@@ -1,0 +1,37 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Correct Invoice" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div
+        data-tpl="pio01"
+        class="color-background-1"
+        data-cross-domain-login-url="http://actum.mockable.io/coremedia-login"
+        data-cross-domain-logout-url="http://actum.mockable.io/coremedia-logout"
+        data-cross-domain-error-message="Cross domain error"
+        data-sitecore-login-url="sitecore/login-url"
+        data-sitecore-logout-url="sitecore/logout-url"
+    >
+        <form action="/en/B2B/sergey-smelov/login-page" method="post">
+            <input name="__RequestVerificationToken" type="hidden" value="8xchlOOMfr3pOah1WyZDFNPebxA6ShH_DbWpApWC5lguvaKtjrPknDy30OeLeSVe2FgN9QuEIurE_ZwJqUEPte6jT2kwPqz2AMf-SFdkOPE1">
+
+            <input id="scController" name="scController" type="hidden" value="InnogyAuthentication">
+
+            <input id="scAction" name="scAction" type="hidden" value="Logout">
+
+            <div data-tpl="tic01" class="indention--none">
+                <div class="content">
+                    <p>Salutation Mr. Daniel Gast</p>
+                </div>
+                <button class="btn btn--full-width color-cta-3" type="submit" name="Logout">
+                    Logout
+                </button>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}

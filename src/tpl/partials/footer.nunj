@@ -1,0 +1,8 @@
+<footer id="main-footer" role="contentinfo">
+    <section data-tpl="individual-zone"></section>
+
+    <section data-tpl="individual-global-zone"></section>
+
+    {% include './footer-zones/global-zone.nunj' %}
+    </section>
+</footer>

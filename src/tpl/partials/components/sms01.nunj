@@ -1,0 +1,20 @@
+<section data-tpl="sms01" class="sms01--centered">
+    <h2 class="headline">SMS 01 headline</h2>
+    <ul>
+        <li class="facebook">
+            <a href="http://www.facebook.com/sharer/sharer.php?u={{ url }}&amp;title={{ title }}" title="Share via facebook" class="link link--external {{optionalLinkColorClass}}" rel="nofollow">Share via facebook</a>
+        </li>
+        <li class="twitter">
+            <a href="http://twitter.com/intent/tweet?status={{ title }}+{{ url }}" title="Share via Twitter" class="link link--external {{optionalLinkColorClass}}" rel="nofollow">Share via Twitter</a>
+        </li>
+        <li class="gplus">
+            <a href="https://plus.google.com/share?url={{ url }}" title="Share via Google Plus" class="link link--external {{optionalLinkColorClass}}" rel="nofollow">Share via Google Plus</a>
+        </li>
+        <li class="mail">
+            <a href="mailto:?subject={{ title }}&amp;body=%0A%0A{{ url }}" title="Share via E-Mail" class="link link--external {{optionalLinkColorClass}}" rel="nofollow">Share via E-Mail</a>
+        </li>
+        <li class="whatsapp">
+            <a href="whatsapp://send?text={{ title }}%0A%0A{{ url }}" title="Share via Whatsapp" class="link link--external {{optionalLinkColorClass}}" rel="nofollow" data-action="share/whatsapp/share">Share via Whatsapp</a>
+        </li>
+    </ul>
+</section>

@@ -1,0 +1,97 @@
+{
+  "Contracts": [
+    {
+      "ContractNumber": "002053325644",
+      "ContractStatus": {
+        "AMRCounter": "",
+        "CustomerType": "1",
+        "InvoiceAcceptedOnline": "false",
+        "ContractActive": "true",
+        "ContractType": "FLATRATE"
+      },
+      "ContractText": {
+        "Label": "2053325644 *Stefan und Hannah Chapman Sebastianusstr. 19  41569 Rommerskirchen *"
+      },
+      "ContractMeterReadingAddress": {
+        "ConsumptionPoint": "7000026981",
+        "Facility": "",
+        "Contract": "",
+        "AddressNumber": "0000084321",
+        "Location1": "Rommerskirchen",
+        "Location2": "Butzheim",
+        "RegionalGroup": "",
+        "PlacePostCode": "41569",
+        "PostCodeMailbox": "",
+        "CompanyPostCode": "",
+        "Street": "Flatrate - Sebastianusstr.",
+        "HouseNumber1": "19",
+        "HouseNumber2": "",
+        "CountryCode": "DE",
+        "Region": "05"
+      },
+      "AccountBalance": "-112.25"
+    },
+    {
+      "ContractNumber": "002049655999",
+      "ContractStatus": {
+        "AMRCounter": "",
+        "CustomerType": "1",
+        "InvoiceAcceptedOnline": "true",
+        "ContractActive": "true",
+        "ContractType": "NORMALRATE"
+      },
+      "ContractText": {
+        "Label": "2053325644 *Stefan und Hannah Chapman Sebastianusstr. 19  41569 Rommerskirchen *"
+      },
+      "ContractMeterReadingAddress": {
+        "ConsumptionPoint": "7000026981",
+        "Facility": "",
+        "Contract": "",
+        "AddressNumber": "0000084321",
+        "Location1": "Rommerskirchen",
+        "Location2": "Butzheim",
+        "RegionalGroup": "",
+        "PlacePostCode": "41569",
+        "PostCodeMailbox": "",
+        "CompanyPostCode": "",
+        "Street": "NormalRate InvOnline=true - Sebastianusstr.",
+        "HouseNumber1": "19",
+        "HouseNumber2": "",
+        "CountryCode": "DE",
+        "Region": "05"
+      },
+      "AccountBalance": "-112.25"
+    },
+    {
+      "ContractNumber": "002049655998",
+      "ContractStatus": {
+        "AMRCounter": "",
+        "CustomerType": "1",
+        "InvoiceAcceptedOnline": "false",
+        "ContractActive": "true",
+        "ContractType": "NORMALRATE"
+      },
+      "ContractText": {
+        "Label": "2053325644 *Stefan und Hannah Chapman Sebastianusstr. 19  41569 Rommerskirchen *"
+      },
+      "ContractMeterReadingAddress": {
+        "ConsumptionPoint": "7000026981",
+        "Facility": "",
+        "Contract": "",
+        "AddressNumber": "0000084321",
+        "Location1": "Rommerskirchen",
+        "Location2": "Butzheim",
+        "RegionalGroup": "",
+        "PlacePostCode": "41569",
+        "PostCodeMailbox": "",
+        "CompanyPostCode": "",
+        "Street": "NormalRate InvOnline=false - Sebastianusstr.",
+        "HouseNumber1": "19",
+        "HouseNumber2": "",
+        "CountryCode": "DE",
+        "Region": "05"
+      },
+      "AccountBalance": "-112.25"
+    }
+  ]
+}

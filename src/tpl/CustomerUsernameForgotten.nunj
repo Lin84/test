@@ -1,0 +1,136 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Change Password" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            {# B2C change password #}
+            <section data-tpl="iebc01" aria-disabled="true" class="item--opened">
+                <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                UsernameForgotten:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="UsernameForgotten"></div>
+                        <script>
+                           innogyForm['UsernameForgotten'] = {
+                            "ApiGetEndpoint": null,
+                            "ApiUpdateEndpoint": "/api/jboss/v1/ResetPassword/UsernameForgotten",
+                            "ConfirmationEmailTemplate": "00000000-0000-0000-0000-000000000000",
+                            "FormDescription": null,
+                            "FormIdentity": "UsernameForgotten",
+                            "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                            "SuccessMessage": "Data saved successfully",
+                            "Children": [
+                              {
+                                "ControlType": "StaticText",
+                                "Label": null,
+                                "Value": "User name forgotten",
+                                "FieldName": "Headline",
+                                "Id": "446dff70-e39f-46d7-a608-ea3cf68c21e9",
+                                "Name": "Headline"
+                              },
+                              {
+                                "ControlType": "StaticText",
+                                "Label": null,
+                                "Value": "This form allows you to request your user name",
+                                "FieldName": "Description",
+                                "Id": "492e656d-4e72-4a7c-9749-276a3766b680",
+                                "Name": "Description Message"
+                              },
+                              {
+                                "ControlType": "StaticText",
+                                "Label": null,
+                                "Value": "SuccessMessage",
+                                "FieldName": "SuccessMessage",
+                                "Id": "90ee621b-71c5-48df-a544-5065f959d17d",
+                                "Name": "Success Message"
+                              },
+                              {
+                                "ControlType": "Text",
+                                "DefaultValue": null,
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "IsEqualToField": null,
+                                "IsEqualToFieldWarning": null,
+                                "IsNotEqualToField": null,
+                                "IsNotEqualToFieldWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 0,
+                                "MaxLengthWarning": null,
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+                                "PatternWarning": null,
+                                "RangeValueWarning": null,
+                                "Label": "Email",
+                                "Placeholder": "Email",
+                                "Tooltip": "This is your Email",
+                                "Required": true,
+                                "RequiredWarningMessage": "This field is required",
+                                "FieldName": "Email",
+                                "Id": "d4a82b93-d1ca-45e3-9cf9-a207f5da6bb1",
+                                "Name": "Email"
+                              },
+                              {
+                                "ControlType": "StaticText",
+                                "Label": null,
+                                "Value": "<span style=\"background-color: #ffffff ; color: #333333 ;\">*Pflichtfeld</span>",
+                                "FieldName": "MandatoryDescription",
+                                "Id": "438f7092-6e9a-4865-aab5-79de6d36d560",
+                                "Name": "Mandatory Description"
+                              },
+                              {
+                                "ControlType": "Button",
+                                "Class": "color-cta-3 formEdit_send",
+                                "Label": "Send",
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "FieldName": "SendButton",
+                                "Id": "6843dcc3-9329-4002-9b58-c608d727c48d",
+                                "Name": "Send"
+                              },
+                              {
+                                "ControlType": "Redirect",
+                                "RedirectUrl": "/en/B2B/DFD-1318Success",
+                                "Link": "c57db7c7-f16c-43b8-a7c4-4f5c098a39b2",
+                                "Label": null,
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "FieldName": null,
+                                "Id": "dffe03e4-2b9b-40ac-8cb5-8ac8ece0a9bf",
+                                "Name": "RedirectActionTemplate"
+                              }
+                            ],
+                            "Id": "afe9597c-6366-4d74-9849-6985a749794c",
+                            "Name": "Form definition"
+                           };
+                        </script>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+{% endblock %}

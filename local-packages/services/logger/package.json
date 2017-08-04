@@ -1,0 +1,15 @@
+{
+  "name": "frontend-logger",
+  "version": "1.1.0",
+  "description": "logs tpo console in  development mode. logs to server for production and staging environments",
+  "main": "Log.service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s.krause@sensory-minds.coom",
+  "license": "ISC",
+  "dependencies": {
+    "superagent": "^1.8.3",
+    "superagent-promise-plugin": "^3.2.0"
+  }
+}

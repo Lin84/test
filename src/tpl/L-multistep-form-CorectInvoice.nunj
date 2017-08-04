@@ -1,0 +1,406 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Correct Invoice" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            <div id="CorrectInvoiceForm">
+                <script type = "text/javascript">
+                    innogyMultistepForm['CorrectInvoiceForm'] = {
+                        "HPN01": {
+                            "__interceptors": [
+                                {}
+                            ],
+                            "Icon": `<svg data-tpl="svg" data-module="animation" data-animation="check_checkbox" data-animation-config="" id="svg-426" width="133px" height="200px" viewBox="0 0 133 200">
+                            <path d="M61.207,199.738c2.002-0.131,3.73-1.44,4.396-3.328L132.719,6.883c0.912-2.599-0.463-5.444-3.071-6.355
+                            c-2.604-0.904-5.465,0.459-6.377,3.061L60.035,182.061L9.473,82.883c-1.249-2.458-4.264-3.44-6.727-2.198
+                            c-2.467,1.244-3.453,4.245-2.207,6.702l55.875,109.628c0.854,1.686,2.586,2.735,4.461,2.735
+                            C60.986,199.75,61.097,199.747,61.207,199.738z"/>`,
+                            "Type": {
+                                "__interceptors": [
+                                    {}
+                                ],
+                                "Value": "Icons",
+                                "Id": "08ce3d3c-855c-481c-99a8-ec150d55ed0f",
+                                "Name": "Numbers"
+                            },
+                            "Id": "d59d0600-cfe8-47f0-a102-bfaa8af8c05e",
+                            "Name": "HPN01-default"
+                        },
+                        "MultistepFormIdentity": "CorrectInvoiceForm",
+                        "Headline": "This is correction form",
+                        "Id": "8fb07168-841c-4c83-bec6-59bca36e71d2",
+                        "Name": "Correction form",
+                        "Children": [
+                            {
+                                "Form":
+                                {
+                                    "ApiGetEndpoint":"http://localhost:5500/api/exampleGetInvoiceInbetween.json",
+                                    "ApiUpdateEndpoint": "/api/esb/v1/CorrectionPrefillForm/step1",
+                                    "FormIdentity": "CorrectionPrefillForm",
+                                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                    "SuccessMessage": "Data saved successfully",
+                                    "Children": [
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Value": "Description of correction process",
+                                            "FieldName": "Description",
+                                            "Id": "38414a2e-31bb-4f58-a818-ae3fb4e0048c",
+                                            "Name": "Correction description"
+                                        },
+                                        {
+                                            "Label": "Correction reason",
+                                            "Placeholder": "Please choose the reason",
+                                            "Required": true,
+                                            "RequiredWarningMessage": "Correction reason is required",
+                                            "FieldName": "CorrectionReason",
+                                            "Children": [
+                                                {
+                                                    "Text": "Estimation too high",
+                                                    "Value": "Schätzung zu hoch",
+                                                    "Id": "b81cac6c-96e9-4813-9174-66028945bd5a",
+                                                    "Name": "Estimation too high"
+                                                },
+                                                {
+                                                    "Text": "Estimation too low",
+                                                    "Value": "Schätzung zu niedrig",
+                                                    "Id": "1ec3708a-4fd7-4417-b8b9-22ec86b4f312",
+                                                    "Name": "Estimation too low"
+                                                },
+                                                {
+                                                    "Text": "False reading",
+                                                    "Value": "Falschablesung",
+                                                    "Id": "1ec2a976-fc49-410c-b317-17cade7fed78",
+                                                    "Name": "False reading"
+                                                }
+                                            ],
+                                            "ControlType": "Select",
+                                            "Id": "f3ba19e4-b43c-495f-bcd0-fa2021649f1b",
+                                            "Name": "CorrectionReason"
+                                        },
+                                        {
+                                            "ControlType": "Display",
+                                            "Label": "Counter number",
+                                            "FieldName": "CounterNumber",
+                                            "Id": "38f3dd5f-6c2d-473c-b14b-3902fc5b2441",
+                                            "Name": "Counter number",
+                                            "Value": "Counter Number",
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Last entry",
+                                            "FieldName": "LastEntry",
+                                            "Id": "f730a08c-9fcb-4740-8a76-7ca0ca461a5c",
+                                            "Name": "Last entry",
+                                            "Value": "Last entry"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "New acquisition",
+                                            "FieldName": "NewEntry",
+                                            "Id": "b58e808b-1abb-4dcb-a240-365754150fb1",
+                                            "Name": "New entry",
+                                            "Value": "New entry"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Pay balance",
+                                            "FieldName": "PayBalance",
+                                            "Id": "2e353338-c075-45f3-9da1-25bc2f83189a",
+                                            "Name": "Pay balance",
+                                            "Value": "Pay balance"
+                                        },
+                                        {
+                                            "ControlType": "Text",
+                                            "Pattern": "^([0-9]*)$",
+                                            "PatternWarning": "Only digits are expected",
+                                            "Label": "Pay balance",
+                                            "Placeholder": "Please fill in",
+                                            "FieldName": "PayBalanceInput",
+                                            "Id": "254f786a-8fc1-41d4-8d78-7bccbd4b1689",
+                                            "Name": "Pay balance input",
+                                            "Required": true,
+                                            "RequiredWarningMessage": "Please Fill in",
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Reading date",
+                                            "FieldName": "ReadingDate",
+                                            "Id": "04f40409-e0ae-4201-9315-4b3eb8c6007e",
+                                            "Name": "Reading date",
+                                            "Value": "Reading date"
+                                        },
+                                        {
+                                            "ControlType": "Text",
+                                            "Label": "Reading date",
+                                            "Placeholder": "Please fill in",
+                                            "FieldName": "ReadingDateInput",
+                                            "Id": "f16f918a-015f-4ed8-810d-d219c012edcf",
+                                            "Name": "Reading date input",
+                                            "Required": true,
+                                            "RequiredWarningMessage": "Please Fill in",
+                                        },
+                                        {
+                                            "ControlType": "Button",
+                                            "Class": "color-cta-3 formEdit__save",
+                                            "Label": "Continue",
+                                            "FieldName": "ContinueButton",
+                                            "Id": "cbce24dc-0566-4c92-b8a1-2251e8f4f855",
+                                            "Name": "Continue button"
+                                        }
+                                    ],
+                                    "Id": "57137934-645e-4845-97be-0f3dd351a3a3",
+                                    "Name": "Prefill data form"
+                                },
+                                "Headline": "Fill",
+                                "Id": "7edb56a5-ba9f-490f-b361-2f5dd9a13f8e",
+                                "Name": "Step 1"
+                            },
+                            {
+                                "Form":
+                                {
+                                    "ApiUpdateEndpoint": "/api/esb/v1/CorrectionCheckForm/step2",
+                                    "FormIdentity": "CorrectionCheckForm",
+                                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                    "SuccessMessage": "Data saved successfully",
+                                    "Children": [
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Value": "Correction Label",
+                                            "FieldName": "CorrectionLabel",
+                                            "Id": "38414a2e-31bb-4f58-a818-ae3fb4e0048c",
+                                            "Name": "Correction Label"
+                                        },
+                                        {
+                                            "ControlType": "Checkbox",
+                                            "CheckboxLabel": "Confirmation",
+                                            "CheckboxName": "Confirmation",
+                                            "Label": "Confirmation",
+                                            "Placeholder": null,
+                                            "Tooltip": null,
+                                            "Required": true,
+                                            "RequiredWarningMessage": "Please confirm",
+                                            "FieldName": "Confirmation",
+                                            "Id": "e5910d4f-8381-48c9-ad52-8bff936e9135",
+                                            "Name": "Confirmation"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Value": "Check the data again pls",
+                                            "FieldName": "AdditionalInformation",
+                                            "Id": "e1546eb2-ce9e-4aa0-891b-5ba8b65e4713",
+                                            "Name": "Additional Information",
+                                            "Value": "Additional Information"
+                                        },
+                                        {
+                                            "Label": "Correction reason",
+                                            "Placeholder": "Please choose the reason",
+                                            "Required": true,
+                                            "RequiredWarningMessage": "Correction reason is required",
+                                            "FieldName": "CorrectionReason",
+                                            "Children": [
+                                                {
+                                                    "Text": "Estimation too high",
+                                                    "Value": "Schätzung zu hoch",
+                                                    "Id": "c28a5965-b72e-4c7c-8dd1-7d9e3382bf3f",
+                                                    "Name": "Estimation too high"
+                                                },
+                                                {
+                                                    "Text": "Estimation too low",
+                                                    "Value": "Schätzung zu niedrig",
+                                                    "Id": "4c4b02c1-2cce-4b40-8de3-3952ac6e37a3",
+                                                    "Name": "Estimation too low"
+                                                },
+                                                {
+                                                    "Text": "False reading",
+                                                    "Value": "Falschablesung",
+                                                    "Id": "392e2056-635d-48f7-b95c-35a1f3fb95eb",
+                                                    "Name": "False reading"
+                                                }
+                                            ],
+                                            "ControlType": "Select",
+                                            "Id": "1bcae750-01b0-4d67-badc-aa2fe8863b93",
+                                            "Name": "CorrectionReason"
+                                        },
+                                        {
+                                            "ControlType": "Display",
+                                            "Label": "Counter number",
+                                            "FieldName": "CounterNumber",
+                                            "Id": "2f343f4d-e9f6-4295-ae29-6edb667d4dc0",
+                                            "Name": "Counter number",
+                                            "Value": "Counter number"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Last entry",
+                                            "FieldName": "LastEntry",
+                                            "Id": "168fbce3-c896-4bd9-8ecc-718edf2b6360",
+                                            "Name": "Last entry",
+                                            "Value": "Last entry"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "New acquisition",
+                                            "FieldName": "NewEntry",
+                                            "Id": "11a5b577-23f2-49ad-8496-7a68028d8196",
+                                            "Name": "New entry",
+                                            "Value": "New entry"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Pay balance",
+                                            "FieldName": "PayBalance",
+                                            "Id": "172cae46-2dde-4042-b911-e6bcfe9b8f95",
+                                            "Name": "Pay balance",
+                                            "Value": "Pay balance"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Reading date",
+                                            "FieldName": "ReadingDate",
+                                            "Id": "e7bc7a9f-c5bb-41e2-a8f8-d86846ae60bd",
+                                            "Name": "Reading date",
+                                            "Value": "Reading date"
+                                        },
+                                        {
+                                            "ControlType": "Button",
+                                            "Class": "color-cta-3 formEdit__save",
+                                            "Label": "Save",
+                                            "FieldName": "SaveButton",
+                                            "Id": "58605aaf-b9b9-43aa-97be-e138f2c8a533",
+                                            "Name": "Save button"
+                                        },
+                                        {
+                                            "ControlType": "Button",
+                                            "Class": "color-cta-2 formEdit__cancel",
+                                            "Label": "Back",
+                                            "FieldName": "BackButton",
+                                            "Id": "4ea07f7f-55ce-4d26-a0a4-07eafcf017bd",
+                                            "Name": "Back button"
+                                        }
+                                    ],
+                                    "Id": "22e2a4da-7098-41f0-883e-47d4f20069a6",
+                                    "Name": "Check data form"
+                                },
+                                "Headline": "Check",
+                                "Id": "36f35090-330e-4339-b22f-3c26e38b4828",
+                                "Name": "Step 2"
+                            },
+                            {
+                                "Form":
+                                {
+                                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                    "SuccessMessage": "Data saved successfully",
+                                    "Children": [
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Value": "Description of correction process",
+                                            "FieldName": "Description",
+                                            "Id": "38414a2e-31bb-4f58-a818-ae3fb4e0048c",
+                                            "Name": "Correction description"
+                                        },
+                                        {
+                                            "Label": "Correction reason",
+                                            "Placeholder": "Please choose the reason",
+                                            "Required": true,
+                                            "RequiredWarningMessage": "Correction reason is required",
+                                            "FieldName": "CorrectionReason",
+                                            "Children": [
+                                                {
+                                                    "Text": "Estimation too high",
+                                                    "Value": "Schätzung zu hoch",
+                                                    "Id": "6421ea5a-eb98-4328-893d-0e11d12e3694",
+                                                    "Name": "Estimation too high"
+                                                },
+                                                {
+                                                    "Text": "Estimation too low",
+                                                    "Value": "Schätzung zu niedrig",
+                                                    "Id": "055f7fea-292a-4ee1-a654-a0835ca0e895",
+                                                    "Name": "Estimation too low"
+                                                },
+                                                {
+                                                    "Text": "False reading",
+                                                    "Value": "Falschablesung",
+                                                    "Id": "c0188523-2e85-4628-be7f-cda3823934aa",
+                                                    "Name": "False reading"
+                                                }
+                                            ],
+                                            "ControlType": "Select",
+                                            "Id": "34d31639-3f2c-4622-aff6-d13aebd63327",
+                                            "Name": "CorrectionReason"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Value": "Correction Label",
+                                            "FieldName": "CorrectionLabel",
+                                            "Id": "38414a2e-31bb-4f58-a818-ae3fb4e0048c",
+                                            "Name": "Correction Label"
+                                        },
+                                        {
+                                            "ControlType": "Display",
+                                            "Label": "Counter number",
+                                            "FieldName": "CounterNumber",
+                                            "Id": "bc9f408a-fb2d-4825-a3f3-a4677ee1c66c",
+                                            "Name": "Counter number",
+                                            "Value": "Counter number"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Value": "Thank you a lot",
+                                            "FieldName": "FinalText",
+                                            "Id": "69cbb557-3c20-4b1e-a7f1-764f8757e0b3",
+                                            "Name": "Final text",
+                                            "Value": "Final text"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Last entry",
+                                            "FieldName": "LastEntry",
+                                            "Id": "9ea6bda3-6432-4d7b-bd94-fcafd5d8995a",
+                                            "Name": "Last entry",
+                                            "Value": "Last entry"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "New acquisition",
+                                            "FieldName": "NewEntry",
+                                            "Id": "ca1c6485-ef50-4647-9dc1-7b83f572e153",
+                                            "Name": "New entry",
+                                            "Value": "New entry"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Pay balance",
+                                            "FieldName": "PayBalance",
+                                            "Id": "3012b1d0-880c-4719-b462-2cc8632aaac9",
+                                            "Name": "Pay balance",
+                                            "Value": "Pay balance"
+                                        },
+                                        {
+                                            "ControlType": "StaticText",
+                                            "Label": "Reading date",
+                                            "FieldName": "ReadingDate",
+                                            "Id": "2f5e6163-2b04-4c81-820e-7987bd11afaf",
+                                            "Name": "Reading date",
+                                            "Value": "Reading date"
+                                        }
+                                    ],
+                                    "Id": "e8313c34-3cd1-4c23-a695-bb33b1d41de4",
+                                    "Name": "Final confirmation"
+                                },
+                                "Headline": "Done",
+                                "Id": "eb8e60be-c4e3-4429-89c9-d8b67a1676d7",
+                                "Name": "Step 3"
+                            }
+                        ]
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+{% endblock %}

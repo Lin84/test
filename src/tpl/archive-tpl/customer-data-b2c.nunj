@@ -1,0 +1,24 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Customer Data Name B2C" %}
+
+{% block content %}
+	<section data-tpl="grid-bas-02">
+	    <div class="container">
+		    <div data-tpl="customer-data">
+			    {% include './partials/customer-data/Customer-data-b2c-view.nunj' %}
+			    {% include './partials/customer-data/Customer-data-b2c-edit.nunj' %}
+		    </div>		    
+
+{# 		    <div data-tpl="customer-data">
+			    {% include './partials/customer-data/Customer-data-b2c-view.nunj' %}
+			    {% include './partials/customer-data/Customer-data-b2c-edit.nunj' %}
+		    </div>		    
+
+		    <div data-tpl="customer-data">
+			    {% include './partials/customer-data/Customer-data-b2c-view.nunj' %}
+			    {% include './partials/customer-data/Customer-data-b2c-edit.nunj' %}
+		    </div> #}
+		</div>
+	</section>
+{% endblock %}

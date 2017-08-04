@@ -1,0 +1,9 @@
+{
+    "DataUsagePermission": true,
+    "EmailContactPermission": false,
+    "MailContactPermission": true,
+    "MarketResearchPermission": true,
+    "PersonalContactPermission": false,
+    "SMSContactPermission": false,
+    "TelephoneContactPermission": false
+}

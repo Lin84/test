@@ -1,0 +1,14 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Customer additional info B2C" %}
+
+{% block content %}
+	<section data-tpl="grid-bas-02">
+	    <div class="container">
+		    <div data-tpl="additional-info-b2c">
+			    {% include './partials/customer-data/Additional-info-b2c-view.nunj' %}
+			    {% include './partials/customer-data/Additional-info-b2c-edit.nunj' %}
+		    </div>
+		</div>
+	</section>
+{% endblock %}

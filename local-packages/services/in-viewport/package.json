@@ -1,0 +1,14 @@
+{
+  "name": "in-viewport",
+  "version": "2.0.0",
+  "description": "watch item visibility in the viewport",
+  "main": "InViewport.service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "rxjs": "^5.0.0-beta.7"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,130 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Customer Data Name" %}
+
+{% block content %}
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <h2 class="headline" data-tpl="hea02">Headline ui kit</h2>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div data-tpl="form" data-module="form" data-module-config="">
+                            <div data-tpl="customer-data">
+                            {% include './partials/customer-data/Customer-data-b2c-view.nunj' %}
+                            {% include './partials/customer-data/Customer-data-b2c-edit.nunj' %}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section data-tpl="ieb01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                        <header class="ieb-item__header">
+                            <header>
+                                <h2 data-tpl="hea02" class="">
+                                    Name B2C
+                                </h2>
+                            </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div data-tpl="customer-data">
+                            {% include './partials/customer-data/Customer-data-b2c-view.nunj' %}
+                            {% include './partials/customer-data/Customer-data-b2c-edit.nunj' %}
+                        </div>
+                    </div>
+                    </section>
+                </section>
+            </section>
+
+            <section data-tpl="ieb01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                        <header class="ieb-item__header">
+                            <header>
+                                <h2 data-tpl="hea02" class="">
+                                    Name SME
+                                </h2>
+                            </header>
+                            <div class="ieb01-toggle"></div>
+                        </header>
+                    <div class="ieb-item__content">
+                        <div data-tpl="customer-data">
+                            {% include './partials/customer-data/Customer-data-sme-view.nunj' %}
+                            {% include './partials/customer-data/Customer-data-sme-edit.nunj' %}
+                        </div>
+                    </div>
+                    </section>
+                </section>
+            </section>
+
+            <section data-tpl="ieb01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                        <header class="ieb-item__header">
+                            <header>
+                                <h2 data-tpl="hea02" class="">
+                                    Customer Newsletter
+                                </h2>
+                            </header>
+                            <div class="ieb01-toggle"></div>
+                        </header>
+                        <div class="ieb-item__content">
+                            <div data-tpl="newsletter">
+                                {% include './partials/customer-data/Newsletter-view.nunj' %}
+                                {% include './partials/customer-data/Newsletter-edit.nunj' %}
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section data-tpl="ieb01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                        <header class="ieb-item__header">
+                            <header>
+                                <h2 data-tpl="hea02" class="">
+                                    Customer Address
+                                </h2>
+                            </header>
+                            <div class="ieb01-toggle"></div>
+                        </header>
+                    <div class="ieb-item__content">
+                    <div data-tpl="customer-address">
+                        {% include './partials/customer-data/Address-view.nunj' %}
+                        {% include './partials/customer-data/Address-edit.nunj' %}
+                    </div>
+                    </div>
+                    </section>
+                </section>
+            </section>
+
+            <section data-tpl="ieb01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                        <header class="ieb-item__header">
+                            <header>
+                                <h2 data-tpl="hea02" class="">
+                                    Customer Contact
+                                </h2>
+                            </header>
+                            <div class="ieb01-toggle"></div>
+                        </header>
+                        <div class="ieb-item__content">
+                            <div data-tpl="customer-contact">
+                                {% include './partials/customer-data/Contact-view.nunj' %}
+                                {% include './partials/customer-data/Contact-edit.nunj' %}
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+        </div>
+    </section>
+{% endblock %}

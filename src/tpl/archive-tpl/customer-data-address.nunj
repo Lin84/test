@@ -1,0 +1,14 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Customer Data Name" %}
+
+{% block content %}
+	<section data-tpl="grid-bas-02">
+	    <div class="container">
+		    <div data-tpl="customer-address">
+			    {% include './partials/customer-data/Address-view.nunj' %}
+			    {% include './partials/customer-data/Address-edit.nunj' %}
+		    </div>
+		</div>
+	</section>
+{% endblock %}

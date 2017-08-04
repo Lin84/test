@@ -1,0 +1,34 @@
+
+
+<div data-tpl="sta01" class="stage color-teaser-4 sta01--centered-left media-align--center-left">
+	<div data-image-id="sta01img" class="image image-decorative image--lazy-loaded image--loaded media-align--top-left">
+		<style type="text/css" data-tpl="inline-style" data-for="responsive-assets" data-image-id="">
+			[data-image-id='sta01img'] > div {
+				background-image: url('../../../images/1-xl.jpg');
+			} @media ( max-width: 479px ) {
+			[data-image-id='sta01img'] > div {
+				background-image: url('../../../images/1-sm.jpg');
+			} } @media ( min-width : 480px ) AND ( max-width : 799px ) {
+			[data-image-id='sta01img'] > div {
+				background-image: url('../../../images/1-md.jpg');
+			} } @media ( min-width : 800px ) AND ( max-width : 1279px ) {
+			[data-image-id='sta01img'] > div {
+				background-image: url('../../../images/1-lg.jpg');
+			} } @media ( min-width : 1280px ) {
+			[data-image-id='sta01img'] > div {
+				background-image: url('../../../images/1-xl.jpg');
+			} }
+		</style>
+
+		<div title="Image Alt Text" aria-describedby="aria-i0819" role="img">
+		</div>
+		<p id="aria-i0819" class="image-caption">Image Caption Text (optional)</p>
+	</div>
+	<header>
+		<h2 class="headline">STA01 Bühnen Element</h2>
+		<h3 class="subheadline">subheadline</h3>
+		<a href="#" title="CTA Button" class="btn color-cta-2">CTA Button</a>
+	</header>
+</div>
+
+

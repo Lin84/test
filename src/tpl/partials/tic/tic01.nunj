@@ -1,0 +1,198 @@
+<h3>TIC01 - with image</h3>
+    <div data-tpl="tic01">
+        <h3 class="headline">Headline</h3>
+        <figure class="image image-semantic">
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="../images/1-xl.jpg" media="(min-width: 1280px)">
+                <source srcset="../images/1-lg.jpg" media="(min-width: 800px) AND (max-width: 1279px)">
+                <source srcset="../images/1-md.jpg" media="(min-width: 480px) AND (max-width: 799px)">
+                <source srcset="../images/1-sm.jpg" media="(min-width: 320px) AND (max-width: 479px)">
+                <source srcset="../images/1-xs.jpg" media="(max-width: 319px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img src="../images/1-xl.jpg" alt="Image Alt Text" aria-describedby="aria-itea04">
+            </picture>
+            <figcaption id="aria-itea04" class="image-caption">Image Caption Text (optional)</figcaption>
+        </figure>
+        <h3 class="subheadline">Subheadline</h3>
+        <div class="content">
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+        </div>
+        <div class="content-extended" aria-expanded="false">
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="content-extended-arrow"></div>
+        <a href="tic01.html#" title="CTA title" class="btn {{optionalColorClass}} {{optionalWidthModifier}} color-cta-3">CTA text</a>
+    </div>
+
+<h3>TIC01 - with downloadable image</h3>
+    <div data-tpl="tic01">
+        <h3 class="headline">Headline</h3>
+        <figure class="image image-semantic">
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="../images/1-xl.jpg" media="(min-width: 1280px)">
+                <source srcset="../images/1-lg.jpg" media="(min-width: 800px) AND (max-width: 1279px)">
+                <source srcset="../images/1-md.jpg" media="(min-width: 480px) AND (max-width: 799px)">
+                <source srcset="../images/1-sm.jpg" media="(min-width: 320px) AND (max-width: 479px)">
+                <source srcset="../images/1-xs.jpg" media="(max-width: 319px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img src="../images/1-xl.jpg" alt="Image Alt Text" aria-describedby="aria-image-13">
+            </picture>
+            <figcaption id="aria-image-13" class="image-caption">Image Caption Text (optional)</figcaption>
+            <a href="/image.jpg" title="Bild herunterladen (JPG, 0.9 MB)" class="link link--download {{optionalLinkColorClass}}">Bild herunterladen (JPG, 0.9 MB)</a>
+        </figure>
+        <h3 class="subheadline">Subheadline</h3>
+        <div class="content">
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+        </div>
+        <div class="content-extended" aria-expanded="false">
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="content-extended-arrow"></div>
+        <a href="#" title="CTA title" class="btn color-cta-3">CTA text</a>
+    </div>
+
+<h3>TIC01 - with badge image</h3>
+    <div data-tpl="tic01">
+        <h3 class="headline">Headline</h3>
+        <figure class="image image-semantic">
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="../images/1-xl.jpg" media="(min-width: 1280px)">
+                <source srcset="../images/1-lg.jpg" media="(min-width: 800px) AND (max-width: 1279px)">
+                <source srcset="../images/1-md.jpg" media="(min-width: 480px) AND (max-width: 799px)">
+                <source srcset="../images/1-sm.jpg" media="(min-width: 320px) AND (max-width: 479px)">
+                <source srcset="../images/1-xs.jpg" media="(max-width: 319px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img src="../images/1-xl.jpg" alt="Image Alt Text" aria-describedby="aria-image-14"></picture>
+            <figcaption id="aria-image-14" class="image-caption">Image Caption Text (optional)</figcaption>
+            <div data-tpl="text-badge" class="color-background-14">
+                <span class="badge-top">Bis zu</span>
+                <span class="badge-main">300€</span>
+                <span class="badge-bottom">sparen!</span>
+            </div>
+        </figure>
+        <h3 class="subheadline">Subheadline</h3>
+        <div class="content">
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+        </div>
+        <div class="content-extended" aria-expanded="false">
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="content-extended-arrow"></div><a href="#" title="CTA title" class="btn color-cta-3">CTA text</a>
+    </div>
+
+<h3>TIC01 - with new mark up for with text badge</h3>
+    <div data-tpl="tic01">
+        <h3 class="headline">Headline</h3>
+        <div data-tpl="mediaContainer" style="position: relative">
+            <figure class="image image-semantic">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source srcset="../images/1-xl.jpg" media="(min-width: 1280px)">
+                    <source srcset="../images/1-lg.jpg" media="(min-width: 800px) AND (max-width: 1279px)">
+                    <source srcset="../images/1-md.jpg" media="(min-width: 480px) AND (max-width: 799px)">
+                    <source srcset="../images/1-sm.jpg" media="(min-width: 320px) AND (max-width: 479px)">
+                    <source srcset="../images/1-xs.jpg" media="(max-width: 319px)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img src="../images/1-xl.jpg" alt="Image Alt Text" aria-describedby="aria-image-14"></picture>
+                <figcaption id="aria-image-14" class="image-caption">Image Caption Text (optional)</figcaption>
+            </figure>
+            <div data-tpl="text-badge" class="color-background-14" style="position: absolute; top: 1.25vw; right: 1.25vw;">
+                <span class="badge-top">Bis zu</span>
+                <span class="badge-main">300€</span>
+                <span class="badge-bottom">sparen!</span>
+            </div>
+        </div>
+        <h3 class="subheadline">Subheadline</h3>
+        <div class="content">
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+        </div>
+        <div class="content-extended" aria-expanded="false">
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="content-extended-arrow"></div><a href="#" title="CTA title" class="btn color-cta-3">CTA text</a>
+    </div>
+
+<h3>TIC01 - with video</h3>
+    <div data-tpl="tic01">
+        <h3 class="headline">Headline</h3>
+        <div data-tpl="video" data-module="video" data-module-config="" class="videoplayer-container videoplayer--inline">
+            <figure>
+                <div class="videoplayer-content"><img src="http://vjs.zencdn.net/v/oceans.png" class="posterimg">
+                    <video preload="auto" poster="http://vjs.zencdn.net/v/oceans.png" data-url="http://vjs.zencdn.net/v/oceans.mp4" data-tracks="[]" role="application" class="video-js videoplayer" controls="controls">
+                        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+                    </video>
+                </div>
+            </figure>
+        </div>
+        <h3 class="subheadline">Subheadline</h3>
+        <div class="content">
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+        </div>
+        <div class="content-extended" aria-expanded="false">
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="content-extended-arrow"></div><a href="#" title="CTA title" class="btn color-cta-3">CTA text</a>
+    </div>
+
+<h3>TIC01 - with slider</h3>
+    <div data-tpl="tic01">
+        <h2 class="headline">Headline</h2>
+        <div data-tpl="sli01" data-module="sli01" data-module-config="" class="slider--ready">
+            <div class="slider-container swiper-container-horizontal">
+                <div class="slider-prev swiper-button-disabled"></div>
+                <div class="slider-next"></div>
+                <div class="slider-wrapper">
+                    <div class="slider-slide swiper-slide-active" style="width: 800px;">
+                        <section data-tpl="grid-bas-01" class="{{colorClass}}">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div data-tpl="video" data-module="video" data-module-config="" class="videoplayer-container videoplayer--inline">
+                                        <figure>
+                                            <div class="videoplayer-content"><img src="http://vjs.zencdn.net/v/oceans.png" class="posterimg">
+                                                <video preload="auto" poster="http://vjs.zencdn.net/v/oceans.png" data-url="http://vjs.zencdn.net/v/oceans.mp4" data-tracks="[]" role="application" class="video-js videoplayer" controls="controls">
+                                                    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+                                                </video>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slider-slide swiper-slide-next" style="width: 800px;">
+                        <section data-tpl="grid-bas-01" class="{{colorClass}}">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <figure class="image image-semantic">
+                                        <picture>
+                                            <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                            <source srcset="../images/1-xl.jpg" media="(min-width: 1280px)">
+                                            <source srcset="../images/1-lg.jpg" media="(min-width: 800px) AND (max-width: 1279px)">
+                                            <source srcset="../images/1-md.jpg" media="(min-width: 480px) AND (max-width: 799px)">
+                                            <source srcset="../images/1-sm.jpg" media="(min-width: 320px) AND (max-width: 479px)">
+                                            <source srcset="../images/1-xs.jpg" media="(max-width: 319px)">
+                                            <!--[if IE 9]></video><![endif]-->
+                                            <img src="../images/1-xl.jpg" alt="Image Alt Text" aria-describedby="aria-image-0">
+                                        </picture>
+                                        <figcaption id="aria-image-0" class="image-caption">Image Caption Text (optional)</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="slider-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+            </div>
+        </div>
+        <h3 class="subheadline">Subheadline</h3>
+        <div class="content">
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+        </div>
+        <div class="content-extended" aria-expanded="false">
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="content-extended-arrow"></div><a href="#" title="CTA title" class="btn color-cta-3">CTA text</a>
+    </div>

@@ -1,0 +1,98 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Picture crop POC" %}
+
+{#
+    media-align--top-left
+    media-align--top-center
+    media-align--top-right
+    media-align--center-left
+    media-align--center-center
+    media-align--center-right
+    media-align--bottom-left
+    media-align--bottom-center
+    media-align--bottom-right
+#}
+
+{% block content %}
+<section data-tpl="grid-bas-03">
+    <div class="container">
+        <div class="row">
+            <div class="grid-content grid-content-1 col-md-6">
+                <style type="text/css" data-tpl="inline-style" data-for="responsive-assets" data-image-id="abc123">
+                @media ( max-width: 479px ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                            background-image: url('//satyr.io/480x270/LightCoral');
+                    }
+                }
+                @media ( max-width: 479px ) AND ( min-resolution: 2dppx ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                            background-image: url('//satyr.io/960x540/Cyan');
+                    }
+                }
+                @media ( min-width : 480px ) AND ( max-width : 799px ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                        background-image: url('//satyr.io/768x432/Maroon');
+                    }
+                }
+                @media ( min-width : 480px ) AND ( max-width : 799px ) AND ( min-resolution: 2dppx ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                        background-image: url('//satyr.io/1536x864/MediumAquaMarine ');
+                    }
+                }
+                @media ( min-width : 800px ) AND ( max-width : 1279px ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                        background-image: url('//satyr.io/1280x720/LightSeaGreen');
+                    }
+                }
+                @media ( min-width : 800px ) AND ( max-width : 1279px ) AND ( min-resolution: 2dppx ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                        background-image: url('//satyr.io/2560x1440/LightSkyBlue');
+                    }
+                }
+                @media ( min-width : 1280px ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                        background-image: url('http://satyr.io/2560x1440/Chartreuse');
+                    }
+                }
+                @media ( min-width : 1280px ) AND ( min-resolution: 2dppx ) {
+                    [data-image-id='abc123'].image--loaded > div {
+                        background-image: url('http://satyr.io/5120x2880/Chocolate');
+                    }
+                }
+              </style>
+              <div data-image-id="abc123" class="image image-decorative image--lazy-loaded image--loaded media-fill--out">
+                <div title="alt text" aria-descripedby="aria-abc123" role="img"></div>
+              </div>
+            </div>
+            <div class="grid-content grid-content-2 col-md-6">
+                <style type="text/css" data-tpl="inline-style" data-for="responsive-assets" data-image-id="i0819">
+                @media ( max-width: 479px ) {
+                    [data-image-id='i0819'].image--loaded > div {
+                            background-image: url('//satyr.io/480x270/LightCoral');
+                    }
+                }
+                @media ( min-width : 480px ) AND ( max-width : 799px ) {
+                    [data-image-id='i0819'].image--loaded > div {
+                        background-image: url('//satyr.io/768x432/Maroon');
+                    }
+                }
+                @media ( min-width : 800px ) AND ( max-width : 1279px ) {
+                    [data-image-id='i0819'].image--loaded > div {
+                        background-image: url('//satyr.io/1280x720/LightSeaGreen');
+                    }
+                }
+                @media ( min-width : 1280px ) {
+                    [data-image-id='i0819'].image--loaded > div {
+                        background-image: url('//satyr.io/2560x1440/Chartreuse');
+                    }
+                }
+              </style>
+              <div data-image-id="i0819" class="image image-decorative image--lazy-loaded image--loaded media-align--bottom-right">
+                <div title="alt text" aria-descripedby="aria-i0819" role="img"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

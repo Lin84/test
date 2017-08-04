@@ -1,0 +1,1925 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "All-Forms" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+
+            <section data-tpl="iebc01" aria-disabled="true" class="item--opened">
+                <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                B2CCustomerPasswordChange:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CCustomerPasswordChange"></div>
+                        <script>
+                           innogyForm['B2CCustomerPasswordChange'] = {
+                             "ApiGetEndpoint": "",
+                             "ApiUpdateEndpoint": "/api/jboss/v1/CustomerPassword",
+                             "ConfirmationEmailTemplate": "00000000-0000-0000-0000-000000000000",
+                             "FormDescription": "This form allows you to change your password",
+                             "FormIdentity": "B2CCustomerPasswordChange",
+                             "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                             "SuccessMessage": "Your password has been changed successfully",
+                             "Children": [
+                               {
+                                 "ControlType": "StaticText",
+                                 "Label": "",
+                                 "Value": "This form allows you to change your password",
+                                 "FieldName": "DescriptionMessage",
+                                 "Id": "4efcbc9e-4d71-42ca-83b2-d51e4a16f3c8",
+                                 "Name": "Description Message"
+                               },
+                               {
+                                 "ControlType": "Button",
+                                 "Class": "color-cta-3 formEdit__edit",
+                                 "Label": "Edit",
+                                 "Placeholder": "",
+                                 "Tooltip": "",
+                                 "Required": false,
+                                 "RequiredWarningMessage": "",
+                                 "FieldName": "EditButton",
+                                 "Id": "a62eee99-160f-460d-8017-96475fd18b79",
+                                 "Name": "Edit Button"
+                               },
+                               {
+                                 "ControlType": "Password",
+                                 "DefaultValue": "",
+                                 "ExactLength": 0,
+                                 "ExactLengthWarning": "",
+                                 "IsEqualToField": "",
+                                 "IsEqualToFieldWarning": "",
+                                 "IsNotEqualToField": "",
+                                 "IsNotEqualToFieldWarning": "Must not be equal to New Password",
+                                 "MaximalValue": 0.0,
+                                 "MaxLength": 0,
+                                 "MaxLengthWarning": "",
+                                 "MinimalValue": 0.0,
+                                 "Pattern": "",
+                                 "PatternWarning": "",
+                                 "RangeValueWarning": "",
+                                 "Label": "Current Password",
+                                 "Placeholder": "Current Password",
+                                 "Tooltip": "Your current password",
+                                 "Required": true,
+                                 "RequiredWarningMessage": "This field is required",
+                                 "FieldName": "CurrentPassword",
+                                 "Id": "94877a31-adc6-4262-a2a1-236f5dd70e92",
+                                 "Name": "Current Password"
+                               },
+                               {
+                                     "ControlType": "Password",
+                                     "DefaultValue": "",
+                                     "ExactLength": 0,
+                                     "ExactLengthWarning": "",
+                                     "IsEqualToField": "",
+                                     "IsEqualToFieldWarning": "",
+                                     "IsNotEqualToField": "CurrentPassword",
+                                     "IsNotEqualToFieldWarning": "Must not be equal to Current Password",
+                                     "MaximalValue": 0.0,
+                                     "MaxLength": 0,
+                                     "MaxLengthWarning": "",
+                                     "MinimalValue": 0.0,
+                                     "Pattern": "^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}$",
+                                     "PatternWarning": "Password must consist minimum 8 characters and contain at least 1 uppercase, 1 lowercase, 1 numeric symbol ",
+                                     "RangeValueWarning": "",
+                                     "Label": "New Password",
+                                     "Placeholder": "New Password",
+                                     "Tooltip": "Your new password",
+                                     "Required": true,
+                                     "RequiredWarningMessage": "This field is required",
+                                     "FieldName": "NewPassword",
+                                     "Id": "5431c39b-83f9-423f-89ca-c55ec46c46f9",
+                                     "Name": "New Password"
+                                   },
+                               {
+                                 "ControlType": "Password",
+                                 "DefaultValue": "",
+                                 "ExactLength": 0,
+                                 "ExactLengthWarning": "",
+                                 "IsEqualToField": "NewPassword",
+                                 "IsEqualToFieldWarning": "Must be equal to New Password",
+                                 "IsNotEqualToField": "",
+                                 "IsNotEqualToFieldWarning": "",
+                                 "MaximalValue": 0.0,
+                                 "MaxLength": 0,
+                                 "MaxLengthWarning": "",
+                                 "MinimalValue": 0.0,
+                                 "Pattern": "",
+                                 "PatternWarning": "",
+                                 "RangeValueWarning": "",
+                                 "Label": "Confirm New Password",
+                                 "Placeholder": "Confirm New Password",
+                                 "Tooltip": "Confirm your new password",
+                                 "Required": true,
+                                 "RequiredWarningMessage": "This field is required",
+                                 "FieldName": "ConfirmNewPassword",
+                                 "Id": "ee50915a-b5f4-4612-bd8d-1bf9b73296d5",
+                                 "Name": "Confirm New Password"
+                               },
+                               {
+                                 "ControlType": "Button",
+                                 "Class": "color-cta-2 formEdit__cancel",
+                                 "Label": "Cancel",
+                                 "Placeholder": "",
+                                 "Tooltip": "",
+                                 "Required": false,
+                                 "RequiredWarningMessage": "",
+                                 "FieldName": "CancelButton",
+                                 "Id": "0ea0161a-ae40-4688-ad37-e8fd40b5153c",
+                                 "Name": "Cancel Button"
+                               },
+                               {
+                                 "ControlType": "Button",
+                                 "Class": "color-cta-3 formEdit__save",
+                                 "Label": "Save",
+                                 "Placeholder": "",
+                                 "Tooltip": "",
+                                 "Required": false,
+                                 "RequiredWarningMessage": "",
+                                 "FieldName": "SaveButton",
+                                 "Id": "96a45156-e9c1-4175-9672-b5cc6a965f37",
+                                 "Name": "Save Button"
+                               }
+                             ],
+                             "Id": "d86ce8a6-2d28-4eef-a9dc-531f70dfa5c8",
+                             "Name": "Form definition"
+                           };
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01" aria-disabled="true" class="item--opened">
+                <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                CustomerAccountDelete:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="CustomerAccountDelete"></div>
+                        <script>
+                            innogyForm['CustomerAccountDelete'] = {
+                                "ApiGetEndpoint": "",
+                                "ApiUpdateEndpoint": "/api/jboss/v1/AccountDelete/CustomerAccountDelete",
+                                "ApiValidatePasswordEndpoint": "/api/jboss/v1/ValidatePassword",
+                                "ConfirmationEmailTemplate": "00000000-0000-0000-0000-000000000000",
+                                "FormDescription": "This form allows you to delete your account",
+                                "FormIdentity": "CustomerAccountDelete",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Your account has been deleted",
+                                "Children": [{
+                                        "ControlType": "StaticText",
+                                        "Label": "",
+                                        "Value": "This form allows you to delete your account",
+                                        "FieldName": "DescriptionMessage",
+                                        "Id": "1bf3354f-11d4-4df7-b0f0-f7059fed57e8",
+                                        "Name": "Description Message"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "Label": "Edit",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "EditButton",
+                                        "Id": "f3cf5735-c17c-4a50-a8ac-97ffcf541a47",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Password",
+                                        "DefaultValue": "",
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": "",
+                                        "IsEqualToField": "",
+                                        "IsEqualToFieldWarning": "",
+                                        "IsNotEqualToField": "",
+                                        "IsNotEqualToFieldWarning": "",
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 0,
+                                        "MaxLengthWarning": "",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "",
+                                        "PatternWarning": "",
+                                        "RangeValueWarning": "",
+                                        "Label": "Password",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "Password",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "FieldName": "CurrentPassword",
+                                        "Id": "2a52cf3a-7d7f-4ca5-887e-460ea457de76",
+                                        "Name": "Password"
+                                    },
+                                    {
+                                        "Label": "Reasons",
+                                        "Placeholder": "please select the reason",
+                                        "Tooltip": "",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "FieldName": "Reasons",
+                                        "Children": [{
+                                                "Selected": false,
+                                                "Text": "Contract Termination:",
+                                                "Value": "KEIN_KUNDE_MEHR",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Preference of other Support:",
+                                                "Value": "KKO_NICHT_MEHR_NUTZEN",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "No Online Data Transfer:",
+                                                "Value": "DATEN_NICHT_ONLINE_UEBERMITTELN",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Missing Functionalities:",
+                                                "Value": "VERMISSE_FUNKTIONEN",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Other Reason:",
+                                                "Value": "SONSTIGE",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            }
+                                        ],
+                                        "ControlType": "Select",
+                                        "Id": "aa797295-bff6-4c7a-8ffd-e46e535fbca3",
+                                        "Name": "TerminationReasons"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Next",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "NextButton",
+                                        "Id": "c4e6cee5-56db-4e82-9d66-fa2dbd91cd7a",
+                                        "Name": "Next Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "Label": "Cancel",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "CancelButton",
+                                        "Id": "9ef6a303-9768-42f2-8407-c7d86717d582",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": "",
+                                        "Value": "You are about to delete your account",
+                                        "FieldName": "ConfirmMessage",
+                                        "Id": "b34d960c-089d-4877-93a4-83b360a16b89",
+                                        "Name": "Confirm Message"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Delete",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "DeleteButton",
+                                        "Id": "f87ffca7-2981-43d7-99c1-b1ebe95f2ae9",
+                                        "Name": "Delete Button"
+                                    },
+                                    {
+                                        "ControlType": "Redirect",
+                                        "RedirectUrl": "/en/B2B",
+                                        "Link": "d892575a-5d18-4aa9-a8d6-8b4d0a0db07d",
+                                        "Label": "",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "Redirect",
+                                        "Id": "f176b657-61a3-416f-b162-75ec83cbb982",
+                                        "Name": "Redirect"
+                                    }
+                                ],
+                                "Id": "2a484c82-1f18-4bbb-8613-122bbde16188",
+                                "Name": "Form definition"
+                            };
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                B2CCustomerAddress:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CCustomerAddress"></div>
+                        <script>
+                            innogyForm['B2CCustomerAddress'] = {
+                                "ApiGetEndpoint": "http://localhost:5500/api/CustomerAddress-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/address",
+                                "FormDescription": "This form is for editing address",
+                                "FormIdentity": "B2CCustomerAddress",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service, Linh",
+                                "SuccessMessage": "Data saved successfully",
+                                "Id": "8d512910-9282-470a-b484-b635d5d32bf7",
+                                "Name": "Form 1",
+                                "Children": [
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 40,
+                                        "MaxLengthWarning": "Max length is 40 characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "FieldName": "CompanyName",
+                                        "Label": "c/o",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4b1469b0-5b05-45f6-99a7-4d22efe119bb",
+                                        "Name": "CompanyName"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": "Prague",
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 40,
+                                        "MaxLengthWarning": "Max length is 40 characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "FieldName": "City",
+                                        "Label": "City",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "Id": "79493da5-e067-4787-b593-4918682d85c6",
+                                        "Name": "City"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 10,
+                                        "MaxLengthWarning": "Max length is 10 characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "FieldName": "Mailbox",
+                                        "Label": "P. O. Box",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "Tooltip for Mailbox",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "RequiredWarningMessage",
+                                        "Id": "10332350-4ba2-4d01-8c3c-dc03edfe6d11",
+                                        "Name": "Mailbox"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 80,
+                                        "MaxLengthWarning": "Max length is 80 characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "FieldName": "Address1",
+                                        "Label": "Street & nr",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "d5ed9528-bcb6-4673-a355-78c07cae66de",
+                                        "Name": "Address1"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 5,
+                                        "ExactLengthWarning": "Zip must have 5 characters",
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 0,
+                                        "MaxLengthWarning": null,
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^([0-9]*)$",
+                                        "PatternWarning": "wrong pattern for postcode",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "PostCode",
+                                        "Label": "PostCode",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": true,
+                                        "RequiredWarningMessage": "required postbox",
+                                        "Id": "db32ea09-1865-4d88-956e-ae2b4039d9b6",
+                                        "Name": "PostCode"
+                                    },
+                                    {
+                                        "ControlType": "Checkbox",
+                                        "CheckboxLabel": "Send to a mailbox",
+                                        "CheckboxName": "SendToMailbox",
+                                        "FieldName": "SendToMailbox",
+                                        "Label": "Send to a mailbox",
+                                        "Placeholder": null,
+                                        "Tooltip": "Tooltip: Send to a mailbox",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "ad5c0faa-8060-4e12-aae8-f8b9c835459a",
+                                        "Name": "SendToMailbox"
+                                    },
+                                    {
+                                      "ControlType": "StaticText",
+                                      "Label": null,
+                                      "Value": "Here i am&nbsp;<a href=\"http://google.com\">Click me</a>",
+                                      "FieldName": "DescriptionMessage",
+                                      "Id": "ee89dd33-61f6-40c3-99f1-8b961f40224c",
+                                      "Name": "DescriptionMessage"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68ca8462-018b-44af-b021-ae43239f0ad1",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4f84512e-5fb3-4b82-9c98-21b1f7cc3abf",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "e52adf29-af40-4c8b-ab46-e18607e25b75",
+                                        "Name": "Cancel Button"
+                                    }
+                                ]
+                            }
+
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                SMECustomerAddress:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="SMECustomerAddress"></div>
+                        <script>
+                            innogyForm['SMECustomerAddress'] = {
+                                "ApiGetEndpoint": "http://localhost:5500/api/CustomerAddress-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/SMECustomerAddress",
+                                "ConfirmationEmailTemplate": "17f811ae-af0a-4501-9b7d-703d359c584c",
+                                "FormDescription": "Customer address form",
+                                "FormIdentity": "SMECustomerAddress",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Data saved successfully",
+                                "Children": [
+                                    {
+                                      "ControlType": "Checkbox",
+                                      "CheckboxLabel": "Send to Mailbox",
+                                      "CheckboxName": "SendToMailbox",
+                                      "Label": "Send to Mailbox",
+                                      "Placeholder": null,
+                                      "Tooltip": null,
+                                      "Required": true,
+                                      "RequiredWarningMessage": "Please confirm",
+                                      "FieldName": "SendToMailbox",
+                                      "Id": "e5910d4f-8381-48c9-ad52-8bff936e9135",
+                                      "Name": "SendToMailbox"
+                                    },
+                                    {
+                                      "ControlType": "Text",
+                                      "DefaultValue": null,
+                                      "ExactLength": 0,
+                                      "ExactLengthWarning": null,
+                                      "IsEqualToField": null,
+                                      "IsEqualToFieldWarning": null,
+                                      "IsNotEqualToField": null,
+                                      "IsNotEqualToFieldWarning": null,
+                                      "MaximalValue": 0.0,
+                                      "MaxLength": 40,
+                                      "MaxLengthWarning": "Max length is 40 characters",
+                                      "MinimalValue": 0.0,
+                                      "Pattern": null,
+                                      "PatternWarning": null,
+                                      "RangeValueWarning": null,
+                                      "Label": "Company name",
+                                      "Placeholder": "Please fill in",
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "CompanyName",
+                                      "Id": "02ecfbc5-4eec-40ee-a055-7ebdb0ed4a7c",
+                                      "Name": "CompanyName"
+                                    },
+                                    {
+                                      "ControlType": "Text",
+                                      "DefaultValue": null,
+                                      "ExactLength": 0,
+                                      "ExactLengthWarning": null,
+                                      "IsEqualToField": null,
+                                      "IsEqualToFieldWarning": null,
+                                      "IsNotEqualToField": null,
+                                      "IsNotEqualToFieldWarning": null,
+                                      "MaximalValue": 0.0,
+                                      "MaxLength": 40,
+                                      "MaxLengthWarning": "Max length is 40 characters",
+                                      "MinimalValue": 0.0,
+                                      "Pattern": null,
+                                      "PatternWarning": null,
+                                      "RangeValueWarning": null,
+                                      "Label": "City",
+                                      "Placeholder": "Please fill in",
+                                      "Tooltip": null,
+                                      "Required": true,
+                                      "RequiredWarningMessage": "This field is required",
+                                      "FieldName": "City",
+                                      "Id": "44e49b62-618d-46fe-8c0e-0360e597502e",
+                                      "Name": "City"
+                                    },
+                                    {
+                                      "ControlType": "Text",
+                                      "DefaultValue": null,
+                                      "ExactLength": 5,
+                                      "ExactLengthWarning": "PostCode must be exactly 5 digits",
+                                      "IsEqualToField": null,
+                                      "IsEqualToFieldWarning": null,
+                                      "IsNotEqualToField": null,
+                                      "IsNotEqualToFieldWarning": null,
+                                      "MaximalValue": 0.0,
+                                      "MaxLength": 0,
+                                      "MaxLengthWarning": null,
+                                      "MinimalValue": 0.0,
+                                      "Pattern": null,
+                                      "PatternWarning": null,
+                                      "RangeValueWarning": null,
+                                      "Label": "PostCode",
+                                      "Placeholder": "Please fill in",
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "PostCode",
+                                      "Id": "995c5c03-79e2-4b44-89cb-dd439c8204aa",
+                                      "Name": "PostCode"
+                                    },
+                                    {
+                                      "ControlType": "Text",
+                                      "DefaultValue": null,
+                                      "ExactLength": 0,
+                                      "ExactLengthWarning": null,
+                                      "IsEqualToField": null,
+                                      "IsEqualToFieldWarning": null,
+                                      "IsNotEqualToField": null,
+                                      "IsNotEqualToFieldWarning": null,
+                                      "MaximalValue": 0.0,
+                                      "MaxLength": 60,
+                                      "MaxLengthWarning": "Max length is 60 characters",
+                                      "MinimalValue": 0.0,
+                                      "Pattern": null,
+                                      "PatternWarning": null,
+                                      "RangeValueWarning": null,
+                                      "Label": "Address 1",
+                                      "Placeholder": "Please fill in",
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "Address1",
+                                      "Id": "a4b8e94d-ed7c-4845-8baa-70a70248f9e4",
+                                      "Name": "Address1"
+                                    },
+                                    {
+                                      "ControlType": "Text",
+                                      "DefaultValue": null,
+                                      "ExactLength": 0,
+                                      "ExactLengthWarning": null,
+                                      "IsEqualToField": null,
+                                      "IsEqualToFieldWarning": null,
+                                      "IsNotEqualToField": null,
+                                      "IsNotEqualToFieldWarning": null,
+                                      "MaximalValue": 0.0,
+                                      "MaxLength": 10,
+                                      "MaxLengthWarning": "Max length is 10 characters",
+                                      "MinimalValue": 0.0,
+                                      "Pattern": null,
+                                      "PatternWarning": null,
+                                      "RangeValueWarning": null,
+                                      "Label": "Address 2",
+                                      "Placeholder": "Please fill in",
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "Address2",
+                                      "Id": "229e1432-767e-4710-aea0-35eb4509d286",
+                                      "Name": "Address2"
+                                    },
+                                    {
+                                      "ControlType": "Text",
+                                      "DefaultValue": null,
+                                      "ExactLength": 0,
+                                      "ExactLengthWarning": null,
+                                      "IsEqualToField": null,
+                                      "IsEqualToFieldWarning": null,
+                                      "IsNotEqualToField": null,
+                                      "IsNotEqualToFieldWarning": null,
+                                      "MaximalValue": 0.0,
+                                      "MaxLength": 10,
+                                      "MaxLengthWarning": "Max length is 10 characters",
+                                      "MinimalValue": 0.0,
+                                      "Pattern": null,
+                                      "PatternWarning": null,
+                                      "RangeValueWarning": null,
+                                      "Label": "Address 3",
+                                      "Placeholder": "Please fill in",
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "Address3",
+                                      "Id": "6d421dfa-a035-4a68-9a6f-a0f97edadea5",
+                                      "Name": "Address3"
+                                    },
+                                    {
+                                      "ControlType": "Text",
+                                      "DefaultValue": null,
+                                      "ExactLength": 0,
+                                      "ExactLengthWarning": null,
+                                      "IsEqualToField": null,
+                                      "IsEqualToFieldWarning": null,
+                                      "IsNotEqualToField": null,
+                                      "IsNotEqualToFieldWarning": null,
+                                      "MaximalValue": 0.0,
+                                      "MaxLength": 10,
+                                      "MaxLengthWarning": "Max length is 10 characters",
+                                      "MinimalValue": 0.0,
+                                      "Pattern": null,
+                                      "PatternWarning": null,
+                                      "RangeValueWarning": null,
+                                      "Label": "Mailbox",
+                                      "Placeholder": "Please fill in",
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": "RequiredWarningMessage",
+                                      "FieldName": "Mailbox",
+                                      "Id": "5e4d17c2-cd61-4d7b-bdda-f031b7e66c52",
+                                      "Name": "Mailbox"
+                                    },
+                                    {
+                                      "ControlType": "StaticText",
+                                      "Label": null,
+                                      "Value": "Here i am&nbsp;<a href=\"http://google.com\">Click me</a>",
+                                      "FieldName": "DescriptionMessage",
+                                      "Id": "ee89dd33-61f6-40c3-99f1-8b961f40224c",
+                                      "Name": "DescriptionMessage"
+                                    },
+                                    {
+                                      "ControlType": "Button",
+                                      "Class": "color-cta-3 formEdit__edit",
+                                      "Label": "Edit",
+                                      "Placeholder": null,
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "EditButton",
+                                      "Id": "4b3553df-f4d1-4b07-b04f-1f8ddaacdbef",
+                                      "Name": "Edit Button"
+                                    },
+                                    {
+                                      "ControlType": "Button",
+                                      "Class": "color-cta-3 formEdit__save",
+                                      "Label": "Save",
+                                      "Placeholder": null,
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "SaveButton",
+                                      "Id": "2787851e-d0bb-423b-9bb5-2fd7ccbd6c32",
+                                      "Name": "Save Button"
+                                    },
+                                    {
+                                      "ControlType": "Button",
+                                      "Class": "color-cta-2 formEdit__cancel",
+                                      "Label": "Cancel",
+                                      "Placeholder": null,
+                                      "Tooltip": null,
+                                      "Required": false,
+                                      "RequiredWarningMessage": null,
+                                      "FieldName": "CancelButton",
+                                      "Id": "0d5c3119-ef59-41f3-8d5c-e04ab5fb13ff",
+                                      "Name": "Cancel Button"
+                                    }
+                                ],
+                                "Id": "2a209fec-c908-42d9-a69f-1e3c3c153d74",
+                                "Name": "Form definition"
+                            };
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <h2 class="headline" data-tpl="hea02">B2CCustomerContactData:</h2>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CCustomerContactData"></div>
+                        <script>
+                        innogyForm['B2CCustomerContactData'] = {
+                            "FormDescription": "This form allows you to change your contact data",
+                            "FormIdentity": "B2CCustomerContactData",
+                            "NoConnectionErrorMessage": "Sorry, no connection with remote service, Linh",
+                            "SuccessMessage": "Data saved successfully",
+                            "ApiGetEndpoint": "http://localhost:5500/api/CustomerContactData-api.json",
+                            "ApiUpdateEndpoint": "/api/esb/v1/contact",
+                            "Id": "1a22df26-efa5-4c82-b06b-90c26cfadcf8",
+                            "Name": "Form 1",
+                            "Children": [{
+                                "ControlType": "Button",
+                                "Class": "color-cta-3 formEdit__edit",
+                                "FieldName": "EditButton",
+                                "Label": "Edit",
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "68a90c20-b7dd-452f-81a4-8a2872104f42",
+                                "Name": "Edit Button"
+                            }, {
+                                "ControlType": "Button",
+                                "Class": "color-cta-2 formEdit__cancel",
+                                "FieldName": "CancelButton",
+                                "Label": "Cancel",
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "943409db-0a1f-46aa-b994-c6ef5d70643b",
+                                "Name": "Cancel Button"
+                            }, {
+                                "ControlType": "Button",
+                                "Class": "color-cta-3 formEdit__save",
+                                "FieldName": "SaveButton",
+                                "Label": "Save",
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "7ad471ff-309e-4b39-a733-04811e0a09ae",
+                                "Name": "Save Button"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": "444 222 333",
+                                "ExactLength": 5,
+                                "ExactLengthWarning": "please enter exactlength",
+                                "MaximalValue": 0.0,
+                                "MaxLength": 50,
+                                "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "AlternativePhoneNumber",
+                                "Label": "Alternative phone number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": "tooltip for alternative Phone Number",
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "18b2ef1e-05a4-4b35-919a-ae4ee43f8cfe",
+                                "Name": "AlternativePhoneNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": null,
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 28,
+                                "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "HomePhoneNumber",
+                                "Label": "Home phone number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": "tooltip HomePhoneNumber",
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "68e9bcef-ebb2-4e82-be74-1e0a1dcedd97",
+                                "Name": "HomePhoneNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": "111 222 333",
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 28,
+                                "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "MobilePhoneNumber",
+                                "Label": "Mobile phone number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "4509f462-2369-4ab6-926f-e22aab9682a9",
+                                "Name": "MobilePhoneNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": null,
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 28,
+                                "MaxLengthWarning": "Maximum 28 digit fax number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "FaxNumber",
+                                "Label": "Fax number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "d2a75e84-ff69-4da7-8e9f-cadce68ce1f1",
+                                "Name": "FaxNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": null,
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 241,
+                                "MaxLengthWarning": "Length of email should be not more then 241 char",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+                                "PatternWarning": "Customer's email address must be e-mail address of format",
+                                "RangeValueWarning": null,
+                                "FieldName": "Email",
+                                "Label": "Email",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": null,
+                                "Required": true,
+                                "RequiredWarningMessage": "Email is required",
+                                "Id": "eb98babb-d874-4d7e-beaa-5d48426816f8",
+                                "Name": "Email"
+                            }]
+                        }
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <h2 class="headline" data-tpl="hea02">SMECustomerContactData:</h2>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="SMECustomerContactData"></div>
+                        <script>
+                            innogyForm['SMECustomerContactData'] = {
+                                "FormDescription": "This form allows you to change your contact data",
+                                "FormIdentity": "SMECustomerContactData",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Data saved successfully",
+                                "ApiGetEndpoint": "http://localhost:5500/api/CustomerContactData-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/contact",
+                                "Id": "1a22df26-efa5-4c82-b06b-90c26cfadcf8",
+                                "Name": "Form 1",
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68a90c20-b7dd-452f-81a4-8a2872104f42",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "943409db-0a1f-46aa-b994-c6ef5d70643b",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                    "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "7ad471ff-309e-4b39-a733-04811e0a09ae",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": "444 222 333",
+                                        "ExactLength": 5,
+                                        "ExactLengthWarning": "please enter exactlength",
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 50,
+                                        "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "AlternativePhoneNumber",
+                                        "Label": "Alternative phone number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "tooltip for alternative Phone Number",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "18b2ef1e-05a4-4b35-919a-ae4ee43f8cfe",
+                                        "Name": "AlternativePhoneNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 28,
+                                        "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "HomePhoneNumber",
+                                        "Label": "Home phone number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "tooltip HomePhoneNumber",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68e9bcef-ebb2-4e82-be74-1e0a1dcedd97",
+                                        "Name": "HomePhoneNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": "111 222 333",
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 28,
+                                        "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "MobilePhoneNumber",
+                                        "Label": "Mobile phone number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4509f462-2369-4ab6-926f-e22aab9682a9",
+                                        "Name": "MobilePhoneNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 28,
+                                        "MaxLengthWarning": "Maximum 28 digit fax number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "FaxNumber",
+                                        "Label": "Fax number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "d2a75e84-ff69-4da7-8e9f-cadce68ce1f1",
+                                        "Name": "FaxNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 241,
+                                        "MaxLengthWarning": "Length of email should be not more then 241 char",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+                                        "PatternWarning": "Customer's email address must be e-mail address of format",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "Email",
+                                        "Label": "Email",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Email is required",
+                                        "Id": "eb98babb-d874-4d7e-beaa-5d48426816f8",
+                                        "Name": "Email"
+                                    }
+                                ]
+                            }
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                B2CCustomerName:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CCustomerName"></div>
+                        <script>
+                            innogyForm['B2CCustomerName'] = {
+                                "ApiGetEndpoint": "http://localhost:5500/api/B2CCustomerName-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/B2CCustomerName",
+                                "FormDescription": "This form is for editing your name",
+                                "FormIdentity": "B2CCustomerName",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "You saved this form successfully",
+                                "Id": "bd44c06b-8393-4ebc-a029-bcc48d84b531",
+                                "Name": "Form1",
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "EditButton",
+                                        "Id": "fe9a015b-d751-4997-a8ed-8f365cf54461",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "CancelButton",
+                                        "Id": "cf3366fd-ebdf-47a8-b325-57b53dde2c9d",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "SaveButton",
+                                        "Id": "bccca21e-57a6-412b-a3d2-24e5a6c92655",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "Label": "Salutation",
+                                        "Placeholder": "Please Fill in",
+                                        "Tooltip": "Please provide us with your salutation",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Its required",
+                                        "FieldName": "Titles",
+                                        "ControlType": "Select",
+                                        "Id": "e30021d5-7b45-4ec6-ba53-ca4ef6566fad",
+                                        "Name": "Title",
+                                    },
+                                    {
+                                        "Label": "Academic title",
+                                        "Placeholder": "Academic title",
+                                        "Tooltip": "This is your academic title",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "AcademicTitles",
+                                        "ControlType": "Select",
+                                        "Id": "cc9e42ed-adfe-46a8-842f-d0262f941461",
+                                        "Name": "Academic Title",
+                                    },
+                                    {
+                                      "ControlType": "StaticText",
+                                      "Label": null,
+                                      "Value": "Additional Explanation Text",
+                                      "FieldName": "AdditionalExplanation",
+                                      "Id": "ee89dd33-61f6-40c3-99f1-8b961f40224c",
+                                      "Name": "DescriptionMessage"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "IsEqualToField": null,
+                                        "IsEqualToFieldWarning": null,
+                                        "IsNotEqualToField": null,
+                                        "IsNotEqualToFieldWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 35,
+                                        "MaxLengthWarning": "Maximum 35 character first name",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "Label": "First Name",
+                                        "Placeholder": "First Name",
+                                        "Tooltip": "This is your first name",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "FieldName": "FirstName",
+                                        "Id": "580d9a4e-0ee6-44cd-8c92-099fa3fd1fc9",
+                                        "Name": "First name"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "IsEqualToField": null,
+                                        "IsEqualToFieldWarning": null,
+                                        "IsNotEqualToField": null,
+                                        "IsNotEqualToFieldWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 35,
+                                        "MaxLengthWarning": "Maximum 35 character surname",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "Label": "Surname",
+                                        "Placeholder": "Surname",
+                                        "Tooltip": "This is your surname",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Field is required",
+                                        "FieldName": "Surname",
+                                        "Id": "b0590cdd-c1e4-4195-9d0b-92d05078fbf2",
+                                        "Name": "Surname"
+                                    },
+                                    {
+                                        "Label": "Name Addition",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "This is your name addition",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "RoyalTitles",
+                                        "ControlType": "Select",
+                                        "Id": "63279e40-2750-466f-a1af-650d774fa9c5",
+                                        "Name": "Name Addition"
+                                    },
+                                    {
+                                        "Label": "Reason For Change",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "This is why you change this form",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This filed is required",
+                                        "FieldName": "ReasonsForChange",
+                                        "ControlType": "Select",
+                                        "Id": "1a16c192-eac6-4ce7-8696-b4cee96a26a3",
+                                        "Name": "Reason For Change",
+                                        "Children": [
+                                            {
+                                                "Selected": false,
+                                                "Text": "Reason B2C Customer 1 Text",
+                                                "Value": "Reason Customer 1 definition value",
+                                                "Id": "ce555b18-55f4-44a2-88bb-c93b54ea2d5c",
+                                                "Name": "Reason B2C Customer 1"
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Reason B2C Customer 2 Text",
+                                                "Value": "Reason Customer 2 definition value",
+                                                "Id": "ce555b18-55f4-44a2-88bb-c93b54ea2d5c",
+                                                "Name": "Reason B2C Customer 2"
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Reason B2C Customer 3 Text",
+                                                "Value": "Reasonustomer 3 definition value",
+                                                "Id": "a34864f1-97a9-41bd-9b66-8f00788a0e67",
+                                                "Name": "Reason B2C Customer 3"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                SMECustomerName:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="SMECustomerName"></div>
+                        <script>
+                            innogyForm['SMECustomerName'] = {
+                                "DescriptionMessage": "If you wanna change ur contract <a href=\"google.com\">click me</a>",
+                                "ApiGetEndpoint": "http://localhost:5500/api/SMECustomerName-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/SMECustomerName",
+                                "FormDescription": "This form is for editing SMECustomerName",
+                                "FormIdentity": "SMECustomerName",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Data saved successfully",
+                                "Id": "8d512910-9282-470a-b484-b635d5d32bf7",
+                                "Name": "Form 1",
+                                "Children": [
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 40,
+                                        "MaxLengthWarning": "Max length is 40 characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "FieldName": "OrgName1",
+                                        "Label": "OrgName1",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4b1469b0-5b05-45f6-99a7-4d22efe119bb",
+                                        "Name": "OrgName1"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": "Prague",
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 40,
+                                        "MaxLengthWarning": "Max length is 40 characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "FieldName": "OrgName2",
+                                        "Label": "OrgName2",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "Id": "79493da5-e067-4787-b593-4918682d85c6",
+                                        "Name": "OrgName2"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": "Prague",
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 40,
+                                        "MaxLengthWarning": "Max length is 40 characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "FieldName": "OrgName3",
+                                        "Label": "OrgName3",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "Id": "79493da5-e067-4787-b593-4918682d85c6",
+                                        "Name": "OrgName3"
+                                    },
+                                    {
+                                      "ControlType": "StaticText",
+                                      "Label": null,
+                                      "Value": "Additional Explanation Text",
+                                      "FieldName": "AdditionalExplanation",
+                                      "Id": "ee89dd33-61f6-40c3-99f1-8b961f40224c",
+                                      "Name": "DescriptionMessage"
+                                    },
+                                    {
+                                        "FieldName": "ReasonsForChange",
+                                        "Label": "Reason for change",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "Tooltip message for select, Linh",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This filed is required",
+                                        "ControlType": "Select",
+                                        "Id": "63279e40-2750-466f-a1af-650d774fa9c5",
+                                        "Name": "Select Element"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68ca8462-018b-44af-b021-ae43239f0ad1",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4f84512e-5fb3-4b82-9c98-21b1f7cc3abf",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "e52adf29-af40-4c8b-ab46-e18607e25b75",
+                                        "Name": "Cancel Button"
+                                    }
+                                ]
+                            }
+
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                SMENewsletterRegister:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="SMENewsletterRegister"></div>
+                        <script>
+                            innogyForm['SMENewsletterRegister'] = {
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68ca8462-018b-44af-b021-ae43239f0ad1",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4f84512e-5fb3-4b82-9c98-21b1f7cc3abf",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "e52adf29-af40-4c8b-ab46-e18607e25b75",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "Checkbox",
+                                        "CheckboxLabel": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "CheckboxName": "EmailContactPermission",
+                                        "Label": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "Placeholder": "Chexckbox place",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "EmailContactPermission",
+                                        "Id": "99c4fd63-2773-407a-abab-e0cc8cb6f159",
+                                        "Name": "EmailContactPermission"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will not receive newsletter. after submit",
+                                        "FieldName": "CancelMessage",
+                                        "Id": "bd8fbbc9-9c9d-49dc-aa34-54fe9a74b5b3",
+                                        "Name": "Cancel Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Success, We will send You newsletter, after submit",
+                                        "FieldName": "ConfirmMessage",
+                                        "Id": "50a65582-cd55-42bf-86ae-ba05b58fcfda",
+                                        "Name": "Confirm Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">user won&acute;t receive any mails, after get request</span>",
+                                        "FieldName": "NotReceivingText",
+                                        "Id": "6a95c1ff-b895-48ae-a83d-0b1a3753fa7e",
+                                        "Name": "Not Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">you will receive continuously news, after get request</span>",
+                                        "FieldName": "ReceivingText",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will receive info, additional info text below checkbox",
+                                        "FieldName": "AdditionalInfoText",
+                                        "Id": "6c15945f-d056-4ca6-86e0-ea6c2433a012",
+                                        "Name": "Additional InfoText"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Email",
+                                        "FieldName": "EmailLabel",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "EmailLabel"
+                                    }
+                                ],
+                                "ApiGetEndpoint": "http://localhost:5500/api/NewsletterRegister-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/NewsletterRegister",
+                                "FormDescription": "This form allows you to update your Name data",
+                                "FormIdentity": "SMENewsletterRegister",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Form updated successfully",
+                                "Id": "457b71c0-0134-4755-bc57-b599b48be568",
+                                "Name": "Form1"
+                            };
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                B2CNewsletterRegister:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CNewsletterRegister"></div>
+                        <script>
+                            innogyForm['B2CNewsletterRegister'] = {
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68ca8462-018b-44af-b021-ae43239f0ad1",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4f84512e-5fb3-4b82-9c98-21b1f7cc3abf",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "e52adf29-af40-4c8b-ab46-e18607e25b75",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "Checkbox",
+                                        "CheckboxLabel": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "CheckboxName": "EmailContactPermission",
+                                        "Label": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "Placeholder": "Chexckbox place",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "EmailContactPermission",
+                                        "Id": "99c4fd63-2773-407a-abab-e0cc8cb6f159",
+                                        "Name": "EmailContactPermission"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will not receive newsletter. after submit",
+                                        "FieldName": "CancelMessage",
+                                        "Id": "bd8fbbc9-9c9d-49dc-aa34-54fe9a74b5b3",
+                                        "Name": "Cancel Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Success, We will send You newsletter, after submit",
+                                        "FieldName": "ConfirmMessage",
+                                        "Id": "50a65582-cd55-42bf-86ae-ba05b58fcfda",
+                                        "Name": "Confirm Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">user won&acute;t receive any mails, after get request</span>",
+                                        "FieldName": "NotReceivingText",
+                                        "Id": "6a95c1ff-b895-48ae-a83d-0b1a3753fa7e",
+                                        "Name": "Not Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">you will receive continuously news, after get request</span>",
+                                        "FieldName": "ReceivingText",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will receive info, additional info text below checkbox",
+                                        "FieldName": "AdditionalInfoText",
+                                        "Id": "6c15945f-d056-4ca6-86e0-ea6c2433a012",
+                                        "Name": "Additional InfoText"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Email",
+                                        "FieldName": "EmailLabel",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "EmailLabel"
+                                    }
+                                ],
+                                "ApiGetEndpoint": "http://localhost:5500/api/NewsletterRegister-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/NewsletterRegister",
+                                "FormDescription": "This form allows you to update your Name data",
+                                "FormIdentity": "B2CNewsletterRegister",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Form updated successfully",
+                                "Id": "457b71c0-0134-4755-bc57-b599b48be568",
+                                "Name": "Form1"
+                            };
+                        </script>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <h2 data-tpl="hea02" class="">
+                B2C Feedback Form
+            </h2>
+            <div id="B2CFeedbackForm"></div>
+            <script>
+                innogyForm['B2CFeedbackForm'] = {
+                    "ApiUpdateEndpoint": "/api/esb/v1/B2CFeedbackForm",
+                    "ConfirmationEmailTemplate": "4849cff2-685d-4c4d-b12a-4d8735c64d07",
+                    "FormIdentity": "B2CFeedbackForm",
+                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                    "SuccessMessage": "Data saved successfully",
+                    "Id": "2daf21b9-e29f-434c-b65f-739775a10f41",
+                    "Name": "Definition",
+                    "Children": [
+                        {
+                            "ControlType": "StaticText",
+                            "Label": "Header text",
+                            "Value": "<p>We are glad to bla-bla-bla</p>",
+                            "FieldName": "Headline",
+                            "Id": "f7f6d465-ca63-4032-9cf7-e336eff90905",
+                            "Name": "Headline"
+                        },
+                        {
+                            "Label": "Rating",
+                            "Placeholder": "Please rate us",
+                            "Required": true,
+                            "RequiredWarningMessage": "This field is required",
+                            "FieldName": "Rating",
+                            "ControlType": "Select",
+                            "Id": "4dc684ba-f98b-48f0-8224-73898ae54523",
+                            "Name": "Rating",
+                            "Children": [
+                                {
+                                    "Text": "5 - very good",
+                                    "Value": "5",
+                                    "Id": "4bbb914a-74e4-444c-9a65-bab6a780702f",
+                                    "Name": "5 - very good"
+                                },
+                                {
+                                    "Text": "4 - good",
+                                    "Value": "4",
+                                    "Id": "b54dc3aa-9065-4bae-b845-fd63feb1f4ee",
+                                    "Name": "4 - good"
+                                },
+                                {
+                                    "Text": "3 - neutral",
+                                    "Value": "3",
+                                    "Id": "bf98876f-7b4e-4c9a-a86f-f3a42bbb281d",
+                                    "Name": "3 - neutral"
+                                },
+                                {
+                                    "Text": "2 - bad",
+                                    "Value": "2",
+                                    "Id": "4fb8cbe6-aa2e-4d4b-9802-9889e981da4e",
+                                    "Name": "2 - bad"
+                                },
+                                {
+                                    "Text": "1 - very bad",
+                                    "Value": "1",
+                                    "Id": "4ea7db2b-dd0a-4d36-aa86-1ac0dcd0c4e2",
+                                    "Name": "1 - very bad"
+                                }
+                            ]
+                        },
+                        {
+                            "ControlType": "TextArea",
+                            "NumberOfRows": 5,
+                            "Label": "Comments",
+                            "Placeholder": "PLease fill in",
+                            "FieldName": "Comments",
+                            "Id": "9a74b0ef-0fb4-4d02-ab97-0a34d92c962f",
+                            "Name": "Comments"
+                        },
+                        {
+                            "ControlType": "Button",
+                            "Class": "color-cta-3 formEdit__save",
+                            "Label": "Submit",
+                            "FieldName": "SaveButton",
+                            "Id": "593d31d3-b39e-4c68-b88a-506d7c7091c3",
+                            "Name": "Save Button"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Mandatory is because...</p>",
+                            "FieldName": "MandatoryDescription",
+                            "Id": "787edb3c-68e7-43b9-b656-6c507fa48683",
+                            "Name": "Mandatory description"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Thank you, submission was successful</p>",
+                            "FieldName": "SuccessMessage",
+                            "Id": "2e007556-33c7-4b0b-9363-52981eb8e477",
+                            "Name": "Success message"
+                        }
+                    ]
+                }
+            </script>
+        </div>
+    </section>
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <h2 data-tpl="hea02" class="">
+                SME Feedback Form
+            </h2>
+            <div id="SMEFeedbackForm"></div>
+            <script>
+                innogyForm['SMEFeedbackForm'] = {
+                    "ApiUpdateEndpoint": "/api/esb/v1/SMEFeedbackForm",
+                    "ConfirmationEmailTemplate": "4849cff2-685d-4c4d-b12a-4d8735c64d07",
+                    "FormIdentity": "SMEFeedbackForm",
+                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                    "SuccessMessage": "Data saved successfully",
+                    "Id": "2daf21b9-e29f-434c-b65f-739775a10f41",
+                    "Name": "Definition",
+                    "Children": [
+                        {
+                            "ControlType": "StaticText",
+                            "Label": "Header text",
+                            "Value": "<p>We are glad to bla-bla-bla</p>",
+                            "FieldName": "Headline",
+                            "Id": "f7f6d465-ca63-4032-9cf7-e336eff90905",
+                            "Name": "Headline"
+                        },
+                        {
+                            "Label": "Rating",
+                            "Placeholder": "Please rate us",
+                            "Required": true,
+                            "RequiredWarningMessage": "This field is required",
+                            "FieldName": "Rating",
+                            "ControlType": "Select",
+                            "Id": "4dc684ba-f98b-48f0-8224-73898ae54523",
+                            "Name": "Rating",
+                            "Children": [
+                                {
+                                    "Text": "5 - very good",
+                                    "Value": "5",
+                                    "Id": "4bbb914a-74e4-444c-9a65-bab6a780702f",
+                                    "Name": "5 - very good"
+                                },
+                                {
+                                    "Text": "4 - good",
+                                    "Value": "4",
+                                    "Id": "b54dc3aa-9065-4bae-b845-fd63feb1f4ee",
+                                    "Name": "4 - good"
+                                },
+                                {
+                                    "Text": "3 - neutral",
+                                    "Value": "3",
+                                    "Id": "bf98876f-7b4e-4c9a-a86f-f3a42bbb281d",
+                                    "Name": "3 - neutral"
+                                },
+                                {
+                                    "Text": "2 - bad",
+                                    "Value": "2",
+                                    "Id": "4fb8cbe6-aa2e-4d4b-9802-9889e981da4e",
+                                    "Name": "2 - bad"
+                                },
+                                {
+                                    "Text": "1 - very bad",
+                                    "Value": "1",
+                                    "Id": "4ea7db2b-dd0a-4d36-aa86-1ac0dcd0c4e2",
+                                    "Name": "1 - very bad"
+                                }
+                            ]
+                        },
+                        {
+                            "ControlType": "TextArea",
+                            "NumberOfRows": 5,
+                            "Label": "Comments",
+                            "Placeholder": "PLease fill in",
+                            "FieldName": "Comments",
+                            "Id": "9a74b0ef-0fb4-4d02-ab97-0a34d92c962f",
+                            "Name": "Comments"
+                        },
+                        {
+                            "ControlType": "Button",
+                            "Class": "color-cta-3 formEdit__save",
+                            "Label": "Submit",
+                            "FieldName": "SaveButton",
+                            "Id": "593d31d3-b39e-4c68-b88a-506d7c7091c3",
+                            "Name": "Save Button"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Mandatory is because...</p>",
+                            "FieldName": "MandatoryDescription",
+                            "Id": "787edb3c-68e7-43b9-b656-6c507fa48683",
+                            "Name": "Mandatory description"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Thank you, submission was successful</p>",
+                            "FieldName": "SuccessMessage",
+                            "Id": "2e007556-33c7-4b0b-9363-52981eb8e477",
+                            "Name": "Success message"
+                        }
+                    ]
+                }
+            </script>
+        </div>
+    </section>
+{% endblock %}

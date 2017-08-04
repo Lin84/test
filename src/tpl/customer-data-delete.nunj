@@ -1,0 +1,15 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Customer Delete Account" %}
+
+{% block content %}
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <div data-tpl="customer-delete">
+                {% include './partials/customer-data/Customer-delete-view.nunj' %}
+                {% include './partials/customer-data/Customer-delete-edit.nunj' %}
+                {% include './partials/customer-data/Customer-delete-afterview.nunj' %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,41 @@
+<div class="formView" data-tpl="form" data-module="form" data-module-config="">
+
+	<div class="formView__form">
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Satulation</label>
+				<p key="satulation">Mr</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label key="Title">Academic Title</label>
+				<p></p>
+			</div>
+		</div>	
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label key="FirstName">First Name</label>
+				<p>Sedat</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label key="Surname">Surname</label>
+				<p>Kastrati</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label key="NameAddition">Name Addition </label>
+			</div>
+		</div>
+
+		<p class="formView__success-msg hidden">Success Message after Front End and Back End validation</p>
+
+		<div class="formView__bottom-wrapper">
+			<button class="btn color-cta-3">Edit</button>
+		</div>
+	</div>
+</div>
+

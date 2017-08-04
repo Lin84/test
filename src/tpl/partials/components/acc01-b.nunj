@@ -1,0 +1,22 @@
+<section data-tpl="acc01">
+    <h2>Headline</h2>
+    <p>Subheadline</p>
+    <ol>
+        <li aria-expanded="true" class="accordion-item">
+            <section>
+                <h3 class="accordion-item__headline">Some entry</h3>
+                <article class="accordion-item__content">
+                    {% include '../tic/tic02.nunj' %}
+                </article>
+            </section>
+        </li>
+        <li aria-expanded="false" class="accordion-item">
+            <section>
+                <h3 class="accordion-item__headline">Some entry 2</h3>
+                <article class="accordion-item__content">
+                    {% include '../tic/tic02.nunj' %}
+                </article>
+            </section>
+        </li>
+    </ol>
+</section>

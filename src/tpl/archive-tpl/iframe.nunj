@@ -1,0 +1,17 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Iframe" %}
+
+{% block content %}
+    <section data-tpl="grid-bas-01" class="color-background-11">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-02">
+                <div class="container">
+                    {% include './partials/components/iframe.nunj' %}
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

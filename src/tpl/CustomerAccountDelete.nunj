@@ -1,0 +1,203 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Delete Account" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            {# B2C change password #}
+            <section data-tpl="iebc01" aria-disabled="true" class="item--opened">
+                <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                CustomerAccountDelete:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="CustomerAccountDelete"></div>
+                        <script>
+                            innogyForm['CustomerAccountDelete'] = {
+                                "ApiGetEndpoint": "",
+                                "ApiUpdateEndpoint": "/api/jboss/v1/AccountDelete/CustomerAccountDelete",
+                                "ApiValidatePasswordEndpoint": "/api/jboss/v1/ValidatePassword",
+                                "ConfirmationEmailTemplate": "00000000-0000-0000-0000-000000000000",
+                                "FormDescription": "This form allows you to delete your account",
+                                "FormIdentity": "CustomerAccountDelete",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Your account has been deleted",
+                                "Children": [{
+                                        "ControlType": "StaticText",
+                                        "Label": "",
+                                        "Value": "This form allows you to delete your account",
+                                        "FieldName": "DescriptionMessage",
+                                        "Id": "1bf3354f-11d4-4df7-b0f0-f7059fed57e8",
+                                        "Name": "Description Message"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "Label": "Edit",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "EditButton",
+                                        "Id": "f3cf5735-c17c-4a50-a8ac-97ffcf541a47",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Password",
+                                        "DefaultValue": "",
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": "",
+                                        "IsEqualToField": "",
+                                        "IsEqualToFieldWarning": "",
+                                        "IsNotEqualToField": "",
+                                        "IsNotEqualToFieldWarning": "",
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 0,
+                                        "MaxLengthWarning": "",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "",
+                                        "PatternWarning": "",
+                                        "RangeValueWarning": "",
+                                        "Label": "Password",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "Password",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "FieldName": "CurrentPassword",
+                                        "Id": "2a52cf3a-7d7f-4ca5-887e-460ea457de76",
+                                        "Name": "Password"
+                                    },
+                                    {
+                                        "Label": "Reasons",
+                                        "Placeholder": "please select the reason",
+                                        "Tooltip": "",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "FieldName": "Reasons",
+                                        "Children": [{
+                                                "Selected": false,
+                                                "Text": "Contract Termination:",
+                                                "Value": "KEIN_KUNDE_MEHR",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Preference of other Support:",
+                                                "Value": "KKO_NICHT_MEHR_NUTZEN",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "No Online Data Transfer:",
+                                                "Value": "DATEN_NICHT_ONLINE_UEBERMITTELN",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Missing Functionalities:",
+                                                "Value": "VERMISSE_FUNKTIONEN",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            },
+                                            {
+                                                "Selected": false,
+                                                "Text": "Other Reason:",
+                                                "Value": "SONSTIGE",
+                                                "Id": "00000000-0000-0000-0000-000000000000",
+                                                "Name": null
+                                            }
+                                        ],
+                                        "ControlType": "Select",
+                                        "Id": "aa797295-bff6-4c7a-8ffd-e46e535fbca3",
+                                        "Name": "TerminationReasons"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Next",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "NextButton",
+                                        "Id": "c4e6cee5-56db-4e82-9d66-fa2dbd91cd7a",
+                                        "Name": "Next Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "Label": "Cancel",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "CancelButton",
+                                        "Id": "9ef6a303-9768-42f2-8407-c7d86717d582",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": "",
+                                        "Value": "You are about to delete your account",
+                                        "FieldName": "ConfirmMessage",
+                                        "Id": "b34d960c-089d-4877-93a4-83b360a16b89",
+                                        "Name": "Confirm Message"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Delete",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "DeleteButton",
+                                        "Id": "f87ffca7-2981-43d7-99c1-b1ebe95f2ae9",
+                                        "Name": "Delete Button"
+                                    },
+                                    {
+                                        "ControlType": "Redirect",
+                                        "RedirectUrl": "/en/B2B",
+                                        "Link": "d892575a-5d18-4aa9-a8d6-8b4d0a0db07d",
+                                        "Label": "",
+                                        "Placeholder": "",
+                                        "Tooltip": "",
+                                        "Required": false,
+                                        "RequiredWarningMessage": "",
+                                        "FieldName": "Redirect",
+                                        "Id": "f176b657-61a3-416f-b162-75ec83cbb982",
+                                        "Name": "Redirect"
+                                    }
+                                ],
+                                "Id": "2a484c82-1f18-4bbb-8613-122bbde16188",
+                                "Name": "Form definition"
+                            };
+                        </script>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,189 @@
+{% extends "layouts/default.nunj" %} {% set title = "Ext Grids" %} {% block content %}
+<section data-tpl="grid-bas-01" class="{{colorClass}}">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center">MAG01</h1>
+            <section data-tpl="grid-mag-01">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-4 col-sm-12">
+                            <header>
+                                <h2>Das könnte Sie auch interessieren</h2>
+                            </header>
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-8 col-sm-12">
+                            <article data-tpl="tea04">
+                                <a href="#" title="Headline" class="link link--internal {{optionalLinkColorClass}}">
+                                    <div data-image-id="itea04" class="image image-decorative image--lazy-loaded image--loaded">
+                                        <div title="Image Alt Text" aria-describedby="aria-itea04" role="img"></div>
+                                        <p id="aria-itea04" class="image-caption">Image Caption Text (optional)</p>
+                                    </div>
+                                    <header>
+                                        <h2 class="headline">Headline</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04">
+                                <a href="#" title="Headline" class="link link--internal {{optionalLinkColorClass}}">
+                                    <div data-image-id="itea04" class="image image-decorative image--lazy-loaded image--loaded">
+                                        <div title="Image Alt Text" aria-describedby="aria-itea04" role="img"></div>
+                                        <p id="aria-itea04" class="image-caption">Image Caption Text (optional)</p>
+                                    </div>
+                                    <header>
+                                        <h2 class="headline">Headline</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-4 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-5">
+                                <a href="#" title="#4 tea04 in mag01" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#4 tea04 in mag01</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-5 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-6">
+                                <a href="#" title="#5 tea04 in mag01" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#5 tea04 in mag01</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h1 class="text-center">MAG02</h1>
+            <section data-tpl="grid-mag-02">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-4 col-sm-12">
+                            <header>
+                                <h2>Das könnte Sie auch interessieren</h2>
+                            </header>
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-8 col-sm-12">
+                            <article data-tpl="tea04" class="color-teaser-7">
+                                <a href="#" title="#2 tea04 in mag02" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#2 tea04 in mag02</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-4 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-8">
+                                <a href="#" title="#3 tea04 in mag02" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#3 tea04 in mag02</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-4 col-md-4 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-9">
+                                <a href="#" title="#4 tea04 in mag02" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#4 tea04 in mag02</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-5 col-md-4 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-10">
+                                <a href="#" title="#5 tea04 in mag02" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#5 tea04 in mag02</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-6 col-md-4 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-14">
+                                <a href="#" title="#6 tea04 in mag02" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#6 tea04 in mag02</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h1 class="text-center">MAG03</h1>
+            <section data-tpl="grid-mag-03">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-4 col-sm-12">
+                            <header>
+                                <h2>Das könnte Sie auch interessieren</h2>
+                            </header>
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-8 col-sm-12">
+                            <article data-tpl="tea04" class="color-teaser-12">
+                                <a href="#" title="#2 tea04 in mag03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#2 tea04 in mag03</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-13">
+                                <a href="#" title="#3 tea04 in mag03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#3 tea04 in mag03</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-4 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-14">
+                                <a href="#" title="#4 tea04 in mag03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#4 tea04 in mag03</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-5 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-15">
+                                <a href="#" title="#5 tea04 in mag03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#5 tea04 in mag03</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-6 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-16">
+                                <a href="#" title="#6 tea04 in mag03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#6 tea04 in mag03</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-7 col-md-4 col-sm-6 col-xs-6">
+                            <article data-tpl="tea04" class="color-teaser-17">
+                                <a href="#" title="#7 tea04 in mag03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#7 tea04 in mag03</h2>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

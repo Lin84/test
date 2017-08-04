@@ -1,0 +1,9 @@
+{
+    "Message":"The request is invalid.",
+    "ModelState":{
+        "RoyalTitle":"wrong RoyalTitle",
+        "ReasonForChange": "wrong ReasonForChange"
+    }
+}
+
+

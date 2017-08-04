@@ -1,0 +1,17 @@
+<div data-tpl="ses01" data-service-id='23e32b3a35beadce32' data-search-url='http://localhost:5500/serp.html'>
+    <div class="container">
+        <div data-tpl="form" data-module="form" data-module-config="">
+            <form>
+                <div class="form-group autocomplete">
+                    <div class="input-group search">
+                        <input name="search" type="search" class="form-control form-control search-input" placeholder="Bitte geben Sie hier Ihre Frage ein" autocomplete="off">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn color-cta-3 search-button">Suchen</button>
+                        </div>
+                    </div>
+                    <ol class="suggestions"></ol>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

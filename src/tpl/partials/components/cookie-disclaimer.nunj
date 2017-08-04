@@ -1,0 +1,6 @@
+<div id="cookie-disclaimer" aria-expanded="true" class="expanded">
+    <div id="cookie-disclaimer-content">
+        <p class="content">Diese Webseite nutzt Cookies für Funktions-, Komfort- und Statistikzwecke. Wenn Sie auf dieser Seite bleiben, stimmen Sie der Verwendung von Cookies zu. In unserer <a href="#" class="link">Datenschutzerklärung</a> beschreiben wir, wie wir mit erhobenen Daten umgehen.</p>
+        <a href="#" title="Ja, einverstanden" class="btn color-cta-3">Ja, einverstanden</a>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+    "presets": [
+        "react",
+        "latest"
+    ],
+    "plugins": [
+        "transform-function-bind",
+        "transform-react-jsx",
+        "transform-object-assign",
+        "transform-object-rest-spread"
+    ]
+}

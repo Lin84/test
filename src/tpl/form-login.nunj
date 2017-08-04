@@ -1,0 +1,97 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Login form" %}
+
+{% block content %}
+<div data-tpl="blanko-overview">
+    <main>
+        <section data-tpl="grid-bas-01">
+            <div class="container-fluid">
+                <section data-tpl="grid-bas-01">
+                    <div class="container">
+                        <div class="row">
+                            <div data-tpl="pio01" class="color-background-none">
+                                <div data-tpl="form" data-module="form" data-module-config="">
+                                    <form id="form-42">
+
+                                        <div class="message-box">
+                                            <h2 class="headline">Headline</h2>
+                                            <h3 class="subheadline">Subheadline</h3>
+                                            <div class="content">
+                                                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+                                            </div>
+                                        </div>
+
+                                        {#<div class="error-message-box color-background-8">#}
+                                        <div class="message-box">
+                                            <h2 class="headline">Ich bin neu hier</h2>
+                                            <div class="content">
+                                                <p>Registrieren Sie sich jetzt und nutzen Sie mit Ihren Anmeldedaten automatisch auch den persönlichen Onlinebereich "Meine NewCo". Mit nur einem Login Kundenvorteile nutzen und komfortabel bei NewCo online einkaufen.</p>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <section data-tpl="grid-form-03">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="grid-content grid-content-1 col-lg-12" data-tpl="loginForm-helper">
+                                                            <div class="form-group error">
+                                                                <label for="text-10">Username</label>
+                                                                <input id="text-10" name="text-10" type="text" class="form-control form-control" placeholder="" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                                                <span class="error-block">A tooltip message.</span>
+                                                            </div>
+
+                                                            <a href="#" title="Forgot username" class="link link--internal">Forgot username?</a>
+                                                        </div>
+
+                                                        <div class="grid-content grid-content-2 col-lg-12" data-tpl="loginForm-helper">
+                                                            <div class="form-group error">
+                                                                <label for="text-11">Password</label>
+                                                                <div class="input-wrapper">
+                                                                    <span class="icon icon_eye_open color-icon-3"></span>
+                                                                    <input id="text-11" name="text-11" type="password" data-tpl="innogy-password" class="form-control form-control" placeholder="" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                                                </div>
+                                                                <span class="error-block">A tooltip message.</span>
+                                                            </div>
+
+                                                            <a href="#" title="Forgot password?" class="link link--internal">Forgot password?</a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="validation-summary-errors">
+                                                        <ul>
+                                                            <li>The username or the password is incorrect.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <button class="btn btn--full-width color-cta-3" type="submit" data-submit>Login</button>
+                                        </div>
+                                        <div data-tpl="ll01">
+                                            <header>
+                                                <h2 class="headline">Was erwartet mich?</h2>
+                                            </header>
+                                            <ul>
+                                                <li><a href="#" title="Zählerstand verwalten" class="link link--internal {{optionalLinkColorClass}}">Zählerstand verwalten</a>
+                                                </li>
+                                                <li><a href="#" title="Abschläge anpassen" class="link link--internal {{optionalLinkColorClass}}">Abschläge anpassen</a>
+                                                </li>
+                                                <li><a href="#" title="Aktuelle Rechnung ansehen" class="link link--internal {{optionalLinkColorClass}}">Aktuelle Rechnung ansehen</a>
+                                                </li>
+                                                <li><a href="#" title="Sparvorteile sichern" class="link link--internal {{optionalLinkColorClass}}">Sparvorteile sichern</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <a href="#" data-tpl="cta01" class="btn color-cta-2 btn--full-width">Registrieren</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock %}

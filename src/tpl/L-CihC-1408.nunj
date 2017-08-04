@@ -1,0 +1,240 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "1408-CIH-C" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+
+        {# example from ui-kit #}
+            <div data-tpl="cih01" class="cih01--cta">
+                <div class="cnt01">
+                    <h2 class="headline"><span>123456 Frankfurt am Main,</span> <span>Friedberger Landstraße 123</span></h2>
+                    <div><span>Kundennummer:</span><span>0123456789</span></div>
+                </div>
+                <div class="cnt03"><a href="cih.html#" title="Zwischenrechnung" class="btn color-cta-4">Zwischenrechnung</a>
+                    <div data-tpl="tooltip"><span data-toggle="tooltip" class="icon icon-info tooltip-trigger"></span>
+                        <div class="tooltip-container">
+                            <div class="tooltip-close icon icon-close_info"></div>
+                            <div class="tooltip-content">Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {# example from ui-kit /#}
+
+            <div data-tpl-component="cih" data-tpl-cih="df9e870c-1ada-413f-a7a6-e1589cd15014">
+                <script type="text/javascript">
+                components['df9e870c-1ada-413f-a7a6-e1589cd15014'] = {
+                    "ButtonText": "button text",
+                    "Tooltip": "Tooltip text",
+                    "ApiEndpoint": "http://localhost:5500/api/CIH.json",
+                    "CustomerID": "132456798",
+                    "Headline": "Velká 27, Praha",
+                    "Id": "e1e91b41-840f-4af5-af0d-defd6bd4d38e",
+                    "Name": "CIH01-test",
+                    "ShortText": "Kundennummer"
+                };
+                </script>
+            </div>
+
+            <section data-tpl="iebc01" aria-disabled="true" class="item--opened">
+                <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+
+                            {# example from ui-kit #}
+                                <div data-tpl="cih01" class="cih01--cta">
+                                    <div class="cnt01">
+                                        <h2 class="headline"><span>123456 Frankfurt am Main,</span> <span>Friedberger Landstraße 123</span></h2>
+                                        <div><span>Kundennummer:</span><span>0123456789</span></div>
+                                    </div>
+                                    <div class="cnt03"><a href="cih.html#" title="Zwischenrechnung" class="btn color-cta-4">Zwischenrechnung</a>
+                                        <div data-tpl="tooltip"><span data-toggle="tooltip" class="icon icon-info tooltip-trigger"></span>
+                                            <div class="tooltip-container">
+                                                <div class="tooltip-close icon icon-close_info"></div>
+                                                <div class="tooltip-content">Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {# example from ui-kit /#}
+
+                            <div data-tpl-component="cih" data-tpl-cih="e1e91b41-840f-4af5-af0d-defd6bd4d38e">
+                                <script type="text/javascript">
+                                components['e1e91b41-840f-4af5-af0d-defd6bd4d38e'] = {
+                                    "__interceptors": [
+                                    {}
+                                    ],
+                                    "ButtonText": "button text",
+                                    "Tooltip": null,
+                                    "ApiEndpoint": "http://localhost:5500/api/CIH.json",
+                                    "CustomerID": "132456798",
+                                    "Headline": "Velká 27, Praha",
+                                    "Id": "e1e91b41-840f-4af5-af0d-defd6bd4d38e",
+                                    "Name": "CIH01-test",
+                                    "ShortText": "Kundennummer"
+                                };
+                                </script>
+                            </div>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CCustomerName"></div>
+                        <script>
+                            innogyForm['B2CCustomerName'] = {
+                                            "ApiGetEndpoint": "/api/esb/v1/B2CCustomerName",
+                                "ApiUpdateEndpoint": "/api/esb/v1/B2CCustomerName",
+                                "FormDescription": "This form is for editing your name",
+                                "FormIdentity": "B2CCustomerName",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "You saved this form successfully",
+                                "Id": "bd44c06b-8393-4ebc-a029-bcc48d84b531",
+                                "Name": "Form1",
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "EditButton",
+                                        "Id": "fe9a015b-d751-4997-a8ed-8f365cf54461",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "CancelButton",
+                                        "Id": "cf3366fd-ebdf-47a8-b325-57b53dde2c9d",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "SaveButton",
+                                        "Id": "bccca21e-57a6-412b-a3d2-24e5a6c92655",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "Label": "Salutation",
+                                        "Placeholder": "Please Fill in",
+                                        "Tooltip": "Please provide us with your salutation",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Its required",
+                                        "FieldName": "Title",
+                                        "ControlType": "Select",
+                                        "Id": "e30021d5-7b45-4ec6-ba53-ca4ef6566fad",
+                                        "Name": "Title",
+                                    },
+                                    {
+                                        "Label": "Academic title",
+                                        "Placeholder": "Academic title",
+                                        "Tooltip": "This is your academic title",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "AcademicTitle",
+                                        "ControlType": "Select",
+                                        "Id": "cc9e42ed-adfe-46a8-842f-d0262f941461",
+                                        "Name": "Academic Title",
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "IsEqualToField": null,
+                                        "IsEqualToFieldWarning": null,
+                                        "IsNotEqualToField": null,
+                                        "IsNotEqualToFieldWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 35,
+                                        "MaxLengthWarning": "Maximum 35 character first name",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "Label": "First Name",
+                                        "Placeholder": "First Name",
+                                        "Tooltip": "This is your first name",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This field is required",
+                                        "FieldName": "FirstName",
+                                        "Id": "580d9a4e-0ee6-44cd-8c92-099fa3fd1fc9",
+                                        "Name": "First name"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "IsEqualToField": null,
+                                        "IsEqualToFieldWarning": null,
+                                        "IsNotEqualToField": null,
+                                        "IsNotEqualToFieldWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 35,
+                                        "MaxLengthWarning": "Maximum 35 character surname",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": null,
+                                        "PatternWarning": null,
+                                        "RangeValueWarning": null,
+                                        "Label": "Surname",
+                                        "Placeholder": "Surname",
+                                        "Tooltip": "This is your surname",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Field is required",
+                                        "FieldName": "Surname",
+                                        "Id": "b0590cdd-c1e4-4195-9d0b-92d05078fbf2",
+                                        "Name": "Surname"
+                                    },
+                                    {
+                                        "Label": "Name Addition",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "This is your name addition",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "RoyalTitle",
+                                        "ControlType": "Select",
+                                        "Id": "63279e40-2750-466f-a1af-650d774fa9c5",
+                                        "Name": "Name Addition"
+                                    },
+                                    {
+                                        "Label": "Reason For Change",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "This is why you change this form",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "This filed is required",
+                                        "FieldName": "ReasonForChange",
+                                        "ControlType": "Select",
+                                        "Id": "1a16c192-eac6-4ce7-8696-b4cee96a26a3",
+                                        "Name": "Reason For Change"
+                                    }
+                                ]
+                            }
+
+                        </script>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+{% endblock %}

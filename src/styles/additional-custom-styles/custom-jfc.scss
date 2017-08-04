@@ -1,0 +1,105 @@
+// user story DFD 2173:
+.customJfc {
+    background-color: #009ba5;
+    border-color: #cecdcc;
+    position: relative;
+
+    &::after {
+        background-color: #009ba5;
+        content: "\00a0";
+        display: block;
+        height: 39px;
+        left: 50%;
+        margin-left: -20px;
+        position: absolute;
+        bottom: -10px;
+        transform: rotate(-46deg) skew(-2deg);
+        width: 40px;
+    }
+
+    .headline {
+        text-align: center;
+        color: #fff;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+    }
+
+    .formView,
+    .customForm {
+        padding: 2.5rem 0;
+        margin: 0 3vw;
+
+        label {
+            color: rgba(255, 255, 255, .5);
+        }
+    }
+
+    .customForm {
+        .aCustomArrow {
+            &::after {
+                content: '\EA14';
+                top: 10px;
+                right: 1rem;
+                font-size: 1.25rem;
+            }
+        }
+
+        .custom-options-wrapper {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .option {
+                padding-left: .5rem;
+
+                @media (max-width: 799px) {
+                    padding-left: .4rem;
+                }
+            }
+        }
+    }
+
+    .grid-content {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+
+    .customSes {
+        display: flex;
+
+        &__container {
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, .5);
+            text-align: center;
+
+            label {
+                margin-bottom: .75rem;
+            }
+        }
+
+        .form-control {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            flex-grow: 2;
+        }
+
+        .input-group-btn {
+            margin-left: -1px;
+
+            .btn {
+                border-radius: 0 1.5rem 1.5rem 0;
+                height: 3rem;
+                margin-left: 0;
+                margin-right: 0;
+
+                &:active {
+                    transform: none;
+                }
+
+                @media (min-width: 800px) {
+                    height: 2.5rem;
+                }
+            }
+        }
+    }
+}

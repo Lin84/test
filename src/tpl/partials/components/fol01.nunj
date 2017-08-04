@@ -1,0 +1,20 @@
+<section data-tpl="fol01" class="fol01--centered">
+    <h2 class="headline">fol01 headline</h2>
+    <ul>
+        <li class="facebook">
+            <a href="http://www.facebook.com/" title="facebook" class="link link--external {{optionalLinkColorClass}}">Follow us on facebook</a>
+        </li>
+        <li class="twitter">
+            <a href="http://www.twitter.com/" title="Twitter" class="link link--external {{optionalLinkColorClass}}">Follow us on Twitter</a>
+        </li>
+        <li class="instagram">
+            <a href="http://www.instagram.com/" title="Instagram" class="link link--external {{optionalLinkColorClass}}">Follow us on Instagram</a>
+        </li>
+        <li class="gplus">
+            <a href="http://plus.google.com/" title="Google Plus" class="link link--external {{optionalLinkColorClass}}">Follow us on Google Plus</a>
+        </li>
+        <li class="youtube">
+            <a href="http://www.youtube.com/" title="YouTube" class="link link--external {{optionalLinkColorClass}}">Follow us on YouTube</a>
+        </li>
+    </ul>
+</section>

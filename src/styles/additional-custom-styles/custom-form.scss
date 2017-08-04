@@ -1,0 +1,322 @@
+// styles for form in EIB01 for View mode
+.formView {
+    margin-bottom: 1rem;
+
+    label {
+        color: #9d9b98;
+    }
+
+    &__bottom-wrapper {
+        margin-top: 1.5rem;
+        text-align: right;
+    }
+
+    &__content {
+        margin-bottom: 30px;
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        a {
+            color: #f59b00;
+        }
+    }
+
+    &__success-msg {
+        color: #fff;
+        display: block;
+        background-color: #64b42d;
+        padding: .5rem;
+
+        &_error {
+            background-color: red;
+        }
+    }
+
+    &__cancel-msg {
+        color: red;
+    }
+}
+
+// styles for form in EIB01 for forEdit mode
+.formEdit {
+    // max-width: 840px;
+
+    .headline {
+        color: #f59b00;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        display: flex;
+
+        input {
+            flex-basis: 100%;
+        }
+    }
+
+    [data-tpl='select'] {
+        width: 100%;
+    }
+
+    [data-tpl='tooltip'] {
+        padding-top: 6px;
+        margin-left: 10px;
+        display: none;
+        z-index: 1;
+        vertical-align: middle;
+
+        &.displayed {
+            display: inline-block;
+        }
+    }
+
+    &__bottom-wrapper {
+        text-align: right;
+        margin-top: 10px;
+
+        @media (max-width: 480px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .btn {
+            @media (max-width: 480px) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .form-group {
+        .error-block {
+            display: none;
+        }
+    }
+
+    .error {
+        .error-block {
+            display: inline-block;
+        }
+    }
+
+    .newsletter-link {
+        color: #f59b00;
+    }
+
+    .checkbox {
+        width: 100%;
+        margin-bottom: 0;
+
+        label {
+            margin-left: 0;
+            margin-right: .25rem;
+            display: block;
+        }
+    }
+
+    .checkbox-group {
+        [data-tpl="tooltip"] {
+            margin-top: -10px;
+        }
+    }
+
+    .color-cta-2 {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .color-cta-3 {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    [data-tpl=tooltip] .tooltip-close.icon.icon-close_info {
+        top: 5px;
+    }
+}
+
+// TODO: to merge styles of .formView and .formEdit above
+.customForm {
+    label {
+        color: #9d9b98;
+    }
+
+    .form-group {
+        label {
+            color: #000;
+        }
+    }
+
+    &__submit {
+        color: #fff;
+        display: block;
+        padding: .5rem;
+
+        &_error {
+            background-color: red;
+        }
+
+        &_success {
+            background-color: #64b42d;
+        }
+    }
+
+    label {
+        a {
+            color: #f59b00;
+        }
+    }
+
+    .custom-options {
+        width: calc(100% - 15px);
+        max-height: 230px;
+        overflow-y: auto;
+    }
+
+    // create additional style for actum Custom Select:
+    .aCustomSelect {
+        padding: 0;
+        width: 100%;
+        position: relative;
+
+        .aCustomArrow {
+            &::after {
+                content: '\EA14';
+                position: absolute;
+                align-items: center;
+                top: 16px;
+                align-self: flex-end;
+                transform: scaleY(1);
+                right: .75rem;
+                font-size: .75rem;
+                color: #f59b00;
+                transition: transform .2s ease-in-out;
+                display: inline-block;
+                font-family: iconfont;
+                font-weight: 400;
+            }
+
+            &_open {
+                &::after {
+                    transform: scaleY(-1);
+                }
+            }
+        }
+
+        select,
+        .customSelectWrapper {
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        .custom-options {
+            opacity: 1;
+            top: calc(100% + 10px);
+            visibility: visible;
+            position: absolute;
+            left: 0;
+            transition: visibility .2s step-end, opacity .2s ease-in-out, top .2s ease-in-out;
+            border: 1px solid #cecdcc;
+            border-radius: 5px;
+            background-color: #fff;
+            z-index: 5;
+            width: calc(100% - 5px);
+
+            &::before {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: -6px;
+                right: 10px;
+                background-color: #fff;
+                border-top: 1px solid #cecdcc;
+                border-right: 1px solid #cecdcc;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+
+            &_closed {
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                width: calc(100% - 15px);
+            }
+
+            .option {
+                position: relative;
+                padding: .75rem 1.5rem;
+                line-height: 1;
+                cursor: pointer;
+                border-top: 1px solid #cecdcc;
+                font-size: 1rem;
+                transition: background-color .4s ease-in-out, color .4s ease-in-out;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                &:first-child {
+                    border-top: none;
+                }
+
+                &:hover {
+                    background-color: #f5f5f5;
+                    color: #009ba5;
+                }
+            }
+        }
+
+        .customSelectWrapper {
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            &:focus {
+                border: 1px #009ba5 solid;
+                background-color: #f5f5f5;
+            }
+        }
+    }
+}
+
+// for CAB - DFD-4319
+.disabled {
+    .formEdit__content {
+        input {
+            color: gray;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    #main-header {
+        #quick-navigation li {
+            line-height: 1.5rem;
+        }
+    }
+}
+
+input[name*="Password"] {
+    padding-right: 75px;
+}
+
+/* [data-tpl="CustomerPasswordChange"] {
+    .customForm {
+        .formEdit__form {
+            .row {
+                // margin-left: 0 !important;
+                // margin-right: 0 !important;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+} */

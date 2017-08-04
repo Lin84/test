@@ -1,0 +1,3 @@
+{% for result in searchResults.results %}
+	<li>{{result.value}}</li>
+{% endfor %}

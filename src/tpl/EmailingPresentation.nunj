@@ -1,0 +1,65 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "CustomerContactData" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+
+            <section data-tpl="iebc01" aria-disabled="true" class="item--opened">
+                <section data-tpl="ieb01" class="ieb-item during-animation during-animation--open" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                EmailingPresentation:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="EmailingPresentation"></div>
+                        <script>
+                            innogyForm['EmailingPresentation'] = {
+                                "FormDescription": "This form allows you to change your contact data",
+                                "FormIdentity": "CustomerContactData",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Data saved successfully",
+                                "ApiGetEndpoint": "/api/esb/v1/contact",
+                                "ApiUpdateEndpoint": "/api/esb/v1/contact",
+                                "Id": "1a22df26-efa5-4c82-b06b-90c26cfadcf8",
+                                "Name": "Form 1",
+                                "Children": [
+                                    {
+                                    "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "7ad471ff-309e-4b39-a733-04811e0a09ae",
+                                        "Name": "Save Button"
+                                    }
+                                ]
+                            }
+                        </script>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+{% endblock %}

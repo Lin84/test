@@ -1,0 +1,39 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Logout form" %}
+
+{% block content %}
+<div data-tpl="blanko-overview">
+    <main>
+        <section data-tpl="grid-bas-01">
+            <div class="container-fluid">
+                <section data-tpl="grid-bas-04">
+                    <div class="container">
+                        <div class="row">
+                            <div class="grid-content grid-content-1 col-md-8"></div>
+                            <div class="grid-content grid-content-2 col-md-4">
+                                <div class="color-background-17">
+                                    <div data-tpl="pio01">
+                                        <div data-tpl="form" data-module="form" data-module-config="">
+                                            <form id="form-42">
+                                                <div data-tpl="tic01" class="indention--none">
+                                                    <div class="content">
+                                                        <p>You are logged in as</p>
+                                                        <h3 class="subheadline">Mr Bean</h3>
+                                                    </div>
+
+                                                    <button type="submit" title="" class="btn color-cta-3 btn--full-width">Logout</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock %}

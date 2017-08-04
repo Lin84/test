@@ -1,0 +1,24 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Iban Validation" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            <input type="text" class="iban">
+        </div>
+    </section>
+{% endblock %}

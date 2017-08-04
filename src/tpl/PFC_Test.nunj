@@ -1,0 +1,35 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "PFC01_Test" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <style>
+        [data-tpl="pfc01"] {
+            display: block !important;
+        }
+    </style>
+
+    <div data-tpl="pfc01" style="display: inline" data-product-type="pk">
+        <p>PK - Strom</p>
+        <input class="pf-input-rate" id="strom" type="text" name="" value="">
+    </div>
+
+    <div data-tpl="pfc01" style="display: inline" data-product-type="pk">
+        <p>PK - Gas</p>
+        <input class="pf-input-rate" id="gas" type="text" name="" value="">
+    </div>
+
+    <div data-tpl="pfc01" style="display: inline" data-product-type="gk">
+        <p>GK - Strom</p>
+        <input class="pf-input-rate" id="strom" type="text" name="" value="">
+    </div>
+
+    <div data-tpl="pfc01" style="display: inline" data-product-type="gk">
+        <p>GK - Gas</p>
+        <input class="pf-input-rate" id="gas" type="text" name="" value="">
+    </div>
+{% endblock %}

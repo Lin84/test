@@ -1,0 +1,113 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "pfc01OverviewAndDetails" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            <div data-tpl="pfc02" data-module="pfc" data-module-config="" data-product-type="pk">
+                <section data-tpl="acc02">
+                    <ul>
+                        <li aria-expanded="true" data-show-subheadline="false" class="accordion-item">
+                            <section>
+                                <header class="accordion-item__headline">
+                                    <h3 class="headline">Ihre Daten anpassen</h3>
+                                    <p class="subheadline">
+                                        <span>
+                                            <span class="location-value">null</span>
+                                            –
+                                        </span>
+                                        <span>
+                                            Stromverbrauch
+                                            <span class="consumption-value">null</span>
+                                            kWh im Jahr</span>
+                                    </p>
+                                </header>
+                                <article class="accordion-item__content">
+                                    <div data-tpl="form" data-module="form" data-module-config="">
+                                        <form id="form-52">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 residence">
+                                                    <div class="form-group autocomplete">
+                                                        <label for="{{ ID }}">Ihr Wohnort
+                                                        </label>
+                                                        <input id="{{ ID }}" name="{{ ID }}" type="text" class="form-control form-control" placeholder="Ort oder Postleitzahl" autocomplete="on" autocorrect="off" spellcheck="false"/>
+                                                        <ol class="suggestions">
+                                                            <li>Vorschlag 1</li>
+                                                            <li>Vorschlag 2</li>
+                                                            <li>Vorschlag 3</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 product gas">
+                                                    <div class="form-group">
+                                                        <label for="consumption">Ihr jährlicher Stromverbrauch
+                                                        </label>
+                                                        <div class="input-group">
+                                                            <input id="gas" name="consumption" type="number" data-max-value="12345678" class="form-control form-control pf-input-rate" placeholder="3.500 kWh" min="0" max="999999" step="100" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                                            <div class="input-group-btn">
+                                                                <div data-tpl="tooltip">
+                                                                    <span data-toggle="tooltip" class="icon icon-info tooltip-trigger"></span>
+                                                                    <div class="tooltip-container">
+                                                                        <div class="tooltip-close icon icon-close_info"></div>
+                                                                        <div class="tooltip-content">
+                                                                            <p>Geben Sie bitte an wie viel Strom Sie im Jahr verbrauchen. Sie können sich an folgenden Richtwerten orientieren:</p>
+                                                                            <table>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <th>1 Person:</th>
+                                                                                        <td>ca. 1.500 kWh</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th>2 Person:</th>
+                                                                                        <td>ca. 2.500 kWh</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th>3 Person:</th>
+                                                                                        <td>ca. 3.500 kWh</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th>4 Person:</th>
+                                                                                        <td>ca. 4.500 kWh</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th>5 Person:</th>
+                                                                                        <td>ca. 5.500 kWh</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 button">
+                                                    <button class="btn color-cta-2 submit-gas">Jetzt berechnen</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </article>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+{% endblock %}

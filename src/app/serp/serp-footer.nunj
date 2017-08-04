@@ -1,0 +1,5 @@
+{% if searchResults.totalResults > 0 %}
+    <div class="searchresult-pagination"><span class="page-current">{% include './serp-displayed-results.nunj' %}</span><span class="page-sum">{{searchResults.totalResults}}</span></div>
+    <button class="btn color-cta-2" id="btn-request-show-more">{{searchResults.texts.more}}</button>
+    <div class="loader loader-circle"></div>
+{% endif %}

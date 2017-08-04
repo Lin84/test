@@ -1,0 +1,11 @@
+<div class="picture">
+    <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="//satyr.io/1280x720/LightSeaGreen, //satyr.io/2560x1440/Chartreuse 2x" media="(min-width: 1280px)">
+        <source srcset="//satyr.io/1024x576/MidnightBlue, //satyr.io/2048x1152/PowderBlue 2x" media="(min-width: 800px)">
+        <source srcset="//satyr.io/768x432/Maroon, //satyr.io/1536x864/LightSalmon 2x" media="(min-width: 480px)">
+        <source srcset="//satyr.io/480x270/LightCoral, //satyr.io/960x540/LawnGreen 2x" media="(max-width: 479px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="//satyr.io/480x270/LightCoral, //satyr.io/960x540/LawnGreen 2x" alt="Responsive image" class="img-responsive">
+    </picture>
+</div>

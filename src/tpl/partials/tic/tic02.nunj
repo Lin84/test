@@ -1,0 +1,17 @@
+<div data-tpl="tic02" class="tic02--centered">
+    <h2 class="headline">Headline</h2>
+    <figure class="image image-semantic">
+    <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="http://satyr.io/1280x8:3" media="(min-width: 1280px)">
+        <source srcset="http://satyr.io/1280x8:3" media="(min-width: 800px) AND (max-width: 1279px)">
+        <source srcset="http://satyr.io/1280x8:3" media="(min-width: 480px) AND (max-width: 799px)">
+        <source srcset="http://satyr.io/1280x8:3" media="(min-width: 320px) AND (max-width: 479px)">
+        <source srcset="http://satyr.io/1280x8:3" media="(max-width: 319px)">
+        <!--[if IE 9]></video><![endif]--><img src="http://satyr.io/1280x8:3" alt="Image Alt Text" aria-describedby="aria-itea04">
+    </picture>
+    <figcaption id="aria-itea04" class="image-caption">Image Caption Text (optional)</figcaption>
+    </figure>
+    <h3 class="subheadline">Subheadline</h3>
+    <div class="content">Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</div>
+</div>

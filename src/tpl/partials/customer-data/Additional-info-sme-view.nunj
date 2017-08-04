@@ -1,0 +1,113 @@
+<div class="formView" data-tpl="form" data-module="form" data-module-config="">
+
+	<div class="formView__form">
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Legal Form</label>
+				<p key="LegalForm">LegalForm</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Contact Person Salutation</label>
+				<p key="ContactPersonTitle">ContactPersonTitle</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Contact Person Academic Title</label>
+				<p key="ContactPersonAcademicTitle">ContactPersonAcademicTitle</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Name Contact Person</label>
+				<p key="ContactPersonFirstName">ContactPersonFirstName</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Surname Contact Person</label>
+				<p key="ContactPersonSurname">ContactPersonSurname</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Department</label>
+				<p key="ContactPersonDepartment">ContactPersonDepartment</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Position</label>
+				<p key="ContactPersonRole">ContactPersonRole</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Branch of Industry</label>
+				<p key="Industry">Industry</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Number of Employees</label>
+				<p key="NumberOfEmployees">NumberOfEmployees</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Founding Year</label>
+				<p key="YearFounded">YearFounded</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Annual Turnover</label>
+				<p key="AnnualTurnover">AnnualTurnover</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Heating System</label>
+				<p key="HeatingSystem">HeatingSystem</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Year of construction Heating System</label>
+				<p key="AgeOfHeatingSystem">AgeOfHeatingSystem</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Energy Type</label>
+				<p key="EnergyTypes">EnergyTypes</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Owner or tenant of the commercial premises</label>
+				<p key="WorkplaceOwnershipRoom">WorkplaceOwnershipRoom</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Owner of the commercial building</label>
+				<p key="WorkplaceOwnershipBuilding">WorkplaceOwnershipBuilding</p>
+			</div>
+		</div>
+
+		<p class="formView__success-msg hidden">Success Message after Front End and Back End validation</p>
+
+		<div class="formView__bottom-wrapper">
+			<button class="btn color-cta-3">Edit</button>
+		</div>
+
+	</div>
+</div>
+

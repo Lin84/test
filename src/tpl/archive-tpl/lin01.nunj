@@ -1,0 +1,44 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Grids" %}
+
+{% block content %}
+<section data-tpl="grid-bas-01" class="backgroundcolor-2">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-02">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Lin01</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, vel ipsa nisi magni nostrum magnam quod itaque cum tempora iusto repellendus atque sed eius in alias? Distinctio, velit necessitatibus.</p>
+                            {% include 'partials/components/hr.nunj' %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-tpl="grid-bas-02">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Lin01</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, vel ipsa nisi magni nostrum magnam quod itaque cum tempora iusto repellendus atque sed eius in alias? Distinctio, velit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, vel ipsa nisi magni nostrum magnam quod itaque cum tempora iusto repellendus atque sed eius in alias? Distinctio, velit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, vel ipsa nisi magni nostrum magnam quod itaque cum tempora iusto repellendus atque sed eius in alias? Distinctio, velit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, vel ipsa nisi magni nostrum magnam quod itaque cum tempora iusto repellendus atque sed eius in alias? Distinctio, velit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, vel ipsa nisi magni nostrum magnam quod itaque cum tempora iusto repellendus atque sed eius in alias? Distinctio, velit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, vel ipsa nisi magni nostrum magnam quod itaque cum tempora iusto repellendus atque sed eius in alias? Distinctio, velit necessitatibus.</p>
+                            {% include 'partials/components/hr.nunj' %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-02">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% include 'partials/pictures/1280.nunj' %}
+            {% include 'partials/components/hr.nunj' %}
+        </div>
+    </div>
+</div>
+</section>
+{% endblock %}

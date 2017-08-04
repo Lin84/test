@@ -1,0 +1,19 @@
+{
+    "ReferenceLists": {
+        "FunctionalArea": ["0", "professional", "manager", "professionals", "experienced", "apprenticeship", "berufsausbildung", "ervaren", "graduate", "starter", "2294", "ausbildung", "berufstätiger", "erfahrener", "mit", "praktijkopleiding", "qualifizierter", "2281", "2283", "2284", "2301", "führungskraft", "hochschulabsolventen", "internship", "praktikum"],
+        "Company": ["npower", "Essent", "RWE AG", "Innogy Business Services UK Limited", "RWW GmbH", "innogy Energie", "Innogy Renewables UK Limited", "energiedirect.nl", "innogy SE", "RWE Generation UK", "2104", "661", "RWE Group Business Services GmbH", "RWE Power AG", "Powerhouse", "RWE Generation", "RWE Generation NL", "RWE Supply & Trading GmbH", "Westnetz GmbH", "innogy East", "innogy Metering GmbH", "2102", "2103", "815", "816"],
+        "ExperienceLevel": ["ExperienceLevel1", "ExperienceLevel2", "ExperienceLevel3"],
+        "Country": ["DE", "GB", "NL", "US", "CW"],
+        "City": ["Essen", "München", "DB", "swindon", "Den Bosch", "Dortmund", "Rainton", "solihull", "Bergheim", "Essen und Köln", "London", "Tallassee", "Tempa", "Uk wide", "db", "leeds", "Arnhem", "Arnsberg", "Birmingham", "Brühl", "Entenhausen", "GTB", "Hull", "Liverpool", "Musterstadt", "Mühlheim", "Stad", "Swindon", "Willemstad", "asdfasdfasd", "great yarmouth", "s"]
+    },
+    "CountriesPivot": {
+        "DE": ["Essen", "München", "Dortmund", "Bergheim", "Essen und Köln", "Arnsberg", "Brühl", "Entenhausen", "Musterstadt", "Mühlheim", "asdfasdfasd"],
+        "GB": ["swindon", "Rainton", "solihull", "London", "Uk wide", "leeds", "Birmingham", "Essen", "Hull", "Liverpool", "Swindon", "great yarmouth", "s"],
+        "NL": ["DB", "Den Bosch", "db", "Arnhem", "GTB", "Stad"],
+        "US": ["Tallassee", "Tempa"],
+        "CW": ["Willemstad"]
+    }
+}
+
+
+

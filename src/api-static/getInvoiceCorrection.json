@@ -1,0 +1,43 @@
+{
+    "Header": {
+        "BodyType": "InvoiceCorrection"
+    },
+
+    "Body": [{
+        "id": "K0050D-40089231",
+        "label": "Strom",
+        "register": [{
+            "number": "001",
+            "type": "HT",
+            "unit": "KWH",
+            "reading": 308281,
+            "date": "20151231"
+        }, {
+            "number": "002",
+            "type": "NT",
+            "unit": "KWH",
+            "reading": 305431,
+            "date": "20151231"
+        }]
+    }, {
+        "id": "K0050D-40089231",
+        "label": "Wasser",
+        "register": [{
+            "number": "001",
+            "unit": "M3",
+            "reading": 308281,
+            "date": "20151231"
+        }]
+    }, {
+        "id": "4325234534",
+        "label": "Gas",
+        "register": [{
+            "number": "001",
+            "unit": "M3",
+            "reading": 33333,
+            "date": "20151231"
+        }]
+    }]
+}
+
+

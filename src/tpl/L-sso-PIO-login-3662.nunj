@@ -1,0 +1,131 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Correct Invoice" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{#{% block content %}
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            <div data-tpl="pio01" class="color-background-1" data-cross-domain-login-url="url/Cross/Domain/Login" data-cross-domain-logout-url="url/Cross/Domain/Logout/Url" data-cross-domain-error-message="CrossDomain Error Message">
+                <div data-tpl="form" data-module="form" data-module-config="">
+                    <form action="/en/B2B/sergey-smelov/login-page"  method="post">
+                        <input name="__RequestVerificationToken" type="hidden" value="tf-aJW6j37tgqgkHlqMe8tZc89FPXXY79T710L6BL105vMyauyket4eyc7v4Fk3mucyzPJ5rAVK1Lsto0MkXWdSrjRbO0atdzVJ-bmeElSU1">
+                        <div>
+                            <section data-tpl="grid-form-03">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="grid-content grid-content-1 col-lg-6" data-tpl="loginForm-helper">
+                                            <div class="form-group ">
+                                                <label for="text-10">User Name</label>
+                                                <input autocomplete="off" autocorrect="off" class="form-control form-control" id="text-10" name="UserName" placeholder="insert placeholder text"
+                                                    spellcheck="false" type="text" value="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-content grid-content-2 col-lg-6" data-tpl="loginForm-helper">
+                                            <div class="form-group ">
+                                                <label for="text-11">Password</label>
+                                                <div class="input-wrapper">
+                                                    <span class="icon icon_eye_open color-icon-3"></span>
+                                                    <input autocomplete="off" autocorrect="off" class="form-control form-control" data-tpl="innogy-password" id="text-11" name="Password"
+                                                        placeholder="insert placeholder text" spellcheck="false" type="password"
+                                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <button data-submit="" class="btn btn--full-width color-cta-3" type="submit">Login button</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}#}
+
+{% block content %}
+<section data-tpl="grid-bas-01">
+    <div class="container">
+        <div
+            data-tpl="pio01"
+            class="color-background-1"
+            data-cross-domain-login-url="http://actum.mockable.io/coremedia-login"
+            data-cross-domain-logout-url="http://actum.mockable.io/coremedia-logout"
+            data-cross-domain-error-message="Cross domain error"
+            data-sitecore-login-url="sitecore/login-url"
+            data-sitecore-logout-url="sitecore/logout-url"
+            data-cross-domain-login-delay="2000"
+        >
+
+            <header>
+                <h2 data-tpl="hea01" class="headline ">
+                    Login form
+                </h2>
+            </header>
+
+            <div data-tpl="form" data-module="form" data-module-config="">
+                <form action="/en/B2B/login-page" method="post">
+                    <input
+                        name="__RequestVerificationToken"
+                        type="hidden"
+                        value="FB1ErWFcfrPCAsYHpxPq8PD-YOIvYb4ba1NUrdpYNvEBM8VzzDHlDflIuFUP3GkirGowaHmlW_H2PxEEoFN34LUBhh_XDGj0VV7pyoWzme01"
+                    >
+                    <div>
+                        <section data-tpl="grid-form-03">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="grid-content grid-content-1 col-lg-12" data-tpl="loginForm-helper">
+                                        <div class="form-group ">
+                                            <label for="text-10">User Name</label>
+                                            <input autocomplete="off" autocorrect="off" class="form-control form-control" id="text-10" name="UserName" placeholder="insert placeholder text"
+                                                spellcheck="false" type="text" value="">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="grid-content grid-content-2 col-lg-12" data-tpl="loginForm-helper">
+                                        <div class="form-group ">
+                                            <label for="text-11">Password</label>
+
+                                            <div class="input-wrapper">
+                                                <span class="icon icon_eye_open color-icon-3" style="visibility: visible;"></span>
+                                                <input autocomplete="off" autocorrect="off" class="form-control form-control" data-tpl="innogy-password" id="text-11" name="Password"
+                                                    placeholder="insert placeholder text" spellcheck="false" type="password">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button data-submit="" class="btn btn--full-width color-cta-3" type="submit">Login button</button>
+                    </div>
+                </form>
+            </div>
+            <div data-tpl="ll01">
+                <header>
+                    <h2 class="headline">Links&nbsp;</h2>
+                    <h3 class="subheadline">For logging form</h3>
+                </header>
+                <ul>
+                    <li>
+                        <a href="tel:3332224444" title="Call support" class="link link--phone">Call support</a>
+                    </li>
+                    <li>
+                        <a href="/en/B2B" title="Simple text link" class="link">Simple text link</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="" target="_self" class="btn color-cta-2 btn--full-width">Registeration</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Tabs" %}
+{% set sitecore = true %}
+
+{% block content %}
+<div data-tpl="blanko-overview">
+    <main>
+        <section data-tpl="grid-bas-02">
+            <div class="container">
+
+                <div class="sc-tabs">
+                    <ul>
+                        <li data-scomponent-tab="login" class="is-active">Login</li>
+                        <li data-scomponent-tab="logout">Logout</li>
+                    </ul>
+                </div>
+
+                <div data-scomponent="login" class="is-active">LOGIN</div>
+                <div data-scomponent="logout">LOGOUT</div>
+
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock %}

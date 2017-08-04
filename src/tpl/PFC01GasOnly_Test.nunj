@@ -1,0 +1,174 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "pfc01GasOnly" %}
+
+{% block js %}
+    {# region-start Mock #}
+    <script>
+        document.querySelector('body').classList.add('pk');
+
+        var consumption = {
+            strom: 111,
+            gas: 222,
+            waermespeicher: 333,
+            waermepumpe: 444,
+            gk_strom: 1111,
+            gk_gas: 2222,
+            gk_waermespeicher: 3333,
+            gk_waermepumpe: 4444
+        };
+
+        document.cookie = 'innogy_consumption=' + JSON.stringify(consumption);
+
+        console.log('Default cookie was created.');
+    </script>
+
+    <script src="js/innogy/app.js"></script>
+    {# region-end #}
+
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            <div data-tpl="pfc01" data-module="pfc" data-module-config="" class="pfc01--only-gas">
+                <div data-tpl="form" data-module="form" data-module-config="" style="display: block !important;">
+                    <form id="form-48">
+                        <h2 class="headline">Ermitteln Sie jetzt Ihren günstigen Erdgastarif</h2>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group autocomplete">
+                                    <label for="text-5">Ihr Wohnort</label>
+                                    <input id="text-5" name="text-5" type="text" class="form-control form-control" placeholder="Ort oder Postleitzahl" autocomplete="on" autocorrect="off" spellcheck="false"/>
+                                    <ol class="suggestions">
+                                        <li>Vorschlag 1</li>
+                                        <li>Vorschlag 2</li>
+                                        <li>Vorschlag 3</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row flex-columns">
+                            <div class="col-md-6 electricity">
+                                <h3 class="icon icon-electricity">Strom</h3>
+                                <div class="form-group">
+                                    <label for="number-14">Ihr jährlicher Stromverbrauch
+                                    </label>
+                                    <div class="input-group">
+                                        <input id="number-14" name="number-14" type="number" class="form-control form-control" placeholder="3.500 kWh" min="0" max="999999" step="100" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                        <div class="input-group-btn">
+                                            <div data-tpl="tooltip">
+                                                <span data-toggle="tooltip" class="icon icon-info tooltip-trigger"></span>
+                                                <div class="tooltip-container">
+                                                    <div class="tooltip-close icon icon-close_info"></div>
+                                                    <div class="tooltip-content">
+                                                        <p>Geben Sie bitte an wie viel Strom Sie im Jahr verbrauchen. Sie können sich an folgenden Richtwerten orientieren:</p>
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>1 Person:</th>
+                                                                    <td>ca. 1.500 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>2 Person:</th>
+                                                                    <td>ca. 2.500 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>3 Person:</th>
+                                                                    <td>ca. 3.500 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>4 Person:</th>
+                                                                    <td>ca. 4.500 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>5 Person:</th>
+                                                                    <td>ca. 5.500 kWh</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="color-cta-2 btn">Jetzt berechnen</a>
+                            </div>
+                            <div class="col-xs-12 electricity-links">
+                                <ul>
+                                    <li>
+                                        <a href="#" title="Wärmepumpen-Strom" class="link link--internal {{optionalLinkColorClass}}">Wärmepumpen-Strom</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Wärmespeicher-Strom" class="link link--internal {{optionalLinkColorClass}}">Wärmespeicher-Strom</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 gas">
+                                <h3 class="icon icon-gas">Erdgas</h3>
+                                <div class="form-group">
+                                    <label for="number-15">Ihr jährlicher Gasverbrauch
+                                    </label>
+                                    <div class="input-group">
+                                        <input id="rateStrom" name="number-15" type="number" data-max-value="250000" class="form-control form-control" placeholder="10.050 kWh" min="0" max="999999" step="100" autocomplete="off" autocorrect="off" spellcheck="false"/>
+                                        <div class="input-group-btn">
+                                            <div data-tpl="tooltip">
+                                                <span data-toggle="tooltip" class="icon icon-info tooltip-trigger"></span>
+                                                <div class="tooltip-container">
+                                                    <div class="tooltip-close icon icon-close_info"></div>
+                                                    <div class="tooltip-content">
+                                                        <p>Geben Sie bitte an wie viel Gas Sie im Jahr verbrauchen. Sie können sich an folgenden Richtwerten orientieren:</p>
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>30m<sup>2</sup>
+                                                                    </th>
+                                                                    <td>ca. 4.000 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>50m<sup>2</sup>
+                                                                    </th>
+                                                                    <td>ca. 7.000 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>75m<sup>2</sup>
+                                                                    </th>
+                                                                    <td>ca. 10.500 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>100m<sup>2</sup>
+                                                                    </th>
+                                                                    <td>ca. 14.000 kWh</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Einfamilienhaus</th>
+                                                                    <td>ca. 20.000 kWh</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="color-cta-2 btn">Jetzt berechnen</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

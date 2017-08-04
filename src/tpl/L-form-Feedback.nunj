@@ -1,0 +1,222 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "FeedbackForm" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <h2 data-tpl="hea02" class="">
+                B2C Feedback Form
+            </h2>
+            <div id="B2CFeedbackForm"></div>
+            <script>
+                innogyForm['B2CFeedbackForm'] = {
+                    "ApiUpdateEndpoint": "/api/esb/v1/B2CFeedbackForm",
+                    "ConfirmationEmailTemplate": "4849cff2-685d-4c4d-b12a-4d8735c64d07",
+                    "FormIdentity": "B2CFeedbackForm",
+                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                    "SuccessMessage": "Data saved successfully",
+                    "Id": "2daf21b9-e29f-434c-b65f-739775a10f41",
+                    "Name": "Definition",
+                    "Children": [
+                        {
+                            "ControlType": "StaticText",
+                            "Label": "Header text",
+                            "Value": "<p>We are glad to bla-bla-bla</p>",
+                            "FieldName": "Headline",
+                            "Id": "f7f6d465-ca63-4032-9cf7-e336eff90905",
+                            "Name": "Headline"
+                        },
+                        {
+                            "Label": "Rating",
+                            "Placeholder": "Please rate us",
+                            "Required": true,
+                            "RequiredWarningMessage": "This field is required",
+                            "FieldName": "Rating",
+                            "ControlType": "Select",
+                            "Id": "4dc684ba-f98b-48f0-8224-73898ae54523",
+                            "Name": "Rating",
+                            "Children": [
+                                {
+                                    "Text": "5 - very good",
+                                    "Value": "5",
+                                    "Id": "4bbb914a-74e4-444c-9a65-bab6a780702f",
+                                    "Name": "5 - very good"
+                                },
+                                {
+                                    "Text": "4 - good",
+                                    "Value": "4",
+                                    "Id": "b54dc3aa-9065-4bae-b845-fd63feb1f4ee",
+                                    "Name": "4 - good"
+                                },
+                                {
+                                    "Text": "3 - neutral",
+                                    "Value": "3",
+                                    "Id": "bf98876f-7b4e-4c9a-a86f-f3a42bbb281d",
+                                    "Name": "3 - neutral"
+                                },
+                                {
+                                    "Text": "2 - bad",
+                                    "Value": "2",
+                                    "Id": "4fb8cbe6-aa2e-4d4b-9802-9889e981da4e",
+                                    "Name": "2 - bad"
+                                },
+                                {
+                                    "Text": "1 - very bad",
+                                    "Id": "4ea7db2b-dd0a-4d36-aa86-1ac0dcd0c4e2",
+                                    "Name": "1 - very bad"
+                                }
+                            ]
+                        },
+                        {
+                            "ControlType": "TextArea",
+                            "NumberOfRows": 5,
+                            "Label": "Comments",
+                            "Placeholder": "PLease fill in",
+                            "FieldName": "Comments",
+                            "Id": "9a74b0ef-0fb4-4d02-ab97-0a34d92c962f",
+                            "Name": "Comments"
+                        },
+                        {
+                            "ControlType": "Button",
+                            "Class": "color-cta-3 formEdit__save",
+                            "Label": "Submit",
+                            "FieldName": "SaveButton",
+                            "Id": "593d31d3-b39e-4c68-b88a-506d7c7091c3",
+                            "Name": "Save Button"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Mandatory is because...</p>",
+                            "FieldName": "MandatoryDescription",
+                            "Id": "787edb3c-68e7-43b9-b656-6c507fa48683",
+                            "Name": "Mandatory description"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Thank you, submission was successful</p>",
+                            "FieldName": "SuccessMessage",
+                            "Id": "2e007556-33c7-4b0b-9363-52981eb8e477",
+                            "Name": "Success message"
+                        }
+                    ]
+                }
+            </script>
+        </div>
+    </section>
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <h2 data-tpl="hea02" class="">
+                SME Feedback Form
+            </h2>
+            <div id="SMEFeedbackForm"></div>
+            <script>
+                innogyForm['SMEFeedbackForm'] = {
+                    "ApiUpdateEndpoint": "/api/esb/v1/SMEFeedbackForm",
+                    "ConfirmationEmailTemplate": "4849cff2-685d-4c4d-b12a-4d8735c64d07",
+                    "FormIdentity": "SMEFeedbackForm",
+                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                    "SuccessMessage": "Data saved successfully",
+                    "Id": "2daf21b9-e29f-434c-b65f-739775a10f41",
+                    "Name": "Definition",
+                    "Children": [
+                        {
+                            "ControlType": "StaticText",
+                            "Label": "Header text",
+                            "Value": "<p>We are glad to bla-bla-bla</p>",
+                            "FieldName": "Headline",
+                            "Id": "f7f6d465-ca63-4032-9cf7-e336eff90905",
+                            "Name": "Headline"
+                        },
+                        {
+                            "Label": "Rating",
+                            "Placeholder": "Please rate us",
+                            "Required": true,
+                            "RequiredWarningMessage": "This field is required",
+                            "FieldName": "Rating",
+                            "ControlType": "Select",
+                            "Id": "4dc684ba-f98b-48f0-8224-73898ae54523",
+                            "Name": "Rating",
+                            "Children": [
+                                {
+                                    "Text": "5 - very good",
+                                    "Value": "5",
+                                    "Id": "4bbb914a-74e4-444c-9a65-bab6a780702f",
+                                    "Name": "5 - very good"
+                                },
+                                {
+                                    "Text": "4 - good",
+                                    "Value": "4",
+                                    "Id": "b54dc3aa-9065-4bae-b845-fd63feb1f4ee",
+                                    "Name": "4 - good"
+                                },
+                                {
+                                    "Text": "3 - neutral",
+                                    "Value": "3",
+                                    "Id": "bf98876f-7b4e-4c9a-a86f-f3a42bbb281d",
+                                    "Name": "3 - neutral"
+                                },
+                                {
+                                    "Text": "2 - bad",
+                                    "Value": "2",
+                                    "Id": "4fb8cbe6-aa2e-4d4b-9802-9889e981da4e",
+                                    "Name": "2 - bad"
+                                },
+                                {
+                                    "Text": "1 - very bad",
+                                    "Value": "1",
+                                    "Id": "4ea7db2b-dd0a-4d36-aa86-1ac0dcd0c4e2",
+                                    "Name": "1 - very bad"
+                                }
+                            ]
+                        },
+                        {
+                            "ControlType": "TextArea",
+                            "NumberOfRows": 10,
+                            "Label": "Comments",
+                            "Placeholder": "PLease fill in",
+                            "FieldName": "Comments",
+                            "Id": "9a74b0ef-0fb4-4d02-ab97-0a34d92c962f",
+                            "Name": "Comments"
+                        },
+                        {
+                            "ControlType": "Button",
+                            "Class": "color-cta-3 formEdit__save",
+                            "Label": "Submit",
+                            "FieldName": "SaveButton",
+                            "Id": "593d31d3-b39e-4c68-b88a-506d7c7091c3",
+                            "Name": "Save Button"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Mandatory is because...</p>",
+                            "FieldName": "MandatoryDescription",
+                            "Id": "787edb3c-68e7-43b9-b656-6c507fa48683",
+                            "Name": "Mandatory description"
+                        },
+                        {
+                            "ControlType": "StaticText",
+                            "Value": "<p>Thank you, submission was successful</p>",
+                            "FieldName": "SuccessMessage",
+                            "Id": "2e007556-33c7-4b0b-9363-52981eb8e477",
+                            "Name": "Success message"
+                        }
+                    ]
+                }
+            </script>
+        </div>
+    </section>
+{% endblock %}

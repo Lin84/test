@@ -1,0 +1,7 @@
+<div data-tpl="tooltip" class="tooltip--center tooltip--top">
+	<span data-toggle="tooltip" class="icon icon-info tooltip-trigger"></span>
+	<div class="tooltip-container">
+		<div class="tooltip-close icon icon-close_info"></div>
+		<div class="tooltip-content">Nulla vitae elit libero, a pharetra augue.</div>
+	</div>
+</div>

@@ -1,0 +1,52 @@
+// Force off-canvas menu to show scrollbar (not to have a fixed position)
+
+#off-screen-cart,
+#off-screen-navigation {
+    position: absolute;
+}
+
+// Always show icons in contact and login links in off-canvas menu
+
+#main-navigation li > a::before {
+    color: inherit;
+    width: 2.5rem;
+    font-size: .9rem;
+    vertical-align: middle;
+    display: inline-block;
+    speak: none;
+    font-family: iconfont;
+    line-height: inherit;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#main-navigation li.contact > a::before,
+.icon-mail::before {
+    content: "\EA20";
+}
+
+#main-navigation li.login > a::before,
+.icon-login::before {
+    content: "\EA1E";
+}
+
+// Always show the bottom menu in off-canvas
+
+/* #main-navigation ul {
+	display: block !important;
+} */
+
+// styles for text-badge outside of the figure tag
+[data-tpl="mediaContainer"] {
+    position: relative;
+
+    [data-tpl="text-badge"] {
+        position: absolute;
+        top: 1.25vw;
+        right: 1.25vw;
+    }
+}

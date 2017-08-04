@@ -1,0 +1,71 @@
+<section data-tpl="acc01">
+    <h2>Headline</h2>
+    <p>Subheadline</p>
+    <ol>
+        <li aria-expanded="true" class="accordion-item">
+            <section>
+                <h3 class="accordion-item__headline">Some entry</h3>
+                <article class="accordion-item__content">
+                    {% include '../tic/tic02.nunj' %}
+                </article>
+            </section>
+        </li>
+        <li aria-expanded="false" class="accordion-item">
+            <section>
+                <h3 class="accordion-item__headline">Some entry 2</h3>
+                <article class="accordion-item__content">
+                    {% include '../tic/tic02.nunj' %}
+                </article>
+            </section>
+        </li>
+    </ol>
+</section>
+<section data-tpl="acc01" class="acc--multi-expandable">
+    <h2>Headline</h2>
+    <p>Subheadline</p>
+    <ul>
+        <li aria-expanded="false" class="accordion-item">
+            <section>
+                <h3 class="accordion-item__headline">Some entry</h3>
+                <article class="accordion-item__content">
+                	{% include '../tic/tic02.nunj' %}
+                </article>
+            </section>
+        </li>
+        <li aria-expanded="false" class="accordion-item">
+            <section>
+                <h3 class="accordion-item__headline">Akkordeon Entry #2</h3>
+                <article class="accordion-item__content">
+                    <div data-tpl="tic01">
+                        <h3 class="headline">Headline</h3>
+                        <figure class="image image-semantic">
+                            <picture>
+                                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                <source srcset="../images/1-xl.jpg" media="(min-width: 1280px)">
+                                <source srcset="../images/1-lg.jpg" media="(min-width: 800px) AND (max-width: 1279px)">
+                                <source srcset="../images/1-md.jpg" media="(min-width: 480px) AND (max-width: 799px)">
+                                <source srcset="../images/1-sm.jpg" media="(min-width: 320px) AND (max-width: 479px)">
+                                <source srcset="../images/1-xs.jpg" media="(max-width: 319px)">
+                                <!--[if IE 9]></video><![endif]-->
+                                <img src="../images/1-xl.jpg" alt="Image Alt Text" aria-describedby="aria-image-14"></picture>
+                            <figcaption id="aria-image-14" class="image-caption">Image Caption Text (optional)</figcaption>
+                            <div data-tpl="text-badge" class="color-background-14">
+                                <span class="badge-top">Bis zu</span>
+                                <span class="badge-main">300€</span>
+                                <span class="badge-bottom">sparen!</span>
+                            </div>
+                        </figure>
+                        <h3 class="subheadline">Subheadline</h3>
+                        <div class="content">
+                            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                        <div class="content-extended" aria-expanded="false">
+                            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        </div>
+                        <div class="content-extended-arrow"></div><a href="#" title="CTA title" class="btn color-cta-3">CTA text</a>
+                    </div>
+                </article>
+            </section>
+        </li>
+    </ul>
+</section>

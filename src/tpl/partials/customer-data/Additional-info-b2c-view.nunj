@@ -1,0 +1,65 @@
+<div class="formView hidden" data-tpl="form" data-module="form" data-module-config="">
+
+	<div class="formView__form">
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Housing situation</label>
+				<p key="HousingSituation">HousingSituation</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Persons in household</label>
+				<p key="PeopleInHousehold">PeopleInHousehold</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Children</label>
+				<p key="ChildrenInHousehold">ChildrenInHousehold</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Heating system</label>
+				<p key="HeatingSystem">HeatingSystem</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label>Year of construction</label>
+				<p key="AgeOfConstruction">AgeOfConstruction</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Energy type</label>
+				<p key="EnergyTypes">EnergyTypes</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Marital status</label>
+				<p key="MaritalStatus">MaritalStatus</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Date fo birth</label>
+				<p key="DateOfBirth">DateOfBirth</p>
+			</div>
+		</div>
+
+		<p class="formView__success-msg hidden">Success Message after Front End and Back End validation</p>
+
+		<div class="formView__bottom-wrapper">
+			<button class="btn color-cta-3">Edit</button>
+		</div>
+
+	</div>
+</div>
+

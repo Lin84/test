@@ -1,0 +1,268 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "NewsletterRegister" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                SMENewsletterRegister:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="SMENewsletterRegister"></div>
+                        <script>
+                            innogyForm['SMENewsletterRegister'] = {
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68ca8462-018b-44af-b021-ae43239f0ad1",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4f84512e-5fb3-4b82-9c98-21b1f7cc3abf",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "e52adf29-af40-4c8b-ab46-e18607e25b75",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "Checkbox",
+                                        "CheckboxLabel": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "CheckboxName": "EmailContactPermission",
+                                        "Label": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "Placeholder": "Chexckbox place",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "EmailContactPermission",
+                                        "Id": "99c4fd63-2773-407a-abab-e0cc8cb6f159",
+                                        "Name": "EmailContactPermission"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will not receive newsletter. after submit",
+                                        "FieldName": "CancelMessage",
+                                        "Id": "bd8fbbc9-9c9d-49dc-aa34-54fe9a74b5b3",
+                                        "Name": "Cancel Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Success, We will send You newsletter, after submit",
+                                        "FieldName": "ConfirmMessage",
+                                        "Id": "50a65582-cd55-42bf-86ae-ba05b58fcfda",
+                                        "Name": "Confirm Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">user won&acute;t receive any mails, after get request</span>",
+                                        "FieldName": "NotReceivingText",
+                                        "Id": "6a95c1ff-b895-48ae-a83d-0b1a3753fa7e",
+                                        "Name": "Not Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">you will receive continuously news, after get request</span>",
+                                        "FieldName": "ReceivingText",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will receive info, additional info text below checkbox",
+                                        "FieldName": "AdditionalInfoText",
+                                        "Id": "6c15945f-d056-4ca6-86e0-ea6c2433a012",
+                                        "Name": "Additional InfoText"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Email",
+                                        "FieldName": "EmailLabel",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "EmailLabel"
+                                    }
+                                ],
+                                "ApiGetEndpoint": "http://localhost:5500/api/NewsletterRegister-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/NewsletterRegister",
+                                "FormDescription": "This form allows you to update your Name data",
+                                "FormIdentity": "SMENewsletterRegister",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Form updated successfully",
+                                "Id": "457b71c0-0134-4755-bc57-b599b48be568",
+                                "Name": "Form1"
+                            };
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <header>
+                            <h2 data-tpl="hea02" class="">
+                                B2CNewsletterRegister:
+                            </h2>
+                        </header>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CNewsletterRegister"></div>
+                        <script>
+                            innogyForm['B2CNewsletterRegister'] = {
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68ca8462-018b-44af-b021-ae43239f0ad1",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4f84512e-5fb3-4b82-9c98-21b1f7cc3abf",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "e52adf29-af40-4c8b-ab46-e18607e25b75",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                        "ControlType": "Checkbox",
+                                        "CheckboxLabel": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "CheckboxName": "EmailContactPermission",
+                                        "Label": "Ich möchte Informationen per E-Mail erhalten und stimme den&nbsp;<a href=\"http://google.com\" target=\"_blank\">peziellen Datenschutzbestimmungen</a>&nbsp;zu",
+                                        "Placeholder": "Chexckbox place",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "FieldName": "EmailContactPermission",
+                                        "Id": "99c4fd63-2773-407a-abab-e0cc8cb6f159",
+                                        "Name": "EmailContactPermission"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will not receive newsletter. after submit",
+                                        "FieldName": "CancelMessage",
+                                        "Id": "bd8fbbc9-9c9d-49dc-aa34-54fe9a74b5b3",
+                                        "Name": "Cancel Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Success, We will send You newsletter, after submit",
+                                        "FieldName": "ConfirmMessage",
+                                        "Id": "50a65582-cd55-42bf-86ae-ba05b58fcfda",
+                                        "Name": "Confirm Message"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">user won&acute;t receive any mails, after get request</span>",
+                                        "FieldName": "NotReceivingText",
+                                        "Id": "6a95c1ff-b895-48ae-a83d-0b1a3753fa7e",
+                                        "Name": "Not Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "<span style=\"background-color: #ffffff; color: #333333;\">you will receive continuously news, after get request</span>",
+                                        "FieldName": "ReceivingText",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "Receiving Text"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "You will receive info, additional info text below checkbox",
+                                        "FieldName": "AdditionalInfoText",
+                                        "Id": "6c15945f-d056-4ca6-86e0-ea6c2433a012",
+                                        "Name": "Additional InfoText"
+                                    },
+                                    {
+                                        "ControlType": "StaticText",
+                                        "Label": null,
+                                        "Value": "Email",
+                                        "FieldName": "EmailLabel",
+                                        "Id": "032a3121-0b7e-4666-ab88-6225fefecc3e",
+                                        "Name": "EmailLabel"
+                                    }
+                                ],
+                                "ApiGetEndpoint": "http://localhost:5500/api/NewsletterRegister-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/NewsletterRegister",
+                                "FormDescription": "This form allows you to update your Name data",
+                                "FormIdentity": "B2CNewsletterRegister",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Form updated successfully",
+                                "Id": "457b71c0-0134-4755-bc57-b599b48be568",
+                                "Name": "Form1"
+                            };
+                        </script>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+{% endblock %}

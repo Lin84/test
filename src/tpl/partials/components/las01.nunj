@@ -1,0 +1,7 @@
+<div data-tpl="las01">
+    <div class="trigger">deutsch</div>
+    <ul>
+        <li><a href="#" title="english">english</a></li>
+        <li><a href="#" title="espanol">espanol</a></li>
+    </ul>
+</div>

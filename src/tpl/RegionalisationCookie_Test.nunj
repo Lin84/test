@@ -1,0 +1,23 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "pfc01GasOnly" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    {# region-start Mock #}
+    <script class="regionalization-endpoints">
+        var regionalizationEndpoints = {
+            regionAutocompleterUrl: 'url to JBoss autocompleter endpoint',
+            regionSetUrl: 'url to sitecore service to set regionalisation',
+            regionGetUrl: 'url to sitecore service to get regionalisation'
+        };
+    </script>
+    {# region-end #}
+
+    <div data-tpl="pfc01" style="display: inline">
+        <input class="pf-input-rate" id="rateStrom" type="text" name="" value="">
+    </div>
+{% endblock %}

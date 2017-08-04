@@ -1,0 +1,36 @@
+import init from './init';
+import factory from './factory';
+import serp from './serp/serp';
+import autocomplete from './autocomplete/autocomplete';
+import checkboxRadioButton from './checkboxRadioButton';
+import wffmTooltip from './wffmTooltip';
+import customerPassword from './form/customerPassword';
+import customerDelete from './form/customerDelete';
+import formTooltip from './form/formTooltip';
+import sitecoreCustom from './sitecore-custom';
+import submitForm from './form/login/submitForm';
+import passwordIcon from './form/passwordIcon';
+import loginFormHelper from './form/loginFormHelper';
+import ssoLogin from './form/login/sso-login';
+import validateMaxValue from './product-finder/validateMaxValue';
+import validateIban from './product-finder/validateIban';
+import pfcConsuptionCookie from './product-finder/pfcConsuptionCookie';
+import regionalisationCookie from './product-finder/regionalisationCookie';
+
+init(serp, document.querySelector('[data-tpl="src01"]'));
+factory(autocomplete, document.querySelectorAll('[data-tpl="ses01"]'));
+init(checkboxRadioButton, document.querySelector('.form-group'));
+init(wffmTooltip, document.querySelector('.form-group'));
+init(ssoLogin, document.querySelector('[data-tpl="pio01"]'));
+init(regionalisationCookie, document.querySelector('.regionalization-endpoints'));
+init(validateIban, document.querySelector('body'));
+
+factory(submitForm, document.querySelectorAll('[data-submit]'));
+factory(sitecoreCustom, document.querySelectorAll('[data-scomponent-tab]'));
+factory(formTooltip, document.querySelectorAll('[data-tpl="tooltip"]'));
+factory(customerPassword, document.querySelectorAll('[data-tpl="customer-password"]'));
+factory(customerDelete, document.querySelectorAll('[data-tpl="customer-delete"]'));
+factory(passwordIcon, document.querySelectorAll('input[data-tpl="innogy-password"]'));
+factory(loginFormHelper, document.querySelectorAll('[data-tpl="loginForm-helper"]'));
+factory(validateMaxValue, document.querySelectorAll('[data-tpl^="pfc0"] input[data-max-value]'));
+factory(pfcConsuptionCookie, document.querySelectorAll('[data-tpl^="pfc0"]'));

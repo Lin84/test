@@ -1,0 +1,11 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Index" %}
+
+{% block content %}
+    <ul style="padding: 20px;">
+        {% for path in _pages %}
+            <li><a href="{{ path }}.html">{{ path }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,5 @@
+<section data-tpl="grid-bas-07">
+	<div class="grid-bas07-content">
+		{% include './bas02.nunj' %}
+	</div>
+</section>

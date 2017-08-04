@@ -1,0 +1,27 @@
+{% set expanded = false %}
+{% set topNav = [{
+        title: "Fürs Geschäft",
+        active: false,
+        target: "http://google.cz/"
+    }, {
+        title: "Für Zuhause",
+        active: true,
+        target: "http://google.cz/"
+    }, {
+        title: "Über Newco",
+        active: false,
+        target: "http://google.cz/"
+    }]
+%}
+<div data-tpl="meta-navigation">
+	{% include './components/cookie-disclaimer.nunj' %}
+    <nav id="target-group-select" role='navigation' data-tpl="target-group-select" {% if expanded %} class="container-expanded"{% endif %}>
+        <ul id="target-group-select-list" role="menubar" aria-labelledby="target-group-select-label" aria-live="polite" {% if expanded %} aria-expanded="true"{% endif %}>
+            {% for item in topNav %}
+            <li {% if item.active %}class="active"{% endif %} aria-selected="{{item.active}}">
+                <a href={{item.target}} class="link">{{item.title}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

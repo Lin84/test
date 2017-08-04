@@ -1,0 +1,86 @@
+{
+    "texts": {
+        "found": "50 results found",
+        "more" : "Load more"
+    },
+    "message": "<p>Not found<p>",
+    "totalResults": 13,
+    "skipNumbers": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+    },
+    "results": [
+        {
+            "id": 0,
+            "date": "",
+            "boosted": true,
+            "link": "http://innogy.com/",
+            "tag": "About innogy",
+            "title": "Dog 1",
+            "imgCaption": "Image caption",
+            "badge": false,
+            "description": "lorem LOREM lOrEm ipsum dolor",
+            "images": [
+                {
+                    "size": 479,
+                    "url": "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi"
+                },
+
+                {
+                    "size": 480,
+                    "url": "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi"
+                },
+
+                {
+                    "size": 800,
+                    "url": "https://s.graphiq.com/sites/default/files/stories/t4/The_Best_Dog_Breeds_18262_10912.jpg"
+                },
+
+                {
+                    "size": 1280,
+                    "url": "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi"
+                }
+            ]
+        },
+
+        {
+            "id": 1,
+            "date": "01/01/2016",
+            "boosted": true,
+            "link": "http://innogy.com/",
+            "tag": "About innogy",
+            "title": "Dog 2",
+            "imgCaption": "Image caption",
+            "badge": true,
+            "description": " im Netz auf www.essen­marathon.de ↵↵ ↵↵↵↵Der innogy­Marathon geht in diesem Jahr zum 54. Mal am Baldeneysee an den Start. ↵↵Das Event ist der äl<strong>test</strong>e und<strong>Das Event ist der ält...",
+            "imgUrl": "https://s.graphiq.com/sites/default/files/stories/t4/The_Best_Dog_Breeds_18262_10912.jpg"
+        },
+
+        {
+            "id": 2,
+            "date": "01/01/2016",
+            "boosted": false,
+            "link": "http://innogy.com/",
+            "tag": "About innogy",
+            "title": "Innogy Consulting",
+            "imgCaption": "Image caption",
+            "badge": true,
+            "description": "3",
+            "imgUrl": "https://s.graphiq.com/sites/default/files/stories/t4/The_Best_Dog_Breeds_18262_10912.jpg"
+        },
+
+        {
+            "id": 3,
+            "date": "01/01/2016",
+            "boosted": false,
+            "link": "http://innogy.com/",
+            "tag": "About innogy",
+            "title": "Innogy Consulting",
+            "imgCaption": "Image caption",
+            "badge": true,
+            "description": "4",
+            "imgUrl": "https://s.graphiq.com/sites/default/files/stories/t4/The_Best_Dog_Breeds_18262_10912.jpg"
+        }
+    ]
+}

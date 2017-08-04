@@ -1,0 +1,20 @@
+<div class="formView" data-tpl="form" data-module="form" data-module-config="">
+	<div class="formView__form">
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Email:</label>
+				<p key="email">customer@email.com</p>
+			</div>
+		</div>
+
+		<p>You will not receive any newsletter ...</p>
+
+		<p class="formView__cancel-msg hidden">Cancel Message: user won´t receive any mails....</p>
+		<p class="formView__success-msg hidden">Success Message: you will receive continuously news ....</p>
+
+		<div class="formView__bottom-wrapper">
+			<button class="btn color-cta-3">Edit</button>
+		</div>
+	</div>
+</div>
+

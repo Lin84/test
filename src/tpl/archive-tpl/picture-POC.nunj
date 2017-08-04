@@ -1,0 +1,150 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Picture POC" %}
+
+{% block content %}
+<section data-tpl="grid-bas-02">
+    <div class="container">
+                <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="//satyr.io/2160x1301/red" media="(min-width: 1280px)">
+                        <source srcset="//satyr.io/1440x867/blue" media="(min-width: 800px)">
+                        <source srcset="//satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="//satyr.io/498x300/red, //satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="//satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-03">
+    <div class="container">
+        <div class="row">
+            <div class="grid-content grid-content-1 col-md-6">
+                <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="http://satyr.io/2160x1301/red" media="(min-width: 1280px)">
+                        <source srcset="http://satyr.io/1440x867/blue" media="(min-width: 800px)">
+                        <source srcset="http://satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>
+            </div>
+            <div class="grid-content grid-content-2 col-md-6">
+                <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="http://satyr.io/2160x1301/red, http://satyr.io/4320x2602/BurlyWood 2x" media="(min-width: 1280px)">
+                        <source srcset="http://satyr.io/1440x867/GreenYellow" media="(min-width: 800px)">
+                        <source srcset="http://satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>            
+            </div>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-04">
+    <div class="container">
+        <div class="row">
+            <div class="grid-content grid-content-1 col-md-9">
+                <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="http://satyr.io/2160x1301/red, http://satyr.io/4320x2602/BurlyWood 2x" media="(min-width: 1280px)">
+                        <source srcset="http://satyr.io/1440x867/GreenYellow" media="(min-width: 800px)">
+                        <source srcset="http://satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>
+            </div>
+            <div class="grid-content grid-content-2 col-md-3">
+               <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="http://satyr.io/2160x1301/red, http://satyr.io/4320x2602/BurlyWood 2x" media="(min-width: 1280px)">
+                        <source srcset="http://satyr.io/1440x867/GreenYellow" media="(min-width: 800px)">
+                        <source srcset="http://satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-05">
+    <div class="container">
+        <div class="row">
+            <div class="grid-content grid-content-1 col-md-4">
+                <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="http://satyr.io/2160x1301/red, http://satyr.io/4320x2602/BurlyWood 2x" media="(min-width: 1280px)">
+                        <source srcset="http://satyr.io/1440x867/GreenYellow" media="(min-width: 800px)">
+                        <source srcset="http://satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>
+            </div>
+            <div class="grid-content grid-content-2 col-md-4">
+                <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="http://satyr.io/2160x1301/red, http://satyr.io/4320x2602/BurlyWood 2x" media="(min-width: 1280px)">
+                        <source srcset="http://satyr.io/1440x867/GreenYellow" media="(min-width: 800px)">
+                        <source srcset="http://satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>
+            </div>
+            <div class="grid-content grid-content-3 col-md-4">
+                <div class="picture">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="http://satyr.io/2160x1301/red, http://satyr.io/4320x2602/BurlyWood 2x" media="(min-width: 1280px)">
+                        <source srcset="http://satyr.io/1440x867/GreenYellow" media="(min-width: 800px)">
+                        <source srcset="http://satyr.io/960x578/red" media="(min-width: 480px)">
+                        <source srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" media="(max-width: 479px)">
+                        <!--[if IE 9]></video><![endif]-->
+                        <img srcset="http://satyr.io/498x300/red, http://satyr.io/996x600/DarkViolet 2x" alt="Responsive image" class="img-responsive">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-01" class="backgroundcolor-14">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-03">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ratione, earum possimus iusto quis animi, recusandae beatae nihil quam assumenda reiciendis nulla. Saepe consequatur, distinctio, praesentium vel mollitia blanditiis laborum!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ratione, earum possimus iusto quis animi, recusandae beatae nihil quam assumenda reiciendis nulla. Saepe consequatur, distinctio, praesentium vel mollitia blanditiis laborum!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ratione, earum possimus iusto quis animi, recusandae beatae nihil quam assumenda reiciendis nulla. Saepe consequatur, distinctio, praesentium vel mollitia blanditiis laborum!</p>
+                        </div>
+                        <div class="grid-content grid-content-1 col-md-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident accusantium, possimus laboriosam. Porro et sapiente odit excepturi dolorem voluptate, voluptatum aliquid sint odio accusamus sit nostrum impedit quae, quia ullam?</p>            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> 
+    </div>
+</section>
+{% endblock %}

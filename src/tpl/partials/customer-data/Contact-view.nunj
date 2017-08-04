@@ -1,0 +1,45 @@
+<div class="formView" data-tpl="form" data-module="form" data-module-config="" target="">
+
+	<div class="formView__form">
+		<div class="row">
+            <div class="col-xs-12 formView__content">
+                <label key="TelefonOne">Telefon 1</label>
+                <p>000 000 000</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 formView__content">
+                <label key="TelefonTwo">Telefon 2</label>
+                <p>111 111 111</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 formView__content">
+                <label key="TelefonThree">Telefon 3</label>
+                <p>222 222 222</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 formView__content">
+                <label key="Fax">Fax</label>
+                <p>333 333 333</p>
+            </div>
+        </div>
+            <div class="row">
+            <div class="col-xs-12 formView__content">
+                <label key="Email">Email</label>
+                <p>customer@email.com</p>
+            </div>
+        </div>
+
+		<p class="formView__success-msg hidden">Success Message after Front End and Back End validation</p>
+
+		<div class="formView__bottom-wrapper">
+			<button class="btn color-cta-3">Edit</button>
+		</div>
+	</div>
+</div>
+

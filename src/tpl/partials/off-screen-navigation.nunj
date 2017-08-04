@@ -1,0 +1,39 @@
+<div id="off-screen-navigation" aria-expanded="false" class="">
+    <div class="scroll-wrapper">
+        <nav role="navigation" id="main-navigation">
+            <ul role="menu">
+                <li class="active" aria-selected="true" role="menuitem"><a title="" target="_self" onclick="" href="#">Home</a></li>
+                <li class="" aria-selected="false" aria-expanded="false" role="menuitem"><span></span><a title="" target="_self" onclick="" href="#">Report on innogy</a>
+                    <ul role="menu">
+                        <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">All innogy press releases</a></li>
+                        <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="" aria-selected="false" aria-expanded="false" role="menuitem"><span></span><a title="" target="_self" onclick="" href="#">Working at innogy</a>
+                    <ul role="menu">
+                        <li class="" aria-selected="false" aria-expanded="false" role="menuitem"><span></span><a title="" target="_self" onclick="" href="#">Areas of activity</a>
+                            <ul role="menu">
+                                <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Retail</a></li>
+                                <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Efficiency</a></li>
+                                <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Grids</a></li>
+                                <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Renewable energy</a></li>
+                                <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Research and Development</a></li>
+                                <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">innogy Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">International teams</a></li>
+                    </ul>
+                </li>
+                <li class="" aria-selected="false" aria-expanded="false" role="menuitem"><span></span><a title="" target="_self" onclick="" href="#">Investor Relations</a>
+                    <ul role="menu">
+                        <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Publications</a></li>
+                        <li class="" aria-selected="false" role="menuitem"><a title="" target="_self" onclick="" href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="quick-nav" aria-expanded="true" role="menu">
+                <li class="contact" aria-selected="false" role="menuitem"><a title="alt" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

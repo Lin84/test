@@ -1,0 +1,348 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "B2CCustomerContactData" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <script type="text/javascript">
+        var innogyForm = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123'
+        };
+    </script>
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <h2 class="headline" data-tpl="hea02">B2CCustomerContactData:</h2>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="B2CCustomerContactData"></div>
+                        <script>
+                        innogyForm['B2CCustomerContactData'] = {
+                            "FormDescription": "This form allows you to change your contact data",
+                            "FormIdentity": "B2CCustomerContactData",
+                            "NoConnectionErrorMessage": "Sorry, no connection with remote service, Linh",
+                            "SuccessMessage": "Data saved successfully",
+                            "ApiGetEndpoint": "http://localhost:5500/api/CustomerContactData-api.json",
+                            "ApiUpdateEndpoint": "/api/esb/v1/contact",
+                            "Id": "1a22df26-efa5-4c82-b06b-90c26cfadcf8",
+                            "Name": "Form 1",
+                            "Children": [{
+                                "ControlType": "Button",
+                                "Class": "color-cta-3 formEdit__edit",
+                                "FieldName": "EditButton",
+                                "Label": "Edit",
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "68a90c20-b7dd-452f-81a4-8a2872104f42",
+                                "Name": "Edit Button"
+                            }, {
+                                "ControlType": "Button",
+                                "Class": "color-cta-2 formEdit__cancel",
+                                "FieldName": "CancelButton",
+                                "Label": "Cancel",
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "943409db-0a1f-46aa-b994-c6ef5d70643b",
+                                "Name": "Cancel Button"
+                            }, {
+                                "ControlType": "Button",
+                                "Class": "color-cta-3 formEdit__save",
+                                "FieldName": "SaveButton",
+                                "Label": "Save",
+                                "Placeholder": null,
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "7ad471ff-309e-4b39-a733-04811e0a09ae",
+                                "Name": "Save Button"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": "444 222 333",
+                                "ExactLength": 5,
+                                "ExactLengthWarning": "please enter exactlength",
+                                "MaximalValue": 0.0,
+                                "MaxLength": 50,
+                                "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "AlternativePhoneNumber",
+                                "Label": "Alternative phone number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": "tooltip for alternative Phone Number",
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "18b2ef1e-05a4-4b35-919a-ae4ee43f8cfe",
+                                "Name": "AlternativePhoneNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": null,
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 28,
+                                "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "HomePhoneNumber",
+                                "Label": "Home phone number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": "tooltip HomePhoneNumber",
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "68e9bcef-ebb2-4e82-be74-1e0a1dcedd97",
+                                "Name": "HomePhoneNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": "111 222 333",
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 28,
+                                "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "MobilePhoneNumber",
+                                "Label": "Mobile phone number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "4509f462-2369-4ab6-926f-e22aab9682a9",
+                                "Name": "MobilePhoneNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": null,
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 28,
+                                "MaxLengthWarning": "Maximum 28 digit fax number - no other characters",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(0|[1-9][0-9]*)$",
+                                "PatternWarning": "Please enter only number, no other characters",
+                                "RangeValueWarning": null,
+                                "FieldName": "FaxNumber",
+                                "Label": "Fax number",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": null,
+                                "Required": false,
+                                "RequiredWarningMessage": null,
+                                "Id": "d2a75e84-ff69-4da7-8e9f-cadce68ce1f1",
+                                "Name": "FaxNumber"
+                            }, {
+                                "ControlType": "Text",
+                                "DefaultValue": null,
+                                "ExactLength": 0,
+                                "ExactLengthWarning": null,
+                                "MaximalValue": 0.0,
+                                "MaxLength": 241,
+                                "MaxLengthWarning": "Length of email should be not more then 241 char",
+                                "MinimalValue": 0.0,
+                                "Pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+                                "PatternWarning": "Customer's email address must be e-mail address of format",
+                                "RangeValueWarning": null,
+                                "FieldName": "Email",
+                                "Label": "Email",
+                                "Placeholder": "Please fill in",
+                                "Tooltip": null,
+                                "Required": true,
+                                "RequiredWarningMessage": "Email is required",
+                                "Id": "eb98babb-d874-4d7e-beaa-5d48426816f8",
+                                "Name": "Email"
+                            }]
+                        }
+                        </script>
+                    </div>
+                </section>
+            </section>
+
+            <section data-tpl="iebc01">
+                <section data-tpl="ieb01" class="ieb-item" aria-expanded="true">
+                    <header class="ieb-item__header">
+                        <h2 class="headline" data-tpl="hea02">SMECustomerContactData:</h2>
+                        <div class="ieb01-toggle"></div>
+                    </header>
+                    <div class="ieb-item__content">
+                        <div id="SMECustomerContactData"></div>
+                        <script>
+                            innogyForm['SMECustomerContactData'] = {
+                                "FormDescription": "This form allows you to change your contact data",
+                                "FormIdentity": "SMECustomerContactData",
+                                "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                "SuccessMessage": "Data saved successfully",
+                                "ApiGetEndpoint": "http://localhost:5500/api/CustomerContactData-api.json",
+                                "ApiUpdateEndpoint": "/api/esb/v1/contact",
+                                "Id": "1a22df26-efa5-4c82-b06b-90c26cfadcf8",
+                                "Name": "Form 1",
+                                "Children": [
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__edit",
+                                        "FieldName": "EditButton",
+                                        "Label": "Edit",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68a90c20-b7dd-452f-81a4-8a2872104f42",
+                                        "Name": "Edit Button"
+                                    },
+                                    {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "FieldName": "CancelButton",
+                                        "Label": "Cancel",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "943409db-0a1f-46aa-b994-c6ef5d70643b",
+                                        "Name": "Cancel Button"
+                                    },
+                                    {
+                                    "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "FieldName": "SaveButton",
+                                        "Label": "Save",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "7ad471ff-309e-4b39-a733-04811e0a09ae",
+                                        "Name": "Save Button"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": "444 222 333",
+                                        "ExactLength": 5,
+                                        "ExactLengthWarning": "please enter exactlength",
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 50,
+                                        "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "AlternativePhoneNumber",
+                                        "Label": "Alternative phone number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "tooltip for alternative Phone Number",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "18b2ef1e-05a4-4b35-919a-ae4ee43f8cfe",
+                                        "Name": "AlternativePhoneNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 28,
+                                        "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "HomePhoneNumber",
+                                        "Label": "Home phone number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": "tooltip HomePhoneNumber",
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "68e9bcef-ebb2-4e82-be74-1e0a1dcedd97",
+                                        "Name": "HomePhoneNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": "111 222 333",
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 28,
+                                        "MaxLengthWarning": "Maximum 28 digit phone number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "MobilePhoneNumber",
+                                        "Label": "Mobile phone number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "4509f462-2369-4ab6-926f-e22aab9682a9",
+                                        "Name": "MobilePhoneNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 28,
+                                        "MaxLengthWarning": "Maximum 28 digit fax number - no other characters",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(0|[1-9][0-9]*)$",
+                                        "PatternWarning": "Please enter only number, no other characters",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "FaxNumber",
+                                        "Label": "Fax number",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": false,
+                                        "RequiredWarningMessage": null,
+                                        "Id": "d2a75e84-ff69-4da7-8e9f-cadce68ce1f1",
+                                        "Name": "FaxNumber"
+                                    },
+                                    {
+                                        "ControlType": "Text",
+                                        "DefaultValue": null,
+                                        "ExactLength": 0,
+                                        "ExactLengthWarning": null,
+                                        "MaximalValue": 0.0,
+                                        "MaxLength": 241,
+                                        "MaxLengthWarning": "Length of email should be not more then 241 char",
+                                        "MinimalValue": 0.0,
+                                        "Pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+                                        "PatternWarning": "Customer's email address must be e-mail address of format",
+                                        "RangeValueWarning": null,
+                                        "FieldName": "Email",
+                                        "Label": "Email",
+                                        "Placeholder": "Please fill in",
+                                        "Tooltip": null,
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Email is required",
+                                        "Id": "eb98babb-d874-4d7e-beaa-5d48426816f8",
+                                        "Name": "Email"
+                                    }
+                                ]
+                            }
+                        </script>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+{% endblock %}

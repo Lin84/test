@@ -1,0 +1,24 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "SERP" %}
+
+{% block content %}
+    <div data-tpl="blanko-overview">
+        <header>
+            <section data-tpl="grid-bas-01" class="color-background-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        {% include './partials/components/ses01.nunj' %}
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section data-tpl="grid-bas-02">
+                <div class="container">
+                    <div data-tpl="src01" class="src01--list-view searchResults" data-service-url='api/solr.json' data-service-id='23e32b3a35beadce32'></div>
+                </div>
+            </section>
+        </main>
+    </div>
+{% endblock %}

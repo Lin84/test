@@ -1,0 +1,93 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "JFC01-2173" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            <div data-tpl-component="jfc01">
+                <script type="text/javascript">
+                        components['jfc01'] = {
+                            "ApiGetFiltersEndpoint": "http://localhost:5500/api/JFC01-api.json",
+                            "ApiGetResultsEndpoint": "/api/jobborse/v1/GetResults",
+                            "NoConnectionErrorMessage": "No connection with remote service",
+                            "Children": [
+                                {
+                                "ControlType": "StaticText",
+                                "Value": "innogy Stellenangebote",
+                                "FieldName": "Headline",
+                                "Id": "16cb9305-2a32-4af9-bfa7-f016a7e3fa15",
+                                "Name": "Headline"
+                                },
+                                {
+                                "Label": "Einstiegslevel",
+                                "FieldName": "ExperienceLevel",
+                                "Children": [],
+                                "ControlType": "Select",
+                                "Id": "93819f26-d3c9-4686-890d-723b83be68b6",
+                                "Name": "ExperienceLevel",
+                                "Placeholder": "ExperienceLevel"
+                                },
+                                {
+                                "Label": "Funktionsbereich",
+                                "FieldName": "FunctionalArea",
+                                "Children": [],
+                                "ControlType": "Select",
+                                "Id": "002edcef-8da9-4b51-9d1f-9f1af4184f84",
+                                "Name": "FunctionalArea",
+                                "Placeholder": "FunctionalArea"
+                                },
+                                {
+                                "Label": "Gesellschaft",
+                                "FieldName": "Company",
+                                "Children": [],
+                                "ControlType": "Select",
+                                "Id": "3d5e7d1b-004c-4346-a3ed-26a229f42c03",
+                                "Name": "Company",
+                                "Placeholder": "Company"
+                                },
+                                {
+                                "Label": "Land",
+                                "FieldName": "Country",
+                                "Children": [],
+                                "ControlType": "Select",
+                                "Id": "648e9009-348f-4968-bc3a-dbcbbec97d65",
+                                "Name": "Country",
+                                "Placeholder": "Country"
+                                },
+                                {
+                                "Label": "Stadt",
+                                "FieldName": "City",
+                                "Children": [],
+                                "ControlType": "Select",
+                                "Id": "c0ef0a98-5183-40b8-8a83-4793ea5e0bc9",
+                                "Name": "City",
+                                "Placeholder": "City"
+                                },
+                                {
+                                "ControlType": "Text",
+                                "Label": "Stichwort oder Anzeigencode",
+                                "Placeholder": "Bitte geben Sie hier Ihre Frage ein",
+                                "FieldName": "Keyword",
+                                "Id": "c1f06e24-7f54-4243-8ab6-ec9118c57ab0",
+                                "Name": "Keyword"
+                                },
+                                {
+                                "ControlType": "Button",
+                                "Label": "Suchen",
+                                "FieldName": "Search",
+                                "Id": "1ffb6090-4f08-4ec8-8411-d512535d5eef",
+                                "Name": "Search"
+                                }
+                            ]
+                        };
+                    </script>
+                <div remoteComponent="jfc01" id="f06e241d-1e18-44db-9241-47bf666e9c87"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "L-InvoicesDetailPage" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %} {% block content %}
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <nav data-tpl="bnv01" role="navigation">
+                <h3 id="back-label" class="aria-only">Back</h3>
+                <a role="button" onclick="javascript:window.history.back();">Back</a>
+            </nav>
+            <header>
+                <h2 data-tpl="hea01" class="headline ">
+                    4400
+                </h2>
+            </header>
+
+            <div data-tpl-component="cih01c" data-tpl-cih="1e179e49-56f4-44fd-b81a-428a0e2a2389">
+                <script type = "text/javascript">
+                    components['cih01c'] = {
+                        "ApiEndpoint": "http://localhost:5500/api/GetContractsForCustomerResponse.json",
+                        "Id": "34dba39a-4180-4fdf-9138-0092a91ab7eb",
+                        "Name": "CIH-C-presentation24",
+                        "ShortText": "KundennummerTest",
+                        "Children": [{
+                                "Link": {
+                                    "Anchor": "",
+                                    "Class": "",
+                                    "Text": "inbetween",
+                                    "Query": "",
+                                    "Title": "",
+                                    "Target": "",
+                                    "TargetId": "42dc5679-f863-4c20-95df-546765fef51c",
+                                    "Type": 4
+                                },
+                                "Text": "InBetween demoTest",
+                                "Tooltip": "Demo",
+                                "Id": "e5d90e88-cf02-44b6-84f9-f78f0a49cf2d",
+                                "Name": "BtnInbetween"
+                            },
+                            {
+                                "BubbleTooltip": "Hello world",
+                                "Link": {
+                                    "Anchor": "",
+                                    "Class": "",
+                                    "Text": "Add Overview Page",
+                                    "Query": "",
+                                    "Title": "",
+                                    "Target": "",
+                                    "TargetId": "8b96c313-3939-4f7b-8ddc-095778a71c00",
+                                    "Type": 4
+                                },
+                                "Text": "Some",
+                                "Tooltip": "Some",
+                                "Id": "01e6607d-a93d-41ba-a950-32cb5e5637cf",
+                                "Name": "BtnBubble"
+                            }
+                        ]
+                    };
+                </script>
+
+            </div>
+
+            <div data-tpl="invoiceDetailsCollection">
+                <div data-tpl-component="invoiceDetailsItem">
+                    <script type="text/javascript">
+                        components['invoiceDetailsItem'] = {
+                            "BillDateLabel": "Rechnung vom",
+                            "InvoiceAmountLabel": "Rechnungsbetrag",
+                            "BillingPeriodLabel": "Abrechnungszeitraum",
+                            "ToLabel": "bis",
+                            "InvoiceStatusLabel": "Rechnung ist",
+                            "DisplayPdfLabel": "PDF Anzeigen",
+                            "CorrectionLabel": "Korrektur"
+                        };
+                    </script>
+                </div>
+                <script type="text/javascript">
+                    components['invoiceDetailsCollection'] = {
+                        "ApiEndpoint": "http://localhost:5500/api/GetInvoicesForCustomerResponse.json",
+                        "PdfUrl": "http://localhost:5500/api/getPdf.json",
+                        "InvoiceCorrectionUrl": "/invoice-correction-url",
+                        "ImportantMessage": "<p>This is very important message by the way.</p>",
+                        "EmptyDataMessage": "Headline text H3"
+                    };
+                </script>
+            </div>
+            <div remoteComponent="invoiceDetailsCollection"></div>
+        </div>
+    </section>
+{% endblock %}

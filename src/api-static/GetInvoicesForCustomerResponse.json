@@ -1,0 +1,35 @@
+{
+    "InvoiceListItems": [
+            {
+            "BusinessPartnerNumber": "",
+            "InvoiceNumber": "010002103477",
+            "DocumentDate": "20160228",
+            "StartBillingPeriod": "20130105",
+            "EndBillingPeriod": "20131226",
+            "Currency": "EUR",
+            "TransactionAmount": -204.2,
+            "Status": "ausgeglichen",
+            "IsCorrectable": true
+        }, {
+            "BusinessPartnerNumber": "",
+            "InvoiceNumber": "010001955490",
+            "DocumentDate": "20131017",
+            "StartBillingPeriod": "20120810",
+            "EndBillingPeriod": "20130104",
+            "Currency": "EUR",
+            "TransactionAmount": 61.73,
+            "Status": "ausgeglichen",
+            "IsCorrectalbe": false
+        }, {
+            "BusinessPartnerNumber": "",
+            "InvoiceNumber": "130001348528",
+            "DocumentDate": "20120310",
+            "StartBillingPeriod": "20131227",
+            "EndBillingPeriod": "20140831",
+            "Currency": "EUR",
+            "TransactionAmount": 966.47,
+            "Status": "ausgeglichen",
+            "IsCorrectalbe": false
+        }
+    ]
+}

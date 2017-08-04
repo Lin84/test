@@ -1,0 +1,155 @@
+// On mobiles, show max 4 results in search - autocompletion
+@media (max-width: 799px) {
+    .form-group.autocomplete .suggestions li {
+        display: none;
+
+        &:nth-child(-n+4) {
+            display: list-item;
+        }
+    }
+}
+
+// Loading icon
+
+.loader-overlay {
+    background: #fff;
+    background: rgba(255, 255, 255, .9);
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.loader {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    display: block;
+    height: 62px;
+    left: 50%;
+    margin-top: -31px;
+    margin-left: -31px;
+    position: fixed;
+    top: 50%;
+    width: 62px;
+}
+
+.loader-overlay.js-loader-active {
+    display: block;
+    position: fixed;
+}
+
+.loader-circle {
+    border: 8px rgba(245, 155, 0, .25) solid;
+    border-top: 8px rgba(245, 155, 0, 1) solid;
+    border-radius: 50%;
+    -webkit-animation: loaderCircRot 2s infinite linear;
+    animation: loaderCircRot 2s infinite linear;
+}
+
+@-webkit-keyframes loaderCircRot {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@keyframes loaderCircRot {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+// Loading icon Search page specific styles
+
+[data-tpl="src01"] .loader {
+    display: none;
+    position: static;
+    margin: auto;
+}
+
+[data-tpl="src01"] .loader.js-loader-active {
+    display: block;
+}
+
+// --- Form styles
+
+// Validation message
+
+.validation-summary-errors {
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+    background: #eb4b0a;
+
+    ul,
+    li,
+    p {
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// ---- Password Icon
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+.input-wrapper {
+    width: 100%;
+    position: relative;
+    // ms-touch-action: none;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    font-size: 2rem;
+    line-height: 1rem;
+    // ms-touch-action: none;
+}
+
+// error message box in login form
+
+.error-message-box {
+    padding: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+// Hotfix DFD-1476
+
+#contact-drawer .grid-content {
+    color: #fff;
+
+    .content {
+        font-size: .8rem;
+    }
+}
+
+// hotfix: DFD-2138
+iframe.track-invisible,
+iframe[name="google_conversion_frame"],
+iframe#esome-iframe-27,
+body > img[height="1"][width="1"] {
+    display: none;
+}

@@ -1,0 +1,7 @@
+<section data-tpl="global-zone">
+	<section data-tpl="grid-bas-02">
+	    <div class="container">
+	        {% include '../components/las01.nunj' %}
+	    </div>
+	</section>
+</section>

@@ -1,0 +1,10 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "TIC" %}
+
+{% block content %}
+    <h2>TIC01</h2>
+    {% include './partials/tic/tic01.nunj' %}
+    <h2>TIC02</h2>
+    {% include './partials/tic/tic02.nunj' %}
+{% endblock %}

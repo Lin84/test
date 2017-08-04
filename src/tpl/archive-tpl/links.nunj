@@ -1,0 +1,17 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Links" %}
+
+{% block content %}
+	<section data-tpl="grid-bas-01">
+	    <div class="container">
+		    <h2>BNV01</h2>
+
+			<h3>History back link (JS event)</h3>
+		    {% include './partials/components/bnv01.nunj' %}
+
+		    <h3>URL back link (href)</h3>
+		    {% include './partials/components/bnv01-b.nunj' %}
+		</div>
+	</section>
+{% endblock %}

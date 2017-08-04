@@ -1,0 +1,36 @@
+<article data-tpl="tea01" class="color-teaser-1 tea01--image-right">
+	<a href="tea01.html#" title="Headline" class="link link--internal {{optionalLinkColorClass}}">
+
+		<style type="text/css" data-tpl="inline-style" data-for="responsive-assets" data-image-id="">
+			[data-image-id='itea01'] > div {
+				background-image: url('../../../images/1-xl.jpg');
+			} @media ( xs ) {
+			[data-image-id='itea01'] > div {
+				background-image: url('../../../images/1-xs.jpg');
+			} } @media ( max-width: 479px ) {
+			[data-image-id='itea01'] > div {
+				background-image: url('../../../images/1-sm.jpg');
+			} } @media ( min-width : 480px ) AND ( max-width : 799px ) {
+			[data-image-id='itea01'] > div {
+				background-image: url('../../../images/1-md.jpg');
+			} } @media ( min-width : 800px ) AND ( max-width : 1279px ) {
+			[data-image-id='itea01'] > div {
+				background-image: url('../../../images/1-lg.jpg');
+			} } @media ( min-width : 1280px ) {
+			[data-image-id='itea01'] > div {
+				background-image: url('../../../images/1-xl.jpg');
+			} }
+		</style>
+
+		<div data-image-id="itea01" class="image image-decorative image--lazy-loaded image--loaded">
+			<div title="Image Alt Text" aria-describedby="aria-itea01" role="img"></div>
+			<p id="aria-itea01" class="image-caption">Image Caption Text (optional)</p>
+		</div>
+
+		<header>
+			<h2 class="headline">Headline</h2>
+			<p>Subheadline - Integer posuere erat a ante venenatis.</p>
+		</header>
+
+	</a>
+</article>

@@ -1,0 +1,22 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "TEA" %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-02">
+                <div class="container">
+                	<h2>TEA01</h2>
+				    {% include './partials/teasers/tea01.nunj' %}
+                	<h2>TEA02</h2>
+				    {% include './partials/teasers/tea02.nunj' %}
+				    <h2>TEA03</h2>
+				    {% include './partials/teasers/tea03.nunj' %}
+                </div>
+            </section>
+        </div>
+    </div>
+
+{% endblock %}

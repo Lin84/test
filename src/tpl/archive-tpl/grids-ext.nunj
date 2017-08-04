@@ -1,0 +1,352 @@
+{% extends "layouts/default.nunj" %} {% set title = "Ext Grids" %} {% block content %}
+<section data-tpl="grid-bas-01" class="{{colorClass}}">
+    <div class="container-fluid">
+        <div class="row">
+
+            <article data-tpl="grid-ext-01">
+                <div class="container">
+                    <header>
+                        <h2 class="headline" data-tpl="hea02">EXT01</h2>
+                        <h3 class="subheadline" data-tpl="hea03">HEA03</h3>
+                    </header>
+                    <div class="content">
+                        <section data-tpl="grid-ext-03">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="grid-content grid-content-1 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-2">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#1 tea03 in ext01" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#1 tea03 in ext01</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="grid-content grid-content-2 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-3">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#2 tea03 in ext01" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#2 tea03 in ext01</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="grid-content grid-content-3 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-4">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#3 tea03 in ext01" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#3 tea03 in ext01</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section data-tpl="grid-ext-03">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="grid-content grid-content-1 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-2">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#1 tea03 in ext01" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#1 tea03 in ext01</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="grid-content grid-content-2 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-3">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#2 tea03 in ext01" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#2 tea03 in ext01</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="grid-content grid-content-3 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-4">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#3 tea03 in ext01" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#3 tea03 in ext01</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <footer><a href="ext-tea.html#" title="cta title" class="btn {{optionalColorClass}} {{optionalWidthModifier}} color-cta-2">Call to Action Button</a>
+                    </footer>
+                </div>
+            </article>
+
+            <article data-tpl="grid-ext-02">
+                <div class="container">
+                    <header>
+                        <h2 class="headline" data-tpl="hea02">EXT02</h2>
+                        <h3 class="subheadline" data-tpl="hea03">HEA03</h3>
+                    </header>
+                    <div class="content">
+                        <section data-tpl="grid-ext-03">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="grid-content grid-content-1 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-2">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#1 tea03 in ext02" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#1 tea03 in ext02</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="grid-content grid-content-2 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-3">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#2 tea03 in ext02" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#2 tea03 in ext02</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="grid-content grid-content-3 col-md-4 col-sm-6">
+                                        <article data-tpl="tea03" class="color-teaser-4">
+                                            <a href="http://localhost:8080/de/grids/targetUrl" title="#3 tea03 in ext02" class="link link--internal {{optionalLinkColorClass}}">
+                                                <header>
+                                                    <h2 class="headline">#3 tea03 in ext02</h2>
+                                                    <p>copytext</p>
+                                                </header>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+
+            <h1 class="text-center">EXT03</h1>
+            <section data-tpl="grid-ext-03">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-2">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#1 tea03 in ext03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#1 tea03 in ext03</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-3">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#2 tea03 in ext03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#2 tea03 in ext03</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-4">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#3 tea03 in ext03" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#3 tea03 in ext03</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h1 class="text-center">EXT04</h1>
+            <section data-tpl="grid-ext-04">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-6">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#1 tea03 in ext04" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#1 tea03 in ext04</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-2 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-7">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#2 tea03 in ext04" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#2 tea03 in ext04</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-3 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-8">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#3 tea03 in ext04" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#3 tea03 in ext04</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-9">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#4 tea03 in ext04" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#4 tea03 in ext04</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h1 class="text-center">EXT05</h1>
+            <section data-tpl="grid-ext-05">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-11">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#1 tea03 in ext05" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#1 tea03 in ext05</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-12">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#2 tea03 in ext05" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#2 tea03 in ext05</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-13">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#3 tea03 in ext05" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#3 tea03 in ext05</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-4 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-14">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#4 tea03 in ext05" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#4 tea03 in ext05</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-5 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-15">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#5 tea03 in ext05" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#5 tea03 in ext05</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h1 class="text-center">EXT06</h1>
+            <section data-tpl="grid-ext-06">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-11">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#1 tea03 in ext06" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#1 tea03 in ext06</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-12">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#2 tea03 in ext06" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#2 tea03 in ext06</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-13">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#3 tea03 in ext06" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#3 tea03 in ext06</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-4 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-14">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#4 tea03 in ext06" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#4 tea03 in ext06</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-5 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-15">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#5 tea03 in ext06" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#5 tea03 in ext06</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="grid-content grid-content-6 col-md-4 col-sm-6">
+                            <article data-tpl="tea03" class="color-teaser-16">
+                                <a href="http://localhost:8080/de/grids/targetUrl" title="#6 tea03 in ext06" class="link link--internal {{optionalLinkColorClass}}">
+                                    <header>
+                                        <h2 class="headline">#6 tea03 in ext06</h2>
+                                        <p>copytext</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,3 @@
+<nav data-tpl="bnv01" role="navigation">
+	<h3 id="back-label" class="aria-only">History back link</h3><a role="button" onClick="javascript: window.history.back();">Back</a>
+</nav>

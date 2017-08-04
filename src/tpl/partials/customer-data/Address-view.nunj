@@ -1,0 +1,50 @@
+<div class="formView" data-tpl="form" data-module="form" data-module-config="">
+
+	<div class="formView__form">
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>c/o</label>
+				<p key="careof"></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Strafe udnd Hausnummer</label>
+				<p key="Street">Nordsternplatz 1</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Postleitzahl</label>
+				<p key="zip">45899</p>
+			</div>
+
+			<div class="col-sm-6 formView__content">
+				<label key="City">Ort</label>
+				<p>Gelsenkirchen</p>
+			</div>
+		</div>	
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label key="mailbox">Postfach</label>
+				<p></p>
+			</div>
+		</div>
+
+		<p>
+			Falls Sie von uns keine Informationen und Neuigkeiten mehr erhalten möchten, entfernen Sie einfach den Haken. Wenn Sie Ihre E-Mail-Adresse ändern möchten, können Sie diese unter "<a href="http://google.com">Kontaktdaten</a>" ändern.
+       </p>
+
+		<p class="formView__success-msg hidden">Success Message after Front End and Back End validation</p>
+
+		<div class="formView__bottom-wrapper">
+			<button class="btn color-cta-3">Edit</button>
+		</div>
+
+	</div>
+</div>
+

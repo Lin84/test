@@ -1,0 +1,34 @@
+<div class="formView" data-tpl="form" data-module="form" data-module-config="">
+
+	<div class="formView__form">
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Organisation Name 1</label>
+				<p key="OrgName1">Customer Name 01</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 formView__content">
+				<label>Organisation Name 2</label>
+				<p key="OrgName2"></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 formView__content">
+				<label>Organisation Name 3</label>
+				<p key="OrgName3"></p>
+			</div>
+		</div>
+
+		<p class='formView__success-msg hidden'>Success Message after Front End and Back End validation</p>
+
+		<div class="formView__bottom-wrapper">
+			<button class="btn color-cta-3">Edit</button>
+		</div>
+	</div>
+</div>
+
+
+

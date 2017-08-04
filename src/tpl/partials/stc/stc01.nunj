@@ -1,0 +1,30 @@
+<div data-tpl="stc01">
+	<header>
+		<h2 class="headline">Headline stc01</h2>
+		<h3 class="subheadline">Subheadline stc01</h3>
+	</header>
+	<section data-tpl="grid-bas-05">
+		<div class="container">
+			<div class="row">
+				<div class="grid-content grid-content-1 col-md-4">
+					{% include '../teasers/tea05.nunj' %}
+				</div>
+				<div class="grid-content grid-content-2 col-md-4">
+					{% include '../teasers/tea05-color.nunj' %}
+				</div>
+				<div class="grid-content grid-content-3 col-md-4">
+					{% include '../teasers/tea05.nunj' %}
+				</div>
+				<div class="grid-content grid-content-3 col-md-4">
+					{% include '../teasers/tea05.nunj' %}
+				</div>
+				<div class="grid-content grid-content-3 col-md-4">
+					{% include '../teasers/tea05-color.nunj' %}
+				</div>
+				<div class="grid-content grid-content-3 col-md-4">
+					{% include '../teasers/tea05.nunj' %}
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

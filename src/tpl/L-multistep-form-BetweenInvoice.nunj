@@ -1,0 +1,353 @@
+ {% extends "layouts/default.nunj" %}
+
+{% set title = "Inbetween Invoice" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <section data-tpl="grid-bas-01">
+        <div class="container">
+            <div id="InvoiceInBetweenForm">
+                <script type = "text/javascript">
+                    innogyMultistepForm['InvoiceInBetweenForm'] = {
+                        "Headline": "In-between",
+                        "MultistepFormIdentity": "InvoiceInBetweenForm",
+                        "Id": "ada6dd32-e98e-4f8f-91d2-e393967468f7",
+                        "Name": "InBetweenForm",
+                        "HPN01": {
+                            "__interceptors": [
+                                {}
+                            ],
+                            "Icon": `<svg data-tpl="svg" data-module="animation" data-animation="check_checkbox" data-animation-config="" id="svg-426" width="133px" height="200px" viewBox="0 0 133 200">
+                            <path d="M61.207,199.738c2.002-0.131,3.73-1.44,4.396-3.328L132.719,6.883c0.912-2.599-0.463-5.444-3.071-6.355
+                            c-2.604-0.904-5.465,0.459-6.377,3.061L60.035,182.061L9.473,82.883c-1.249-2.458-4.264-3.44-6.727-2.198
+                            c-2.467,1.244-3.453,4.245-2.207,6.702l55.875,109.628c0.854,1.686,2.586,2.735,4.461,2.735
+                            C60.986,199.75,61.097,199.747,61.207,199.738z"/>`,
+                            "Type": {
+                                "__interceptors": [
+                                    {}
+                                ],
+                                "Value": "Icons",
+                                "Id": "08ce3d3c-855c-481c-99a8-ec150d55ed0f",
+                                "Name": "Numbers"
+                            },
+                            "Id": "d59d0600-cfe8-47f0-a102-bfaa8af8c05e",
+                            "Name": "HPN01-default"
+                        },
+                        "Children": [
+                            {
+                                "Form": {
+                                    "ApiUpdateEndpoint":"somePostApiEndpoint/step1",
+                                    "ApiGetEndpoint":"http://localhost:5500/api/exampleGetInvoiceInbetween.json",
+                                    "FormIdentity": "InBetweenFormStep1",
+                                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                    "SuccessMessage": "Data saved successfully",
+                                    "Children": [{
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Continue",
+                                        "FieldName": "ContinueButton",
+                                        "Id": "48ac3519-75db-47dd-8290-30feadf667dc",
+                                        "Name": "Continue Button"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Description",
+                                        "FieldName": "Description",
+                                        "Id": "06413794-de19-420d-8126-85dea328edcf",
+                                        "Name": "Description",
+                                        "Value": "Description",
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Counter number",
+                                        "FieldName": "CounterNumber",
+                                        "Id": "4d8da648-2a24-44eb-a9dd-32fb8fd11027",
+                                        "Name": "CounterNumber",
+                                        "Value": "Counter Number",
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Last entry",
+                                        "FieldName": "LastEntry",
+                                        "Id": "ac7d2412-bda8-491f-9481-d7b082f2bc4f",
+                                        "Name": "LastEntry",
+                                        "Value": "Last Entry",
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "New entry",
+                                        "FieldName": "NewEntry",
+                                        "Id": "8f2baf0a-41a3-44b1-a781-4ce8616aa9f2",
+                                        "Name": "NewEntry",
+                                        "Value": "New Entry",
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Pay balance",
+                                        "FieldName": "PayBalance",
+                                        "Id": "e6c053e1-c828-45db-845c-65d053bc645b",
+                                        "Name": "PayBalance",
+                                        "Value": "Pay Balance"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Reading date",
+                                        "FieldName": "ReadingDate",
+                                        "Id": "623e9339-3665-4836-a18c-da9bf90253ed",
+                                        "Name": "ReadingDate",
+                                        "Value": "Reading Date"
+                                    }, {
+                                        "ControlType": "Text",
+                                        "Pattern": "^([0-9]*)$",
+                                        "PatternWarning": "Only numbers are allowed",
+                                        "Label": "Pay Balance",
+                                        "Placeholder": "Please fill in",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Please fill in data",
+                                        "FieldName": "PayBalanceInput",
+                                        "Id": "171947ef-8849-42f8-af41-54e302c0f3af",
+                                        "Name": "PayBalanceInput"
+                                    }, {
+                                        "ControlType": "DatePicker",
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Please choose the date",
+                                        "Config": {
+                                            "monthsFull": [
+                                                "January",
+                                                "February",
+                                                "March",
+                                                "April",
+                                                "May",
+                                                "June",
+                                                "July",
+                                                "August",
+                                                "September",
+                                                "October",
+                                                "November",
+                                                "December"
+                                            ],
+                                            "monthsShort": [
+                                                "Jan",
+                                                "Feb",
+                                                "Mar",
+                                                "Apr",
+                                                "May",
+                                                "Jun",
+                                                "Jul",
+                                                "Aug",
+                                                "Sep",
+                                                "Oct",
+                                                "Nov",
+                                                "Dec"
+                                            ],
+                                            "weekdaysFull": [
+                                                "Sunday",
+                                                "Monday",
+                                                "Tuesday",
+                                                "Wednesday",
+                                                "Thursday",
+                                                "Friday",
+                                                "Saturday"
+                                            ],
+                                            "weekdaysShort": [
+                                                "Su",
+                                                "Mo",
+                                                "Tu",
+                                                "We",
+                                                "Th",
+                                                "Fr",
+                                                "Sa"
+                                            ],
+                                            "today": "Today",
+                                            "labelMonthNext": "Next Month",
+                                            "labelMonthPrev": "Previous Month",
+                                            "labelMonthSelect": "Select Month",
+                                            "labelYearSelect": "Select Year",
+                                            "format": "dd.mm.yyyy",
+                                            "formatSubmit": "yyyy-mm-dd",
+                                            "hiddenPrefix": false,
+                                            "hiddenSuffix": false,
+                                            "hiddenName": "",
+                                            "firstDay": 1,
+                                            "min": [
+                                                1920,
+                                                1,
+                                                1
+                                            ],
+                                            "max": [
+                                                2096,
+                                                12,
+                                                31
+                                            ]
+                                        },
+                                        "DataElementConfig": "{   \"monthsFull\": [     \"January\",     \"February\",     \"March\",     \"April\",     \"May\",     \"June\",     \"July\",     \"August\",     \"September\",     \"October\",     \"November\",     \"December\"   ],   \"monthsShort\": [     \"Jan\",     \"Feb\",     \"Mar\",     \"Apr\",     \"May\",     \"Jun\",     \"Jul\",     \"Aug\",     \"Sep\",     \"Oct\",     \"Nov\",     \"Dec\"   ],   \"weekdaysFull\": [     \"Sunday\",     \"Monday\",     \"Tuesday\",     \"Wednesday\",     \"Thursday\",     \"Friday\",     \"Saturday\"   ],   \"weekdaysShort\": [     \"Su\",     \"Mo\",     \"Tu\",     \"We\",     \"Th\",     \"Fr\",     \"Sa\"   ],   \"today\": \"Today\",   \"labelMonthNext\": \"Next Month\",   \"labelMonthPrev\": \"Previous Month\",   \"labelMonthSelect\": \"Select Month\",   \"labelYearSelect\": \"Select Year\",   \"format\": \"dd.mm.yyyy\",   \"formatSubmit\": \"yyyy-mm-dd\",   \"hiddenPrefix\": false,   \"hiddenSuffix\": false,   \"hiddenName\": \"\",   \"firstDay\": 1,   \"min\": [     1920,     1,     1   ],   \"max\": [     2096,     12,     31   ] }",
+                                        "Label": "Reading date",
+                                        "FieldName": "ReadingDateInput",
+                                        "Id": "51efc420-3d76-4c66-833e-03d4cf141844",
+                                        "Name": "ReadingDateInput"
+                                    }],
+                                    "Id": "d5d27755-b753-4f99-b4e8-320ee5972240",
+                                    "Name": "InBetweenFormStep1"
+                                    },
+                                    "Headline": "Step 1",
+                                    "Id": "f83380e0-913a-4156-bb38-9e17c3e2763e",
+                                    "Name": "Step1"
+                                },
+                            {
+                                "Form": {
+                                    "ApiUpdateEndpoint":"somePostApiEndpoint/step2",
+                                    "ApiGetEndpoint":"http://localhost:5500/api/exampleGetInvoiceInbetween.json",
+                                    "FormIdentity": "InBetweenFormStep2",
+                                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                    "SuccessMessage": "Data saved successfully",
+                                    "Children": [{
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-2 formEdit__cancel",
+                                        "Label": "Back",
+                                        "FieldName": "BackButton",
+                                        "Id": "dbeeb8ca-59a6-4ece-8cff-838acaf4bdd1",
+                                        "Name": "Back Button"
+                                    }, {
+                                        "ControlType": "Button",
+                                        "Class": "color-cta-3 formEdit__save",
+                                        "Label": "Save",
+                                        "FieldName": "SaveButton",
+                                        "Id": "1d1c08a8-b38c-4590-a560-a3dbacb9feb9",
+                                        "Name": "Save Button"
+                                    }, {
+                                        "ControlType": "Checkbox",
+                                        "CheckboxLabel": "Confirmation",
+                                        "CheckboxName": "Confirmation",
+                                        "Label": "Confirmation",
+                                        "Placeholder": null,
+                                        "Tooltip": null,
+                                        "Required": true,
+                                        "RequiredWarningMessage": "Please confirm",
+                                        "FieldName": "Confirmation",
+                                        "Id": "e5910d4f-8381-48c9-ad52-8bff936e9135",
+                                        "Name": "Confirmation"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Additional Information",
+                                        "FieldName": "AdditionalInformation",
+                                        "Id": "dd9da322-89a1-4b3a-acdf-f4facd91c7ac",
+                                        "Name": "AdditionalInformation",
+                                        "Value": "Additional, Information"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Warning Message",
+                                        "FieldName": "WarningMessage",
+                                        "Id": "631bd900-9692-4827-aa44-9c8103a11d0f",
+                                        "Name": "WarningMessage",
+                                        "Value": "Warning Message"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Counter number",
+                                        "FieldName": "CounterNumber",
+                                        "Id": "132f8975-d081-44a0-bffc-2497ab01b518",
+                                        "Name": "CounterNumber",
+                                        "Value": "Counter Number"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Last entry",
+                                        "FieldName": "LastEntry",
+                                        "Id": "1e941ad3-e37e-4885-a621-9282fb87d379",
+                                        "Name": "LastEntry",
+                                        "Value": "Last Entry"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "New entry",
+                                        "FieldName": "NewEntry",
+                                        "Id": "533cac0a-8cd6-4d93-a2f2-0f1e71b0f820",
+                                        "Name": "NewEntry",
+                                        "Value": "New Entry"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Pay balance",
+                                        "FieldName": "PayBalance",
+                                        "Id": "21e1848c-5d38-45cb-88a1-d63dbd0398c0",
+                                        "Name": "PayBalance",
+                                        "Value": "Pay Balance"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Reading date",
+                                        "FieldName": "ReadingDate",
+                                        "Id": "db898d01-cfc3-4afa-a9ec-90f05f69ceca",
+                                        "Name": "ReadingDate",
+                                        "Value": "Reading Date"
+                                    }],
+                                    "Id": "8aabddc8-589b-49c9-a03b-e9c3eae3de33",
+                                    "Name": "InBetweenFormStep2"
+                                },
+                                "Headline": "Step 2",
+                                "Id": "aa94d475-2f9a-424b-87af-79f530332af9",
+                                "Name": "Step 2"
+                            },
+                            {
+                                "Form": {
+                                    "ApiUpdateEndpoint":"somePostApiEndpoint",
+                                    "ApiGetEndpoint":"http://localhost:5500/api/exampleGetInvoiceInbetween.json",
+                                    "FormIdentity": "InBetweenFormStep3",
+                                    "NoConnectionErrorMessage": "Sorry, no connection with remote service",
+                                    "SuccessMessage": "Data saved successfully",
+                                    "Children": [{
+                                        "ControlType": "StaticText",
+                                        "Label": "Counter number",
+                                        "FieldName": "CounterNumber",
+                                        "Id": "564dacc3-39fd-4087-a56d-3438eb424434",
+                                        "Name": "CounterNumber",
+                                        "Value": "Counter Number"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Description",
+                                        "FieldName": "Description",
+                                        "Id": "250ce73f-aeea-4551-bad9-1b6f9a04ea58",
+                                        "Name": "Description",
+                                        "Value": "Description"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Last entry",
+                                        "FieldName": "LastEntry",
+                                        "Id": "3bef94aa-c70c-4ac6-922e-fe36ed19b6b0",
+                                        "Name": "LastEntry",
+                                        "Value": "LastEntry"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "New entry",
+                                        "FieldName": "NewEntry",
+                                        "Id": "c1e91d4b-c3b1-4379-aad3-06c08b370be6",
+                                        "Name": "NewEntry",
+                                        "Value": "New Entry"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Pay balance",
+                                        "FieldName": "PayBalance",
+                                        "Id": "0f0c8f7a-9f8f-4f47-b8e2-e40e9264d1c6",
+                                        "Name": "PayBalance",
+                                        "Value": "PayBalance"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Reading date",
+                                        "FieldName": "ReadingDate",
+                                        "Id": "1eeb68e7-0582-42bb-b43c-dbb5b94e6f32",
+                                        "Name": "ReadingDate",
+                                        "Value": "Reading Date"
+                                    }, {
+                                        "ControlType": "StaticText",
+                                        "Label": "Confirmation message",
+                                        "FieldName": "ConfirmationMessage",
+                                        "Id": "1d73b577-8f61-4267-9262-d549f0bf6e88",
+                                        "Name": "ConfirmationMessage",
+                                        "Value": "Confirmation Message"
+                                    }],
+                                    "Id": "7624e59a-4708-4584-b5e4-2f7b91161fb5",
+                                    "Name": "InBetweenFormStep3"
+                                },
+                                "Headline": "Step 3",
+                                "Id": "27c44a91-324e-4e1e-ab98-2d8895aa4129",
+                                "Name": "Step 3"
+                            }
+                        ]
+                    };
+                </script>
+            </div>
+        </div>
+    </section>
+{% endblock %}

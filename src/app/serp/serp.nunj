@@ -1,0 +1,34 @@
+<header class="row">
+    <div class="col-xs-3 text-left">
+        {#% if searchResults.totalResults > 0 %}
+            <a href="#" title="RSS Feed abbonieren" rel="nofollow" class="icon-link">
+                <i class="icon icon-rss icon--rounded"></i>
+            </a>
+        {% endif %#}
+    </div>
+    <div class="col-xs-6">
+        {% if searchResults.totalResults > 0 %}
+            <h3>{{searchResults.texts.found}}</h3>
+        {% else %}
+            {{searchResults.message|safe}}
+        {% endif %}
+    </div>
+
+    <div class="col-xs-3 text-right">
+        {% if searchResults.totalResults > 0 %}
+            <div data-element="toggle-switch">
+                <input id="toggleSwitch-2" type="checkbox" checked="checked">
+                <label for="toggleSwitch-2">
+                    <div><i class="icon icon-tiles"></i><i class="icon icon-list"></i><span><i class="icon icon-tiles"></i><i class="icon icon-list"></i></span></div>
+                </label>
+            </div>
+        {% endif %}
+    </div>
+</header>
+<ol class="row">
+    {% include './serp-items.nunj' %}
+</ol>
+
+<footer>
+    {% include './serp-footer.nunj' %}
+</footer>

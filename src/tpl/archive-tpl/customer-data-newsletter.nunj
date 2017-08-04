@@ -1,0 +1,14 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Newsletter" %}
+
+{% block content %}
+	<section data-tpl="grid-bas-02">
+		<div class="container">
+			<div data-tpl="newsletter">
+				{% include './partials/customer-data/Newsletter-view.nunj' %}
+				{% include './partials/customer-data/Newsletter-edit.nunj' %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,7 @@
+<nav id="breadcrumb" role="navigation" data-tpl="breadcrumb">
+    <h3 id="breadcrumb-label" class="aria-only">Breadcrumbs</h3>
+    <ol id="breadcrumb-list" role="menubar" aria-labelledby="breadcrumb-label" aria-live="polite">
+        <li aria-selected="false"><a href="index.html" title="">Startseite</a></li>
+        <li aria-selected="true" class="active"><a title="">eMobility</a></li>
+    </ol>
+</nav>

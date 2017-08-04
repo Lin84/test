@@ -1,0 +1,16 @@
+{
+    "OrgName1":"Actum",
+    "OrgName2":"Actum Plus",
+    "OrgName3":"Super Actum",
+    "ReasonsForChange":"",
+
+    "ReferenceLists": {
+        "ReasonsForChange": [
+            "Fehlerhafte Schreibweise",
+            "Heirat",
+            "Scheidung"
+        ]
+    }
+}
+
+

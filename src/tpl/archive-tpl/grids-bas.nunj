@@ -1,0 +1,92 @@
+{% extends "layouts/default.nunj" %} {% set title = "BAS Grids" %} {% block content %}
+<section data-tpl="grid-bas-01" class="{{colorClass}} color-background-7">
+    <div class="container-fluid">
+        <div class="row">BAS 01
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-01" class="{{colorClass}} color-background-11">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-02">
+                <div class="container">BAS 02
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-01" class="{{colorClass}} color-background-5">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-03">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-6">BAS 03 COLUMN 1
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-6">
+                            BAS 03 COLUMN 2 Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-01" class="{{colorClass}} color-background-9">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-04">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-8">
+                            BAS 04 COLUMN 1 Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-4">BAS 04 COLUMN 2
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-01" class="{{colorClass}} color-background-4">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-05">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-4">BAS 05 COLUMN 1
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-4">
+                            BAS 05 COLUMN 2 Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-4">BAS 05 COLUMN 3
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<section data-tpl="grid-bas-01" class="{{colorClass}} color-background-8">
+    <div class="container-fluid">
+        <div class="row">
+            <section data-tpl="grid-bas-06">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-content grid-content-1 col-md-3">
+                            BAS 06 COLUMN 1 Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </div>
+                        <div class="grid-content grid-content-2 col-md-3">BAS 06 COLUMN 2
+                        </div>
+                        <div class="grid-content grid-content-3 col-md-3">BAS 06 COLUMN 3
+                        </div>
+                        <div class="grid-content grid-content-4 col-md-3">BAS 06 COLUMN 4
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

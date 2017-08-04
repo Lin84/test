@@ -1,0 +1,14 @@
+<div class="formAfterView hidden" data-tpl="form" data-module="form" data-module-config="">
+
+	<div class="formView__form">
+		<p>Konto löschen</p>
+		<p>Attansion!!!</p>
+
+		<p class="formView__success-msg hidden">Success Message after Front End and Back End validation</p>
+
+		<div class="formEdit__bottom-wrapper">
+			<a title="Save" class="btn color-cta-3 formAfterView__submit">Delete</a>
+			<a title="Cancel" class="btn color-cta-2 formAfterView__cancel">Cancel</a>
+		</div>
+	</div>
+</div>

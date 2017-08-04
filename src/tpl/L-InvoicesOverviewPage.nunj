@@ -1,0 +1,42 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "L-InvoicesOverviewPage" %}
+
+{% block js %}
+    <script src="js/innogy/app-forms.js"></script>
+{% endblock %}
+
+{% block content %}
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+            <header class="ieb-item__header">
+                <header>
+                    <h2 data-tpl="hea02" class="">
+                        L-InvoicesOverviewPage:
+                    </h2>
+                </header>
+            </header>
+            <div class="grid-bas-02">
+                <div data-tpl="ctl01">
+                    <script type="text/javascript">
+                        components['ctl01'] = {
+                            "ApiEndpoint": "http://localhost:5500/api/GetContractsForCustomerResponse.json",
+                            "RedirectEndpoint": "http://localhost:5500/L-InvoicesDetailPage.html",
+                            "Id": "e1e91b41-840f-4af5-af0d-defd6bd4d38e",
+                            "Name": "CIH01-test",
+                            "EmptyDataMessage": "Headline text H3"
+                        };
+                        components['cih01a'] = {
+                            "CustomerID": "132456798",
+                            "Headline": "Velká 27, Praha",
+                            "Id": "e1e91b41-840f-4af5-af0d-defd6bd4d38e",
+                            "Name": "CIH01-test",
+                            "ShortText": "some short text"
+                        };
+                    </script>
+                    <div remoteComponent='ctl01' id="ctl01Id"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="description">
+    <meta name="date" content="2016-05-05" scheme="YYYY-MM-DD">
+    <meta name="author" content="ACTUM">
+    <meta name="robots" content="index follow">
+    <meta name="keywords" content="rwe">
+
+    <title>{{ title }}</title>
+
+    {# Sensory Minds's inline styles #}
+     <style data-tpl="inline-style" data-for="above-the-fold">
+         {% include '../../sm/css/above-the-fold.css' %}
+    </style>
+
+    {# Sensory Minds's inline scripts #}
+    {# <script>
+        {% include '../../js/runtime.js' %}
+    </script> #}
+
+    {# ACTUM custom styles used for different HTML or own-solved solutions #}
+    <link rel="stylesheet" href="/css/Innogy/innogy-custom.css" media="all">
+    <link rel="stylesheet" href="/css/Innogy/wffm-custom.css" media="all">
+    <link rel="stylesheet" href="/css/Innogy/customer-data-custom.css" media="all">
+
+    {% if sitecore %}
+        <link rel="stylesheet" href="/css/experience-editor-custom.css" media="all">
+    {% endif %}
+
+    <script>
+        var innogyForm = {};
+        var innogyMultistepForm ={};
+        var components = {};
+        var defaultHeaders = {
+            'Site': 'innogy',
+            'Database': 'master',
+            'Language': 'en',
+            'Authorization': 'Bearer 123',
+        };
+        var stcUserData = {
+            Name: 'Name',
+            Email: 'Email@email.com'
+        };
+        var stcLoginData = {
+            SitecoreLoginUrl: 'http://localhost:5500/L-sso-PIO-login-3662.html',
+            CoremediaLogoutApiEndpoint: '/coremedia/api/v1/ssologout',
+            UnauthorizedMessage: 'Unauthorized message'
+        };
+    </script>
+</head>
+<body>
+    <div id="page-wrapper">
+        {% include '../partials/meta-navigation.nunj' %}
+
+        <div id="off-screen-wrap">
+            {% include '../partials/off-screen-navigation.nunj' %}
+            {% include '../partials/off-screen-cart.nunj' %}
+            {% include '../partials/main-header.nunj' %}
+            {% include '../partials/off-screen-app-drawer.nunj' %}
+            <div id="off-screen-content">
+                <div data-tpl="blanko-overview"> {# blanko / detail-one-marginal-column / detail-two-marginal-column / serp #}
+                    <main>
+                        {% block content %}{% endblock %}
+                    </main>
+                </div>
+                {% include '../partials/components/breadcrumbs.nunj' %}
+                {% include '../partials/footer.nunj' %}
+            </div>
+            <div id="off-screen-overlay"></div>
+        </div>
+    </div>
+
+    {# Passing variable into templates to distinguish develop environment #}
+    {% if _dev %}
+        <script>
+            var isDev = true;
+        </script>
+    {% endif %}
+
+    {# ACTUM main javascript file #}
+    <script src="js/Innogy/app.js"></script>
+
+    {% block js %}{% endblock %}
+
+    {# Sensory Minds's script #}
+    <script async deferred src="js/runtime.js"></script>
+    <script async deferred src="js/client.js"></script>
+
+
+
+    {# Sensory Minds's style #}
+    {# Maybe will be used later #}
+    {# <link rel="stylesheet" href="/css/product-finder.css" media="all" data-for="product-finder"> #}
+</body>
+</html>

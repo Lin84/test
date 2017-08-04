@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>RWE.Innogy.Html</id>
+        <version>1.0.0</version>
+        <title>Innogy front end part</title>
+        <authors>oorlenko</authors>
+        <owners>RWE</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Front end part of Innogy project</description>
+    </metadata>
+    <files>
+        <file src="dist\css\**\*.css" target="Content\css" />
+        <file src="dist\css\**\*.map" target="Content\css" />
+        <file src="dist\js\**\*.js" target="Content\js" />
+        <file src="dist\js\**\*.map" target="Content\js" />
+		<file src="dist\fonts\*.*" target="Content\fonts" />
+    </files>
+</package>

@@ -1,0 +1,130 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "WFFM" %}
+
+{% block content %}
+    <section data-tpl="grid-bas-02">
+    <div>
+        <form action="/form/Index?wffm.FormItemId=cb6294a5-513b-4e7b-8081-7c33edb8a433&amp;wffm.Id=03f72546-bb0e-478c-8bb7-045a1115ec92&amp;sc_lang=en" class="text-left" data-wffm="{CB6294A5-513B-4E7B-8081-7C33EDB8A433}" data-wffm-ajax="True" enctype="multipart/form-data" id="wffm03f72546bb0e478c8bb7045a1115ec92" method="post" role="form" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="SnhY2xjhs_wIcrXf44c-hkjPOHibTJBT8H_NmCIlFEzXK5qDls5TdLj3ZP_tkZolr8Rzw7tzNXVW9e0EL1vUoPqaAwd1-ywb4SkJlBQzXEo1">
+
+            <h2>Checkbox with help-block</h2>
+            <div class="required-field form-group has-feedback">
+                <input id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Id" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Id" type="hidden" value="{6D1FF666-6024-488E-802F-1E0320FFA209}">
+                <div class="checkbox">
+                    <input data-val="true" data-val-ischecked="The checkbox field is required." data-val-ischecked-tracking="{7E86B2F5-ACEC-4C60-8922-4EB5AE5D9874}" data-val-required="The Value field is required." id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="checkbox" value="true"><input name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="hidden" value="false" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13">
+                    <label for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13">
+                    checkbox
+                    </label>
+                </div>
+                <span class="field-validation-valid help-block" data-valmsg-for="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" data-valmsg-replace="true"></span><span class="help-block">this is checkbox help-block this is checkbox help-block this is checkbox help-block this is checkbox help-block this is checkbox help-block this is checkbox help-block help-block this is checkbox help-block help-block this is checkbox help-block</span>
+            </div>
+
+        <h2>DROPLIST</h2>
+            <div class="required-field form-group has-feedback">
+                <input id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_0__Id" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[0].Id" type="hidden" value="{B9FB0D36-D86D-4629-949B-3DFA924FD457}">
+                <label class="control-label" for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_0__Value">droplist</label>
+                <div data-tpl="form" data-module="form" data-module-config="">
+                    <div data-tpl="select" data-module="select" data-module-config="">
+                        <select class="form-control" data-val="true" data-val-required="The droplist field is required." data-val-required-tracking="{7E86B2F5-ACEC-4C60-8922-4EB5AE5D9874}" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_0__Value" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[0].Value">
+                            <option value=""></option>
+                            <option value="asd">asd</option>
+                            <option value="asdf">asdf</option>
+                            <option value="asdffdsa">asdffdsa</option>
+                        </select>
+                        <div class="custom-select form-control"></div>
+                        <div class="custom-options">
+                            <div class="custom-options-wrapper" style="max-height: 312.625px;">
+                                <div class="option" data-key="0"></div>
+                                <div class="option" data-key="1">asd</div>
+                                <div class="option" data-key="2">asdf</div>
+                                <div class="option" data-key="3">asdffdsa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="field-validation-valid help-block" data-valmsg-for="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[0].Value" data-valmsg-replace="true"></span>
+
+    {#             <span class="help-block field-validation-error" data-valmsg-for="wffm27cfe1e5c33641c4a30662f2beab2816.Sections[0].Fields[8].Value" data-valmsg-replace="true"><span id="wffm27cfe1e5c33641c4a30662f2beab2816.Sections[0].Fields[8].Value-error" class="">The Checkbox Field field is required.</span></span> #}
+
+                <span class="help-block">this is checkbox help-block</span>
+            </div>
+
+            {# <h2>CHECKBOXS</h2>
+            <div class="checkbox">
+                <input data-val="true" data-val-required=""" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="checkbox" value="true">
+                <input name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="hidden" value="false" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13">
+                <label for="">
+                    checkbox
+                </label>
+            </div>
+            <div class="checkbox">
+                <input data-val="true" data-val-required=""" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value14" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="checkbox" value="true">
+                <input name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="hidden" value="false" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value14">
+                <label for="">
+                    checkbox
+                </label>
+            </div>
+
+            <h2>RADIO BUTTONS</h2>
+            <div class="radio">
+                        <input id="radioone" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[2].Value" type="radio" value="asdf">
+                        <label for="">
+                            radio one
+                        </label>
+            </div>
+            <div class="radio">
+                <input id="radiotwo" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[2].Value" type="radio" value="asdf">
+                <label for="">
+                    radio two
+                </label>
+            </div> #}
+
+
+
+            <h2>Radio button with help-block</h2>
+            <div class="required-field form-group has-feedback">
+                <input id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Id" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[2].Id" type="hidden" value="{A7F46C28-07FE-4F5E-B3CC-E590761F4BFE}">
+                <label class="control-label" for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Value"></label>
+                <div class="radio">
+                    <input data-val="true" data-val-required="The radio field is required." data-val-required-tracking="{7E86B2F5-ACEC-4C60-8922-4EB5AE5D9874}" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Value16" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[2].Value" type="radio" value="asdf">
+                    <label for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Value16">
+                    asdf
+                    </label>
+                </div>
+                <div class="radio">
+                    <input id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Value17" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[2].Value" type="radio" value="asdfasdfdsf">
+                    <label for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Value17">
+                    asdfasdfdsf
+                    </label>
+                </div>
+                <div class="radio">
+                    <input id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Value18" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[2].Value" type="radio" value="asdfasfd">
+                    <label for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_2__Value18">
+                    asdfasfd
+                    </label>
+                </div>
+                <span class="field-validation-valid help-block" data-valmsg-for="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[2].Value" data-valmsg-replace="true"></span><span class="help-block">this is radio help-block</span>
+            </div>
+
+            <h2>single line with help-block</h2>
+            <div class="required-field form-group has-feedback">
+                <input id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_4__Id" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[4].Id" type="hidden" value="{FD7D7241-93EE-4EBB-8DBA-81E5A4106D5A}">
+                <label class="control-label" for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_4__Value">single line</label>
+                <input class=" form-control text-box single-line" data-val="true" data-val-length="The single line field must be a string with a minimum length of 0 and a maximum length of 256." data-val-length-max="256" data-val-required="The single line field is required." data-val-required-tracking="{7E86B2F5-ACEC-4C60-8922-4EB5AE5D9874}" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_4__Value" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[4].Value" placeholder="" style="" type="text" value=""><span class="field-validation-valid help-block" data-valmsg-for="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[4].Value" data-valmsg-replace="true"></span><span class="help-block">single line help-block text</span>
+            </div>
+
+            <h2>checkbox with required text</h2>
+            <div class="required-field form-group has-feedback has-error">
+                <input id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Id" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Id" type="hidden" value="{6D1FF666-6024-488E-802F-1E0320FFA209}">
+                <div class="checkbox">
+                    <input data-val="true" data-val-ischecked="The checkbox field is required." data-val-ischecked-tracking="{7E86B2F5-ACEC-4C60-8922-4EB5AE5D9874}" data-val-required="The Value field is required." id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13" name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="checkbox" value="true" aria-required="true" aria-invalid="true" aria-describedby="wffmca97b20779a14309ac4042c80d3f4cbc\.Sections\[0\]\.Fields\[1\]\.Value-error wffmca97b20779a14309ac4042c80d3f4cbc\.Sections\[0\]\.Fields\[1\]\.Value-error wffmca97b20779a14309ac4042c80d3f4cbc\.Sections\[0\]\.Fields\[1\]\.Value-error wffmca97b20779a14309ac4042c80d3f4cbc\.Sections\[0\]\.Fields\[1\]\.Value-error wffmca97b20779a14309ac4042c80d3f4cbc\.Sections\[0\]\.Fields\[1\]\.Value-error"><input name="wffmca97b20779a14309ac4042c80d3f4cbc.Sections[0].Fields[1].Value" type="hidden" value="false" id="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13">
+                    <label for="wffmca97b20779a14309ac4042c80d3f4cbc_Sections_0__Fields_1__Value13">
+                    checkbox
+                    </label>
+                </div>
+                <span class="help-block">this is checkbox help-block</span>
+            </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}

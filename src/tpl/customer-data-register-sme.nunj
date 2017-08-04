@@ -1,0 +1,119 @@
+{% extends "layouts/default.nunj" %}
+
+{% set title = "Customer Data Registration B2C form" %}
+
+{% block content %}
+    <section data-tpl="grid-bas-02">
+        <div class="container">
+
+            <div class="formView" data-tpl="form" data-module="form" data-module-config="">
+                <div class="formView__form">
+                    <h2 class="headline">Registrieren</h2>
+                    <p>Registrieren Sie sich jetzt für Meine innogy ganz einfach und völlig kostenlos.
+                        Haben Sie bereits einen Account für meine innogy, meine RWE oder das RWE Energiekaufhaus?
+                        Dann loggen Sie sich einfach <a href="#" class="link">hier</a> mit diesen Zugangsdaten ein.</p>
+                    <p>Sie sind Privatperson? Dann registrieren Sie sich bitte als <a href="#" class="link">Privatperson.</a>
+                    </p>
+
+                    <h3 class="subheadline">Ihre Kundendaten</h3>
+                    <p>Bitte geben Sie Namenzeile 1 und 2 sowie Ihre 10-stellige. Kundennummer (ohne Leerzeichen und
+                        ohne den vorausgehenden Buchstaben z.B. X), wie auf Ihrer aktuellen Rechnung angegeben,
+                        ein.</p>
+
+                    <div class="form-group">
+                        <label for="text">Namenszeile 1</label>
+                        <input id="text" name="text" type="text" class="form-control form-control" placeholder=""
+                               autocomplete="off" autocorrect="off" spellcheck="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Namenszeile 2</label>
+                        <input id="text" name="text" type="text" class="form-control form-control" placeholder=""
+                               autocomplete="off" autocorrect="off" spellcheck="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Kundennummer</label>
+                        <input id="text" name="text" type="text" class="form-control form-control" placeholder=""
+                               autocomplete="off" autocorrect="off" spellcheck="false">
+                    </div>
+
+                    <hr data-tpl="lin01">
+
+
+                    <h3 class="subheadline">Ihre Zugangsdaten für Meine innogy</h3>
+                    <p>Mit dem von Ihnen frei wählbaren Benutzernamen und Passwort können Sie sich jederzeit bei Meine
+                        innogy anmelden
+                        und alle Services zur Vertragsverwaltung und viele weitere Vorteile online nutzen.</p>
+
+                    <div class="form-group">
+                        <label for="text">Benutzername</label>
+                        <input id="text" name="text" type="text" class="form-control form-control" placeholder=""
+                               autocomplete="off" autocorrect="off" spellcheck="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Passwort</label>
+                        <input id="text" name="text" type="text" class="form-control form-control" placeholder=""
+                               autocomplete="off" autocorrect="off" spellcheck="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Passwort weiderholen</label>
+                        <input id="text" name="text" type="text" class="form-control form-control" placeholder=""
+                               autocomplete="off" autocorrect="off" spellcheck="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">E-Mail</label>
+                        <input id="text" name="text" type="text" class="form-control form-control" placeholder=""
+                               autocomplete="off" autocorrect="off" spellcheck="false">
+                    </div>
+
+                    <hr data-tpl="lin01">
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <input id="RememberMe4" name="RememberMe" type="checkbox" value="true"><input
+                                name="RememberMe" type="hidden" value="false" id="RememberMe4">
+                            <label for="RememberMe4">Ja, ich stimme zu, dass ich mit meiner Registrierung meine Rechnung
+                                einfach und bequem online in Meine innogy erhalte.</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <input id="RememberMe4" name="RememberMe" type="checkbox" value="true"><input
+                                name="RememberMe" type="hidden" value="false" id="RememberMe4">
+                            <label for="RememberMe4">Ja, ich stimme denv <a href="#" class="link">&nbsp; AGB &nbsp;</a>
+                                zu.</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <input id="RememberMe4" name="RememberMe" type="checkbox" value="true"><input
+                                name="RememberMe" type="hidden" value="false" id="RememberMe4">
+                            <label for="RememberMe4">Ja, ich möchte per E-Mail über eigene oder ähnliche Angebote und
+                                Produkte der innogy SE informiert werden.</label>
+                        </div>
+                    </div>
+                    <p class="small">Diese Einwilligung kann jederzeit über die Funktion „Abbestellen“ in erhaltenen
+                        E-Mails oder die im Internet bzw. auf Ihren Unterlagen angegebenen Kontaktmöglichkeiten entzogen
+                        werden.</p>
+
+                    <hr data-tpl="lin01">
+
+                    <h3 class="subheadline">Datenschutz</h3>
+                    <p class="small">Die im Rahmen des Online-Services mitgeteilten und für die Abwicklung des
+                        Vertragsverhältnisses erforderlichen Daten werden von der innogy SE und beauftragten
+                        Dienstleistern im Sinne des Bundesdatenschutzgesetzes erhoben, verarbeitet und genutzt. Neben
+                        der allgemeinen <a href="#" class="link">Datenschutzerklärung</a> unserer Internetseite gelten
+                        die Datenschutzerklärungen der AGB Ihres Energieversorgungsvertrages.</p>
+
+                    <p class="small">Mit * markierte Felder sind Pflichtfelder.
+                        <br>innogy Mitarbeiter mit Anspruch auf Deputat-Leistungen haben keine Berechtigung zur
+                        Nutzung von Meine innogy.</p>
+
+                    <div class="formEdit__bottom-wrapper">
+                        <button class="btn color-cta-3" type="submit" data-submit>Registrieren</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+{% endblock %}

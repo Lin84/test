@@ -1,0 +1,461 @@
+/**
+ * This file is for change standard style in experience editor
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+#page-wrapper { // Prevent elements from wrapper from overflowing the sitecore UI
+    z-index: 1;
+    overflow: visible;
+}
+
+.image-decorative {
+    position: relative;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .container-fluid .row {
+    margin: 0;
+}
+
+[data-tpl="grid-bas-03"],
+[data-tpl="grid-bas-05"],
+[data-tpl="grid-bas-06"] {
+    .container {
+        .row {
+            display: block;
+
+            [class*='col-'] {
+                display: block;
+            }
+        }
+    }
+}
+
+.tea02-default {
+    background: gray;
+    width: 100%;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+@media (min-width: 480px) {
+    [data-tpl="grid-ext-05"] > .container > .row > .grid-content {
+        padding: 15px;
+    }
+
+    [data-tpl="grid-ext-05"] > .container > .row > .grid-content [data-tpl="tea03"] a {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 480px) {
+    [data-tpl="grid-ext-05"] > .container > .row > .grid-content:first-child [data-tpl="tea03"] {
+        padding-top: 140.5%;
+    }
+}
+
+// EXT grids floating fix
+
+[data-tpl="grid-ext-04"] .grid-content:nth-of-type(3),
+[data-tpl="grid-ext-06"] .grid-content:nth-of-type(4) {
+    clear: both;
+}
+
+[data-tpl="grid-ext-05"] {
+    .grid-content-1 .scEmptyPlaceholder {
+        height: 560px;
+    }
+
+    .grid-content-2 .scEmptyPlaceholder {
+        height: 265px;
+    }
+
+    .grid-content-3 .scEmptyPlaceholder {
+        height: 265px;
+    }
+
+    .grid-content-4 .scEmptyPlaceholder {
+        height: 265px;
+    }
+
+    .grid-content-5 .scEmptyPlaceholder {
+        height: 265px;
+    }
+}
+
+// Mag-01 fix
+
+[data-tpl="grid-mag-01"] {
+    .grid-content-1 .scEmptyPlaceholder {
+        height: 291px;
+    }
+
+    .grid-content-2 .scEmptyPlaceholder {
+        height: 592px;
+    }
+
+    .grid-content-3 .scEmptyPlaceholder {
+        height: 602px;
+    }
+
+    .grid-content-4 .scEmptyPlaceholder {
+        height: 301px;
+    }
+
+    .grid-content-5 .scEmptyPlaceholder {
+        height: 602px;
+    }
+}
+
+// Mag-02 fix
+
+[data-tpl="grid-mag-02"] {
+    .grid-content-1 .scEmptyPlaceholder {
+        height: 291px;
+    }
+
+    .grid-content-2 .scEmptyPlaceholder {
+        height: 592px;
+    }
+
+    .grid-content-3 .scEmptyPlaceholder {
+        height: 602px;
+    }
+
+    .grid-content-4 .scEmptyPlaceholder {
+        height: 301px;
+    }
+
+    .grid-content-5 .scEmptyPlaceholder {
+        height: 602px;
+    }
+
+    .grid-content-6 .scEmptyPlaceholder {
+        height: 602px;
+    }
+}
+
+// Mag-03 fix
+
+[data-tpl="grid-mag-03"] {
+    .grid-content-1 .scEmptyPlaceholder {
+        height: 291px;
+    }
+
+    .grid-content-2 .scEmptyPlaceholder {
+        height: 592px;
+    }
+
+    .grid-content-3 .scEmptyPlaceholder {
+        height: 602px;
+    }
+
+    .grid-content-4 .scEmptyPlaceholder {
+        height: 301px;
+    }
+
+    .grid-content-5 .scEmptyPlaceholder {
+        height: 602px;
+    }
+
+    .grid-content-6 .scEmptyPlaceholder {
+        height: 301px;
+    }
+
+    .grid-content-7 .scEmptyPlaceholder {
+        height: 301px;
+    }
+}
+
+// Mag grids global fix - added padding
+
+[data-tpl="grid-mag-01"],
+[data-tpl="grid-mag-02"],
+[data-tpl="grid-mag-03"] {
+    .grid-content {
+        padding: 5px !important;
+    }
+}
+
+// iframe overlay for disable links inside
+.iframe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: .1;
+}
+
+[data-tpl=iframe] iframe {
+    opacity: 1;
+}
+
+// Quotes temporary fix
+
+[data-tpl="quo01"] {
+    img,
+    .img-responsive {
+        max-width: none;
+    }
+
+    .scWebEditInput {
+        display: inline !important;
+    }
+}
+
+// Off canvas menu fix - change position from "fixed"
+
+#off-screen-cart,
+#off-screen-navigation {
+    position: absolute;
+    overflow-y: scroll;
+}
+
+// Alerts margin remove
+
+.alert.scEnabledChrome {
+    margin-bottom: 0 !important;
+}
+
+// Fix the ugly "Add here" button
+
+.scInsertionHandleCenter {
+    height: 23px !important;
+}
+
+// Set min dimensions for placeholders of header navigation
+
+#quick-navigation-left-list,
+#quick-navigation-right-list {
+    .scEnabledChrome.scEmptyPlaceholder {
+        min-width: 200px;
+    }
+}
+
+// Always show icons in contact and login links in off-canvas menu
+
+#main-navigation li > a::before {
+    color: inherit;
+    width: 2.5rem;
+    font-size: .9rem;
+    vertical-align: middle;
+    display: inline-block;
+    speak: none;
+    font-family: iconfont;
+    line-height: inherit;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#main-navigation li.contact > a::before,
+.icon-mail::before {
+    content: "\EA20";
+}
+
+#main-navigation li.login > a::before,
+.icon-login::before {
+    content: "\EA1E";
+}
+
+// Always show the bottom menu in off-canvas
+
+#main-navigation ul {
+    display: block !important;
+}
+
+[data-tpl=iframe] iframe {
+    opacity: 1;
+}
+
+// Header needs to be not positioned absolutely because the drawer component below is not visible in editing mode
+
+header#main-header {
+    position: relative;
+}
+
+#off-screen-content {
+    margin-top: 0;
+}
+
+// styles for text-badge outside of the figure tag
+
+[data-tpl="mediaContainer"] {
+    position: relative;
+
+    [data-tpl="text-badge"] {
+        position: absolute;
+        top: 1.25vw;
+        right: 1.25vw;
+    }
+}
+
+// All the drawers must be visible in editing mode
+
+#off-screen-app-drawer {
+    top: 0;
+
+    &,
+    & > div {
+        height: 1020px;
+    }
+
+    .app-drawer {
+        position: relative;
+    }
+}
+
+// Test
+
+nav#quick-navigation ul {
+    position: relative;
+}
+
+// Temporary styling of the third drawer which is not developed yet
+
+#off-screen-app-drawer .app-drawer.error {
+    color: white;
+    text-align: center;
+}
+
+// Remove absolute positioning (???) from header menu
+
+#target-group-select ul li {
+    position: static !important;
+}
+
+// BAS04 - fix missing placeholder
+[data-tpl="grid-bas-04"] {
+    .scEmptyPlaceholder {
+        width: 100%;
+    }
+}
+
+// LL01 - Linklist - allow overflow of the content
+
+[data-tpl="ll01"] .scLooseFrameZone {
+    overflow-y: visible;
+}
+
+// LIN01 - Line - added padding to allow to click on this component
+
+[data-tpl="lin01"] {
+    padding: 5px 0;
+}
+
+// The Sitecore UI should be always on the top
+
+#scPageExtendersForm {
+    position: relative;
+    z-index: 9999;
+}
+
+// Header elements should not be clickable when we are not in editing mode of header itself
+// Ugly fix, I know, but not found any better solution :)
+
+.previewModeOverlay {
+    & + div + header > * {
+        pointer-events: none;
+    }
+}
+
+// Fix overlapping of sitecore elements
+
+.scSortingHandle,
+.scInsertionHandle {
+    z-index: 1000;
+}
+
+// Placeholder in meta navigation needs to be visible
+
+[data-tpl="meta-navigation"] .scEmptyPlaceholder {
+    width: 200px;
+}
+
+// Some elements need to have a minimal height because is impossible to click on them
+
+[data-tpl="htm01"] {
+    min-height: 30px;
+}
+
+// DFD-1158 - missing text-badge in tic01
+
+[data-tpl="tic01"] {
+    [data-tpl="text-badge"] {
+        z-index: 1;
+    }
+}
+
+// Styles what element should get from siblings, due sitecore is it impossible | Login form
+
+[data-tpl=pio01] .link {
+    margin-bottom: 1.5rem;
+}
+
+// Tabs
+
+.sc-tabs {
+    background: black;
+    padding: 10px;
+    display: inline-block;
+
+    ul,
+    li {
+        margin: 0;
+    }
+
+    li {
+        padding: 5px 10px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        background: #3c3732;
+        color: white;
+
+        &.is-active {
+            background: #f59b00;
+        }
+
+        &:not(.is-active):hover {
+            background: lighten(#3c3732, 10%);
+        }
+    }
+}
+
+[data-scomponent] {
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
+
+// Login form spaces fix
+
+#form-42.editing {
+    .link,
+    .btn {
+        margin-bottom: 1.5rem;
+    }
+}

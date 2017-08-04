@@ -1,0 +1,14 @@
+<div class="formView" data-tpl="form" data-module="form" data-module-config="">
+
+    <div class="formView__form">
+        <p>Hinweis: Für Kunden mit mehreren Vertragskonten:</p>
+        <p>Die Deaktivierung von Meine innogy betrifft alle in der Übersicht angezeigten Kundennummern, eine Abmeldung einzelner Kundennummern ist leider nicht möglich.</p>
+        <p>Sofern Sie nur die Online-Rechnung auf Papier-Rechnung umstellen möchten, klicken Sie bitte hier.</p>
+
+        <p class="formView__success-msg hidden">Success Message after Front End and Back End validation</p>
+
+        <div class="formView__bottom-wrapper">
+            <button class="btn color-cta-3">Edit</button>
+        </div>
+    </div>
+</div>

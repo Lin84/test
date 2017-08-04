@@ -1,0 +1,8 @@
+<article data-tpl="tea05" class="color-teaser-4">
+	<a href="#" title="Headline" class="link link--internal {{optionalLinkColorClass}}">
+		<header>
+			<h2 class="headline">Headline</h2>
+			<h3 class="subheadline">Subheadline - Integer posuere erat a ante venenatis.</h3>
+		</header>
+	</a>
+</article>

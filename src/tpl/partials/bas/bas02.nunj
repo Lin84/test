@@ -1,0 +1,30 @@
+<section data-tpl="grid-bas-02">
+	<div class="container">
+		<h3>TIC01 - with image</h3>
+	    <div data-tpl="tic01">
+	        <h3 class="headline">Headline</h3>
+	        <figure class="image image-semantic">
+	            <picture>
+	                <!--[if IE 9]><video style="display: none;"><![endif]-->
+	                <source srcset="../images/1-xl.jpg" media="(min-width: 1280px)">
+	                <source srcset="../images/1-lg.jpg" media="(min-width: 800px) AND (max-width: 1279px)">
+	                <source srcset="../images/1-md.jpg" media="(min-width: 480px) AND (max-width: 799px)">
+	                <source srcset="../images/1-sm.jpg" media="(min-width: 320px) AND (max-width: 479px)">
+	                <source srcset="../images/1-xs.jpg" media="(max-width: 319px)">
+	                <!--[if IE 9]></video><![endif]-->
+	                <img src="../images/1-xl.jpg" alt="Image Alt Text" aria-describedby="aria-itea04">
+	            </picture>
+	            <figcaption id="aria-itea04" class="image-caption">Image Caption Text (optional)</figcaption>
+	        </figure>
+	        <h3 class="subheadline">Subheadline</h3>
+	        <div class="content">
+	            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+	        </div>
+	        <div class="content-extended" aria-expanded="false">
+	            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+	        </div>
+	        <div class="content-extended-arrow"></div>
+	        <a href="tic01.html#" title="CTA title" class="btn {{optionalColorClass}} {{optionalWidthModifier}} color-cta-3">CTA text</a>
+	    </div>
+	</div>
+</section>
